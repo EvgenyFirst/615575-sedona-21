@@ -1,12 +1,307 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no, width = device-width">
+</head>
 
-  </body>
+<body>
+
+  <!-- Навигационное меню start -->
+  <header class="menu">
+    <h2 class="visually-hidden">
+      Навигационное меню
+    </h2>
+    <div class="menu__block">
+      <!-- Навигационное меню (открытое) start -->
+      <nav class="menu__nav">
+        <ul class="menu__nav-block">
+          <li class="menu__items">
+            <!-- Кнопка для закрытия навигационного меню будет реализовано псевдоэлементами-->
+            <a class="menu__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="menu__items">
+            <a class="menu__link" href="#">
+              Фото и видео
+            </a>
+          </li>
+          <li class="menu__items">
+            <a class="menu__link" href="#">
+              Форма Отзыва
+            </a>
+          </li>
+          <li class="menu__items">
+            <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Навигационное меню (открытое) end -->
+
+      <!-- Навигационное меню (закрытое) start -->
+      <div class="menu__hide">
+        <img class="menu__logo" src="https://via.placeholder.com/150x150" alt="Логотип «Седона»">
+        <img class="menu__burger" src="https://via.placeholder.com/150x150" alt="Кнопка меню «бургер»">
+      </div>
+    </div>
+    <!-- Навигационное меню (закрытое) end -->
+  </header>
+  <!-- Навигационное меню end -->
+
+  <main class="content">
+    <!-- Добро пожаловать в «Седону» start -->
+    <section class="welcome">
+      <h2 class="visually-hidden">
+        Добро пожаловать в «Седону»
+      </h2>
+      <img class="welcome__welcome" src="https://via.placeholder.com/150x150" alt="Welcome">
+      <img class="welcome__gorgeous" src="https://via.placeholder.com/150x150" alt="-to the gorgeous-">
+      <img class="welcome__sedona" src="https://via.placeholder.com/150x150" alt="«Sedona»">
+      <img class="welcome__canyon" src="https://via.placeholder.com/150x150" alt="«Because the grand canyon sucks!»">
+      <!-- последнее слово на уточнении -->
+    </section>
+    <!-- Добро пожаловать в «Седону» end -->
+
+    <!-- 5 причин, по которым «Седона» круче, чем «гранд каньон»! start -->
+    <section class="reasons">
+      <h2 class="visually-hidden">
+        5 причин, по которым «Седона» круче, чем «гранд каньон»!
+      </h2>
+      <div class="reasons__block">
+        <h1 class="reasons__header">
+          СЕДОНА небольшой
+          городок в АРИЗОНЕ,
+          зАСЛУЖИвающий большего!
+        </h1>
+        <h2 class="reasons__info">
+          Рассмотрим 5 причин, по которым
+          Седона круче, чем гранд каньон!
+        </h2>
+      </div>
+      <!-- — №1 — start -->
+      <div class="reasons__items">
+        <div class="reasons__items-block">
+          <h3 class="reasons__items-header">
+            НАСТОЯЩИЙ ГОРОДОК
+          </h3>
+          <h4 class="reasons__items-number">
+            — №1 —
+          </h4>
+          <p class="reasons__items-info">
+            СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ
+            ТЕЧЕТ СВОЯ ЖИЗНЬ
+          </p>
+          <img class="reasons__home" src="https://via.placeholder.com/150x150" alt="Дом">
+        </div>
+        <ul class="reasons__itemadd">
+          <li class="reasons__itemadd-item">
+            <img class="reasons__itemadd-item-pic" src="https://via.placeholder.com/150x150" alt="Жилье">
+            <h4 class="reasons__itemadd-item-header">
+              Жилье
+            </h4>
+            <p class="reasons__itemadd-item-info">
+              Рекомендуем пожить в
+              настоящем мотеле, все как в
+              кино!
+            </p>
+          </li>
+          <li class="reasons__itemadd-item">
+            <img class="reasons__itemadd-item-pic" src="https://via.placeholder.com/150x150" alt="Сувениры">
+            <h4 class="reasons__itemadd-item-header">
+              СУВЕНИРЫ
+            </h4>
+            <p class="reasons__itemadd-item-info">
+              Не только китайского, но и
+              местного производства!
+            </p>
+          </li>
+          <li class="reasons__itemadd-item">
+            <img class="reasons__itemadd-item-pic" src="https://via.placeholder.com/150x150" alt="Еда">
+            <h4 class="reasons__itemadd-item-header">
+              ЕДА
+            </h4>
+            <p class="reasons__itemadd-item-info">
+              Всегда заказывайте
+              ФИРМЕННЫЙ БУРГЕР, Вы НЕ
+              разочаруетесь!
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!-- — №1 — end -->
+
+      <!-- — №2 — start -->
+      <div class="reasons__items">
+        <div class="reasons__items-block">
+          <h3 class="reasons__items-header">
+            ТАМ ЕСТЬ Мост дьявола
+          </h3>
+          <h4 class="reasons__items-number">
+            — №2 —
+          </h4>
+          <p class="reasons__items-info">
+            Да, по нему можно пройти! Если вы
+            осмелитесь, конечно
+          </p>
+          <img class="reasons__home" src="https://via.placeholder.com/150x150" alt="Мост дьявола">
+        </div>
+      </div>
+      <!-- — №2 — end -->
+
+      <div class="reasons__items-some">
+        <!-- — №3 — start -->
+        <div class="reasons__items">
+          <div class="reasons__items-block">
+            <h3 class="reasons__items-header">
+              НЕБОЛЬШАЯ ПЛОЩАДЬ
+            </h3>
+            <h4 class="reasons__items-number">
+              — №3 —
+            </h4>
+            <p class="reasons__items-info">
+              ВСЕ интересные места находятся
+              очень близко
+            </p>
+          </div>
+        </div>
+        <!-- — №3 — end -->
+
+        <!-- — №4 — start -->
+        <div class="reasons__items">
+          <div class="reasons__items-block">
+            <h3 class="reasons__items-header">
+              КРАСИВАЯ ДОРОГА
+            </h3>
+            <h4 class="reasons__items-number">
+              — №4 —
+            </h4>
+            <p class="reasons__items-info">
+              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА
+            совсем НЕ СКУЧНО!
+            </p>
+          </div>
+        </div>
+        <!-- — №4 — end -->
+
+        <!-- — №5 — start -->
+        <div class="reasons__items">
+          <div class="reasons__items-block">
+            <h3 class="reasons__items-header">
+              МАЛО ТУРИСТОВ
+            </h3>
+            <h4 class="reasons__items-number">
+              — №5 —
+            </h4>
+            <p class="reasons__items-info">
+              Большинство едет в гранд каньон
+              и толпится там
+            </p>
+          </div>
+        </div>
+        <!-- — №5 — end -->
+      </div>
+    </section>
+    <!-- 5 причин, по которым «Седона» круче, чем «гранд каньон»! end -->
+
+    <!-- ЗАИНТЕРЕСОВАЛИСЬ? start -->
+    <section class="interesting">
+      <h2 class="visually-hidden">
+        ЗАИНТЕРЕСОВАЛИСЬ?
+      </h2>
+      <h1 class="interesting__header">
+        ЗАИНТЕРЕСОВАЛИСЬ?
+      </h1>
+      <p class="interesting__info">
+        Укажите предполагаемые даты
+        поездки, и мы покажем вам лучшие
+        предложения гостиниц в седоне
+      </p>
+      <a class="interesting__link" href="#">
+        НАЙТИ гостиницу
+      </a>
+    </section>
+    <!-- ЗАИНТЕРЕСОВАЛИСЬ? end -->
+
+    <!-- Карта start -->
+    <section class="map">
+      <h2 class="visually-hidden">
+        Карта
+      </h2>
+      <img class="map__pic" src="https://via.placeholder.com/150x150" alt="Карта">
+    </section>
+    <!-- Карта end -->
+  </main>
+
+  <!-- Подвал сайта start -->
+  <footer class="bottom">
+    <h2 class="visually-hidden">
+      Подвал сайта
+    </h2>
+
+    <!-- #visitSEDONA start -->
+    <a class="vitit" href="#">
+      #visitSEDONA
+    </a>
+    <!-- #visitSEDONA end -->
+
+    <!-- Социальные сети start -->
+    <section class="social">
+      <h2 class="visually-hidden">
+        Социальные сети
+      </h2>
+      <ul class="social__items">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <p class="visually-hidden">
+              Твиттер
+            </p>
+            <img class="social__pic" src="https://via.placeholder.com/150x150" alt="Твиттер">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <p class="visually-hidden">
+              Фейсбук
+            </p>
+            <img class="social__pic" src="https://via.placeholder.com/150x150" alt="Фейсбук">
+          </a>
+        </li>
+        <li class="social__sitem">
+          <a  class="social__link" href="#">
+            <p class="visually-hidden">
+              Ютуб
+            </p>
+            <img class="social__pic" src="https://via.placeholder.com/150x150" alt="Ютуб">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- Социальные сети end -->
+
+    <!-- Разработано HTMLAcademy start -->
+    <section class="developer">
+      <h2 class="visually-hidden">
+        Разработано HTMLAcademy
+      </h2>
+      <p class="developer__developed">
+        Разработано
+      </p>
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="visually-hidden">
+          Разработано HTMLAcademy
+        </p>
+        <img class="developer__pic" src="https://via.placeholder.com/150x150" alt="HTMLAcademy">
+      </a>
+    </section>
+    <!-- Разработано HTMLAcademy end -->
+  </footer>
+  <!-- Подвал сайта end -->
+
+</body>
+
 </html>
