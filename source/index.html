@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
   <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no, width = device-width">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>HTML Academy: Седона</title>
 </head>
 
-<body>
+<body class="data">
 
   <!-- Навигационное меню start -->
   <header class="menu">
@@ -18,10 +20,11 @@
       <!-- Навигационное меню (открытое) start -->
       <nav class="menu__nav">
         <ul class="menu__nav-block">
-          <li class="menu__items">
+          <li class="menu__items menu__items-btn-close">
             <!-- Кнопка для закрытия навигационного меню будет реализовано псевдоэлементами-->
             <a class="menu__link">
               Главная
+              <span class="menu__link-btn menu__link-btn-hidden"></span>
             </a>
           </li>
           <li class="menu__items">
@@ -34,7 +37,7 @@
               Форма Отзыва
             </a>
           </li>
-          <li class="menu__items">
+          <li class="menu__items menu__items-bottom">
             <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">
               HTML ACADEMY
             </a>
@@ -42,17 +45,16 @@
         </ul>
       </nav>
       <!-- Навигационное меню (открытое) end -->
-
-      <!-- Навигационное меню (закрытое) start -->
-      <div class="menu__hide">
-        <a class="menu__logo" href="index.html">
-          <img class="menu__pic" src="https://via.placeholder.com/150x150" alt="Логотип «Седона»">
-        </a>
-        <img class="menu__burger" src="https://via.placeholder.com/150x150" alt="Кнопка меню «бургер»">
-      </div>
-    </div>
-    <!-- Навигационное меню (закрытое) end -->
   </header>
+        <!-- Навигационное меню (закрытое) start -->
+        <div class="menu__hide menu__hide-add">
+          <a class="menu__logo" href="index.html">
+            <img class="menu__pic" src="img/logotype-mobile.svg" alt="Логотип «Седона»">
+          </a>
+          <img class="menu__burger" src="img/icon-menu.svg" alt="Кнопка меню «бургер»">
+        </div>
+      </div>
+      <!-- Навигационное меню (закрытое) end -->
   <!-- Навигационное меню end -->
 
   <main class="content">
@@ -61,10 +63,21 @@
       <h2 class="visually-hidden">
         Добро пожаловать в «Седону»
       </h2>
-      <img class="welcome__welcome" src="https://via.placeholder.com/150x150" alt="Welcome">
-      <img class="welcome__gorgeous" src="https://via.placeholder.com/150x150" alt="-to the gorgeous-">
-      <img class="welcome__sedona" src="https://via.placeholder.com/150x150" alt="«Sedona»">
-      <img class="welcome__canyon" src="https://via.placeholder.com/150x150" alt="«Because the grand canyon sucks!»">
+      <div class="welcome__wrapper">
+        <img class="welcome__welcome" src="img/welcome.svg" alt="Welcome">
+        <div class="welcome__group-gorgeous">
+          <img class="welcome__line" src="img/to-the-gorgeous-line.svg" width="17" height="1" alt="-to the gorgeous-line">
+          <img class="welcome__gorgeous" src="img/to-the-gorgeous.svg" width="108" height="17" alt="-to the gorgeous-">
+          <img class="welcome__line" src="img/to-the-gorgeous-line.svg" width="17" height="1" alt="-to the gorgeous-line">
+        </div>
+        <img class="welcome__sedona" src="img/sedona-header-background.svg" width="282" height="48" alt="«Sedona»">
+        <div class="welcome__group-canyon">
+          <img class="welcome__quotes welcome__quotes-top" src="img/quotes-up.svg" width="8" height="5" alt="Кавычки">
+          <img class="welcome__canyon" src="img/because-the-grand-canyon-sucks.svg" width="173" height="45"
+            alt="«Because the grand canyon sucks!»">
+          <img class="welcome__quotes welcome__quotes-bottom" src="img/quotes-down.svg" width="8" height="5" alt="Кавычки">
+        </div>
+      </div>
     </section>
     <!-- Добро пожаловать в «Седону» end -->
 
@@ -73,6 +86,7 @@
       <h2 class="visually-hidden">
         5 причин, по которым «Седона» круче, чем «гранд каньон»!
       </h2>
+      <span class="reasons__triangle-top"></span>
       <div class="reasons__block">
         <h1 class="reasons__header">
           СЕДОНА небольшой
@@ -84,87 +98,100 @@
           Седона круче, чем гранд каньон!
         </h2>
       </div>
+      <span class="reasons__triangle-bottom"></span>
       <!-- — №1 — start -->
       <div class="reasons__items">
-        <div class="reasons__items-block">
-          <h3 class="reasons__items-header">
-            НАСТОЯЩИЙ ГОРОДОК
-          </h3>
-          <h4 class="reasons__items-number">
-            — №1 —
-          </h4>
-          <p class="reasons__items-info">
-            СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ
-            ТЕЧЕТ СВОЯ ЖИЗНЬ
-          </p>
-          <img class="reasons__home" src="https://via.placeholder.com/150x150" alt="Дом">
+        <div class="reasons__items-special">
+          <div class="reasons__items-block">
+            <h3 class="reasons__items-header">
+              НАСТОЯЩИЙ ГОРОДОК
+            </h3>
+            <h4 class="reasons__items-number">
+              — №1 —
+            </h4>
+            <p class="reasons__items-info">
+              СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ
+              ТЕЧЕТ СВОЯ ЖИЗНЬ
+            </p>
+          </div>
         </div>
-        <ul class="reasons__itemadd">
-          <li class="reasons__itemadd-item">
-            <img class="reasons__itemadd-item-pic" src="https://via.placeholder.com/150x150" alt="Жилье">
-            <h4 class="reasons__itemadd-item-header">
-              Жилье
-            </h4>
-            <p class="reasons__itemadd-item-info">
-              Рекомендуем пожить в
-              настоящем мотеле, все как в
-              кино!
-            </p>
-          </li>
-          <li class="reasons__itemadd-item">
-            <img class="reasons__itemadd-item-pic" src="https://via.placeholder.com/150x150" alt="Сувениры">
-            <h4 class="reasons__itemadd-item-header">
-              СУВЕНИРЫ
-            </h4>
-            <p class="reasons__itemadd-item-info">
-              Не только китайского, но и
-              местного производства!
-            </p>
-          </li>
-          <li class="reasons__itemadd-item">
-            <img class="reasons__itemadd-item-pic" src="https://via.placeholder.com/150x150" alt="Еда">
-            <h4 class="reasons__itemadd-item-header">
-              ЕДА
-            </h4>
-            <p class="reasons__itemadd-item-info">
-              Всегда заказывайте
-              ФИРМЕННЫЙ БУРГЕР, Вы НЕ
-              разочаруетесь!
-            </p>
-          </li>
-        </ul>
+        <span class="reasons__city"></span>
+        <div  class="reasons__wrapper">
+          <ul class="reasons__itemadd">
+            <li class="reasons__itemadd-item">
+              <div class="reasons__itemadd-item-group">
+                <img class="reasons__itemadd-item-pic" src="img/icon-house.svg" width="39" height="36" alt="Жилье">
+                <h4 class="reasons__itemadd-item-header">
+                  Жилье
+                </h4>
+              </div>
+              <p class="reasons__itemadd-item-info">
+                Рекомендуем пожить в
+                настоящем мотеле, все как в
+                кино!
+              </p>
+            </li>
+            <li class="reasons__itemadd-item">
+              <div class="reasons__itemadd-item-group">
+                <img class="reasons__itemadd-item-pic" src="img/icon-gift.svg" width="39" height="36" alt="Сувениры">
+                <h4 class="reasons__itemadd-item-header">
+                  СУВЕНИРЫ
+                </h4>
+              </div>
+              <p class="reasons__itemadd-item-info">
+                Не только китайского, но и
+                местного производства!
+              </p>
+            </li>
+            <li class="reasons__itemadd-item">
+              <div class="reasons__itemadd-item-group">
+                <img class="reasons__itemadd-item-pic" src="img/icon-burger.svg" width="40" height="34" alt="Еда">
+                <h4 class="reasons__itemadd-item-header">
+                  ЕДА
+                </h4>
+              </div>
+              <p class="reasons__itemadd-item-info">
+                Всегда заказывайте
+                ФИРМЕННЫЙ БУРГЕР, Вы НЕ
+                разочаруетесь!
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- — №1 — end -->
 
       <!-- — №2 — start -->
       <div class="reasons__items">
-        <div class="reasons__items-block">
-          <h3 class="reasons__items-header">
-            ТАМ ЕСТЬ Мост дьявола
-          </h3>
-          <h4 class="reasons__items-number">
-            — №2 —
-          </h4>
-          <p class="reasons__items-info">
-            Да, по нему можно пройти! Если вы
-            осмелитесь, конечно
-          </p>
-          <img class="reasons__home" src="https://via.placeholder.com/150x150" alt="Мост дьявола">
+        <div class="reasons__items-special">
+          <div class="reasons__items-block">
+            <h3 class="reasons__items-header">
+              ТАМ ЕСТЬ Мост дьявола
+            </h3>
+            <h4 class="reasons__items-number">
+              — №2 —
+            </h4>
+            <p class="reasons__items-info">
+              Да, по нему можно пройти! Если вы
+              осмелитесь, конечно
+            </p>
+          </div>
         </div>
+        <span class="reasons__devil"></span>
       </div>
       <!-- — №2 — end -->
 
       <div class="reasons__items-some">
         <!-- — №3 — start -->
         <div class="reasons__items">
-          <div class="reasons__items-block">
-            <h3 class="reasons__items-header">
+          <div class="reasons__items-block reasons__items-block-add">
+            <h3 class="reasons__items-header reasons__items-header-add reasons__items-block-add-three">
               НЕБОЛЬШАЯ ПЛОЩАДЬ
             </h3>
-            <h4 class="reasons__items-number">
+            <h4 class="reasons__items-number reasons__items-number-add reasons__items-block-add-three">
               — №3 —
             </h4>
-            <p class="reasons__items-info">
+            <p class="reasons__items-info reasons__items-info-add reasons__items-block-add-three">
               ВСЕ интересные места находятся
               очень близко
             </p>
@@ -174,14 +201,14 @@
 
         <!-- — №4 — start -->
         <div class="reasons__items">
-          <div class="reasons__items-block">
-            <h3 class="reasons__items-header">
+          <div class="reasons__items-block reasons__items-block-add">
+            <h3 class="reasons__items-header reasons__items-header-add reasons__items-block-add-four">
               КРАСИВАЯ ДОРОГА
             </h3>
-            <h4 class="reasons__items-number">
+            <h4 class="reasons__items-number reasons__items-number-add reasons__items-block-add-four">
               — №4 —
             </h4>
-            <p class="reasons__items-info">
+            <p class="reasons__items-info reasons__items-info-add reasons__items-block-add-four">
               ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА
               совсем НЕ СКУЧНО!
             </p>
@@ -192,13 +219,13 @@
         <!-- — №5 — start -->
         <div class="reasons__items">
           <div class="reasons__items-block">
-            <h3 class="reasons__items-header">
+            <h3 class="reasons__items-header reasons__items-header-add reasons__items-block-add-five">
               МАЛО ТУРИСТОВ
             </h3>
-            <h4 class="reasons__items-number">
+            <h4 class="reasons__items-number reasons__items-number-add reasons__items-block-add-five">
               — №5 —
             </h4>
-            <p class="reasons__items-info">
+            <p class="reasons__items-info reasons__items-info-add reasons__items-block-add-five">
               Большинство едет в гранд каньон
               и толпится там
             </p>
@@ -208,6 +235,7 @@
       </div>
     </section>
     <!-- 5 причин, по которым «Седона» круче, чем «гранд каньон»! end -->
+
 
     <!-- ЗАИНТЕРЕСОВАЛИСЬ? start -->
     <section class="interesting">
@@ -233,7 +261,8 @@
       <h2 class="visually-hidden">
         Карта
       </h2>
-      <img class="map__pic" src="https://via.placeholder.com/150x150" alt="Карта">
+      <img class="map__pic" src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
+      <img class="map__marker" src="img/map-marker.svg" width="27" height="27" alt="Маркер">
     </section>
     <!-- Карта end -->
   </main>
@@ -245,7 +274,7 @@
     </h2>
 
     <!-- #visitSEDONA start -->
-    <a class="vitit" href="#">
+    <a class="bottom__visit" href="#">
       #visitSEDONA
     </a>
     <!-- #visitSEDONA end -->
@@ -261,7 +290,7 @@
             <p class="visually-hidden">
               Твиттер
             </p>
-            <img class="social__pic" src="https://via.placeholder.com/150x150" alt="Твиттер">
+            <img class="social__pic" src="img/icon-twitter.svg" width="17" height="14" alt="Твиттер">
           </a>
         </li>
         <li class="social__item">
@@ -269,7 +298,7 @@
             <p class="visually-hidden">
               Фейсбук
             </p>
-            <img class="social__pic" src="https://via.placeholder.com/150x150" alt="Фейсбук">
+            <img class="social__pic" src="img/icon-facebook.svg" width="6" height="18" alt="Фейсбук">
           </a>
         </li>
         <li class="social__sitem">
@@ -277,7 +306,7 @@
             <p class="visually-hidden">
               Ютуб
             </p>
-            <img class="social__pic" src="https://via.placeholder.com/150x150" alt="Ютуб">
+            <img class="social__pic" src="img/icon-youtube.svg" width="19" height="14" alt="Ютуб">
           </a>
         </li>
       </ul>
@@ -296,7 +325,12 @@
         <p class="visually-hidden">
           Разработано HTMLAcademy
         </p>
-        <img class="developer__pic" src="https://via.placeholder.com/150x150" alt="HTMLAcademy">
+        <svg class="developer__pic" width="27" height="35" viewBox="0 0 27 35" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+            fill="black" />
+        </svg>
       </a>
     </section>
     <!-- Разработано HTMLAcademy end -->
