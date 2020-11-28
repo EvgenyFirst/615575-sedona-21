@@ -1,0 +1,17 @@
+.map {
+  background-color: $lite-grey-color;
+  margin-top: 0;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
+  outline-offset: -3px; // специальные цыета для рамок по заданию
+}
+
+.map__marker {
+  padding-top: 160px;
+  position: absolute;
+}

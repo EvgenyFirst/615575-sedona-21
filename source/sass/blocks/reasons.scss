@@ -1,0 +1,191 @@
+.reasons {
+  margin-top: -56px;
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 901px;
+  min-width: 320px;
+
+  outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
+  outline-offset: -3px; // специальные цыета для рамок по заданию
+}
+
+.reasons__items {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reasons__triangle-top {
+  display: block;
+  background-image: url("../img/triangle-top.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 1201px;
+  min-width: 320px;
+  height: 57px;
+}
+
+.reasons__triangle-bottom {
+  display: block;
+  background-image: url("../img/triangle-bottom.svg");
+  background-repeat: no-repeat;
+  max-width: 768px;
+  min-width: 320px;
+  height: 37px;
+}
+
+.reasons__items-special {
+  background-color: $lite-blue-color;
+}
+
+.reasons__items-some {
+  background-color: $grey-color;
+}
+
+.reasons__block {
+  padding-right: 17px;
+  padding-left: 18px;
+}
+
+.reasons__header {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+
+.reasons__info {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.reasons__items-block {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.reasons__items-block-add {
+  border-bottom: 1px solid $lighter-grey-color;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.reasons__items-block-add-three {
+  padding-right: 13px;
+  padding-left: 12px;
+}
+
+.reasons__items-block-add-four {
+  padding-right: 21px;
+  padding-left: 22px;
+}
+
+.reasons__items-block-add-five {
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+.reasons__items-header {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: $white-color;
+}
+
+.reasons__items-number {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: center;
+  color: $white-color;
+
+  margin-top: 10px;
+}
+
+.reasons__items-info {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: $white-color;
+}
+
+.reasons__city {
+  display: block;
+  background-color: #fcfcfc;
+  background-image: url("../img/photo-city@1x1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 520px;
+  min-width: 320px;
+  height: 260px;
+}
+
+.reasons__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.reasons__itemadd {
+  list-style: none;
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.reasons__itemadd-item-group {
+  display: flex;
+}
+
+.reasons__itemadd-item-header {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+
+  padding-left: 14px;
+}
+
+.reasons__itemadd-item-info {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  padding-right: 20px;
+  padding-left: 50px;
+}
+
+.reasons__devil {
+  display: block;
+  background-color: #fcfcfc;
+  background-image: url("../img/photo-bridge@1x1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 520px;
+  min-width: 320px;
+  height: 260px;
+}
+
+.reasons__items-header-add,
+.reasons__items-number-add,
+.reasons__items-info-add {
+  color: $black-color;
+}
