@@ -70,35 +70,3 @@
   }
 }
 // Навигационное меню (открытое) end //
-
-// Навигационное меню (закрытое) start //
-.menu__hide {
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-
-  min-height: 56px;
-
-  margin-top: -14px;
-
-  padding-right: 20px;
-  padding-left: 20px;
-
-  outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
-  outline-offset: -3px; // специальные цыета для рамок по заданию
-}
-
-.menu__hide-add {
-  margin-top: -74px;
-  z-index: -1;
-}
-
-.menu__burger {
-  padding-bottom: 17px;
-
-  position: absolute;
-  top: 17px;
-  right: 20px;
-}
-// Навигационное меню (закрытое) end //

@@ -7,32 +7,37 @@
 // параметры
 @import "variables.scss";
 // параметры
-
+//
 // для общих стилей
 @import "blocks/img.scss";
 @import "blocks/data.scss";
 @import "blocks/content.scss";
 // для общих стилей
-
+//
 // шрифты, подключение файлов
 @import "fonts.scss";
 // шрифты, подключение файлов
-
-// общие блоки, подключение файлов
-@import "blocks/visually-hidden.scss";
 //
 // общие блоки, подключение файлов
-
-// index
+@import "blocks/visually-hidden.scss";
 @import "blocks/menu.scss";
+@import "blocks/menu-hide.scss";
+@import "blocks/bottom.scss";
+@import "blocks/social.scss";
+@import "blocks/developer.scss";
+// общие блоки, подключение файлов
+//
+// index
 @import "blocks/welcome.scss";
 @import "blocks/reasons.scss";
 @import "blocks/interesting.scss";
 @import "blocks/map.scss";
-@import "blocks/bottom.scss";
-@import "blocks/social.scss";
-@import "blocks/developer.scss";
-//
 // index
+//
+// form
+@import "blocks/sedona.scss";
+@import "blocks/reviews.scss";
+//
+// form
 
 // каждому БЭМ-блоку должен соответствовать отдельный препроцессорный файл
