@@ -1,0 +1,228 @@
+.reviews {
+  margin-top: -57px;
+
+  outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
+  outline-offset: -3px; // специальные цыета для рамок по заданию
+}
+
+.reviews__triangle {
+  display: block;
+  background-image: url("../img/triangle-top.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 1201px;
+  min-width: 320px;
+  height: 57px;
+}
+
+.reviews__block {
+  padding-right: 6px;
+  padding-left: 6px;
+
+  border-bottom: 1px solid $very-light-grey-color;
+}
+
+.reviews__header {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+
+.reviews__info {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.reviews__style {
+  padding: 0;
+
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid $very-light-grey-color;
+  border-left: none;
+}
+
+.reviews__legend {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+
+.reviews__items {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  list-style: none;
+}
+
+.reviews__data {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__data-contact {
+  flex-wrap: wrap;
+}
+
+.reviews__label-phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: $very-light-grey-color;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 19px;
+    bottom: 20px;
+    z-index: 1;
+  }
+}
+
+.reviews__label-email {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: $very-light-grey-color;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 19px;
+    bottom: 20px;
+    z-index: 1;
+  }
+}
+
+.reviews__label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+
+  padding-right: 13px;
+}
+
+.reviews__label-contact {
+  padding-left: 21px;
+}
+
+.reviews__input {
+  width: 100%;
+  min-height: 58px;
+
+  padding-left: 22px;
+
+  border: none;
+
+  background-color: $very-lighter-grey-color;
+
+  &::placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $black-color;
+  }
+}
+
+.reviews__input-contact,
+.reviews__input-email {
+  padding-right: 59px;
+}
+
+.reviews__label-radio {
+  margin-right: 26px;
+}
+
+.reviews__input-radio {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black-color;
+  text-transform: none;
+}
+
+.reviews__label-checkbox {
+  margin-right: 24px;
+}
+
+.reviews__input-checkbox {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black-color;
+  text-transform: none;
+}
+
+.reviews__input-user-description {
+  width: 100%;
+  min-height: 160px;
+
+  padding-top: 13px;
+  padding-right: 23px;
+  padding-bottom: 21px;
+  padding-left: 22px;
+}
+
+.reviews__button {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.reviews__pin {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  color: $white-color;
+
+  width: 100%;
+
+  padding-top: 18.53px;
+  padding-bottom: 13.5px;
+
+  background-color: $lite-blue-color;
+
+  border: none;
+}
