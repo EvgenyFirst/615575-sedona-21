@@ -9,6 +9,7 @@
 // параметры
 //
 // для общих стилей
+@import "blocks/master.scss";
 @import "blocks/img.scss";
 @import "blocks/data.scss";
 @import "blocks/content.scss";
@@ -39,5 +40,11 @@
 @import "blocks/reviews.scss";
 //
 // form
+//
+// catalog
+@import "blocks/city.scss";
+@import "blocks/materials.scss";
+//
+// catalog
 
 // каждому БЭМ-блоку должен соответствовать отдельный препроцессорный файл

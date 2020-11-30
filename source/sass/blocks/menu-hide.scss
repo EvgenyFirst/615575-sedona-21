@@ -21,14 +21,15 @@
   z-index: -1;
 }
 
-.menu-hide__burger {
-  padding-bottom: 17px;
-
+.menu-hide__button-burger {
   position: absolute;
   top: 17px;
   right: 20px;
-}
 
+  background: none;
+
+  border: none;
+}
 
 .menu__hidden {
   display: none;

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="master" lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
   <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no, width = device-width">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>HTML Academy: Седона</title>
 </head>
 
-<body>
+<body class="data">
 
   <!-- Навигационное меню start -->
   <header class="menu">
@@ -18,11 +20,14 @@
       <!-- Навигационное меню (открытое) start -->
       <nav class="menu__nav">
         <ul class="menu__nav-block">
-          <li class="menu__items">
+          <li class="menu__items menu__items-btn-close">
             <!-- Кнопка для закрытия навигационного меню будет реализовано псевдоэлементами-->
             <a class="menu__link" href="index.html">
               Главная
             </a>
+            <button type="button" class="menu__link-btn menu__link-btn-hidden">
+              <span class="menu__link-btn-pic"></span>
+            </button>
           </li>
           <li class="menu__items">
             <a class="menu__link">
@@ -34,7 +39,7 @@
               Форма Отзыва
             </a>
           </li>
-          <li class="menu__items">
+          <li class="menu__items menu__items-bottom">
             <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">
               HTML ACADEMY
             </a>
@@ -42,26 +47,31 @@
         </ul>
       </nav>
       <!-- Навигационное меню (открытое) end -->
-
-      <!-- Навигационное меню (закрытое) start -->
-      <div class="menu__hide">
-        <a class="menu__logo" href="index.html">
-          <img class="menu__pic" src="https://via.placeholder.com/150x150" alt="Логотип «Седона»">
-        </a>
-        <img class="menu__burger" src="https://via.placeholder.com/150x150" alt="Кнопка меню «бургер»">
-      </div>
     </div>
-    <!-- Навигационное меню (закрытое) end -->
   </header>
+  <!-- Навигационное меню (закрытое) start -->
+  <div class="menu-hide">
+    <div class="menu-hide__hide menu-hide__hide-add">
+      <a class="menu-hide__logo" href="index.html">
+        <img class="menu-hide__pic" src="img/logotype-mobile.svg" alt="Логотип «Седона»">
+      </a>
+      <button class="menu-hide__button-burger" type="button">
+        <img class="menu-hide__burger" src="img/icon-menu.svg" alt="Кнопка меню «бургер»">
+      </button>
+    </div>
+  </div>
+  <!-- Навигационное меню (закрытое) end -->
   <!-- Навигационное меню end -->
 
   <main class="content">
     <!-- «Седона» start -->
-    <section class="sedona">
+    <section class="city">
       <h2 class="visually-hidden">
         «Седона»
       </h2>
-      <img class="sedona__main" src="https://via.placeholder.com/150x150" alt="«Седона»">
+      <div class="city__wrapper">
+        <img class="city__main" src="img/sedona-header-background-form.svg" width="229" height="39" alt="«Седона»">
+      </div>
     </section>
     <!-- «Седона» end -->
 
@@ -70,6 +80,7 @@
       <h2 class="visually-hidden">
         Фото и видео
       </h2>
+      <span class="materials__triangle"></span>
       <div class="materials__block">
         <h1 class="materials__header">
           Фото и видео
@@ -81,7 +92,11 @@
       </div>
       <div class="materials__block">
         <div class="materials__cart">
-          <img class="materials__block" src="https://via.placeholder.com/150x150" alt="Пейзаж">
+          <div class="materials__lines">
+            <span class="materials__lines-scenery-right"></span>
+            <span class="materials__lines-scenery-left"></span>
+          </div>
+          <span class="materials__scenery"></span>
           <p class="materials__name">
             неродные просторы
           </p>
@@ -89,14 +104,41 @@
             Автор фото: Борис
           </p>
           <div class="materials__social">
-            <img class="materials__like" src="https://via.placeholder.com/150x150" alt="Лайк">
+            <button type="button" class="materials__button-like">
+              <img class="materials__like" src="img/icon-like.svg" width="23" height="21" alt="Лайк">
+            </button>
             <p class="materials__number">
               1350
             </p>
           </div>
         </div>
         <div class="materials__cart">
-          <img class="materials__block" src="https://via.placeholder.com/150x150" alt="Дорога на север">
+          <div class="materials__lines">
+            <span class="materials__lines-vegetation-right"></span>
+            <span class="materials__lines-vegetation-left"></span>
+          </div>
+          <span class="materials__vegetation"></span>
+          <p class="materials__name">
+            Местная растительность
+          </p>
+          <p class="materials__author">
+            Автор фото: Сергей
+          </p>
+          <div class="materials__social">
+            <button type="button" class="materials__button-like">
+              <img class="materials__like" src="img/icon-like.svg" width="23" height="21" alt="Лайк">
+            </button>
+            <p class="materials__number">
+              143
+            </p>
+          </div>
+        </div>
+        <div class="materials__cart">
+          <div class="materials__lines">
+            <span class="materials__lines-road-right"></span>
+            <span class="materials__lines-road-left"></span>
+          </div>
+          <span class="materials__road"></span>
           <p class="materials__name">
             Дорога на север
           </p>
@@ -104,14 +146,20 @@
             Автор фото: Петр
           </p>
           <div class="materials__social">
-            <img class="materials__like" src="https://via.placeholder.com/150x150" alt="Лайк">
+            <button type="button" class="materials__button-like">
+              <img class="materials__like" src="img/icon-like.svg" width="23" height="21" alt="Лайк">
+            </button>
             <p class="materials__number">
               96
             </p>
           </div>
         </div>
         <div class="materials__cart">
-          <img class="materials__block" src="https://via.placeholder.com/150x150" alt="Мост дьявола">
+          <div class="materials__lines">
+            <span class="materials__lines-bridge-right"></span>
+            <span class="materials__lines-bridge-left"></span>
+          </div>
+          <span class="materials__bridge"></span>
           <p class="materials__name">
             Мост дьявола
           </p>
@@ -119,7 +167,9 @@
             Автор фото: Антон
           </p>
           <div class="materials__social">
-            <img class="materials__like" src="https://via.placeholder.com/150x150" alt="Лайк">
+            <button type="button" class="materials__button-like">
+              <img class="materials__like" src="img/icon-like.svg" width="23" height="21" alt="Лайк">
+            </button>
             <p class="materials__number">
               254
             </p>
@@ -134,16 +184,29 @@
           Смотрите видеопрезентацию и скорее за билетами,
           пока они не подорожали в очередной раз!
         </p>
-        <img class="materials__block" src="https://via.placeholder.com/150x150" alt="Пейзаж">
-        <div class="materials__player">
+        <div class="materials__wrapper-video-pic">
+          <img class="materials__video-pic" src="img/video-mobile.jpg" width="320" height="201" alt="Пейзаж">
+        </div>
+        <div class="materials__player" tabindex="0">
           <div class="materials__range">
-            <img class="materials__scale" src="https://via.placeholder.com/150x150" alt="Шкала времени">
-            <img class="materials__slider" src="https://via.placeholder.com/150x150" alt="Бегунок на шкале">
+            <img class="materials__scale" src="img/scale-mobile.svg" width="235" height="3" alt="Шкала времени"
+              tabindex="0">
+            <button type="button" class="materials__-button-slider">
+              <img class="materials__slider" src="img/slider-mobile.svg" width="13" height="13" alt="Бегунок на шкале">
+            </button>
           </div>
           <div class="materials__navigation">
-            <img class="materials__refresh" src="https://via.placeholder.com/150x150" alt="Обновить">
-            <img class="materials__сс" src="https://via.placeholder.com/150x150" alt="СС">
-            <img class="materials__full" src="https://via.placeholder.com/150x150" alt="На весь экран">
+            <button type="button" class="materials__button-navigation">
+              <img class="materials__refresh" src="img/refresh-mobile.svg" width="16" height="20" alt="Обновить">
+            </button>
+            <div class="materials__navigation-group">
+              <button type="button" class="materials__button-navigation">
+                <img class="materials__сс" src="img/cc-mobile.svg" width="32" height="20" alt="СС">
+              </button>
+              <button type="button" class="materials__button-navigation">
+                <img class="materials__full" src="img/resize-mobile.svg" width="20" height="20" alt="На весь экран">
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -159,7 +222,7 @@
     </h2>
 
     <!-- #visitSEDONA start -->
-    <a class="vitit" href="#">
+    <a class="bottom__visit" href="#">
       #visitSEDONA
     </a>
     <!-- #visitSEDONA end -->
@@ -175,7 +238,7 @@
             <p class="visually-hidden">
               Твиттер
             </p>
-            <img class="social__pic" src="https://via.placeholder.com/150x150" alt="Твиттер">
+            <img class="social__pic" src="img/icon-twitter.svg" width="17" height="14" alt="Твиттер">
           </a>
         </li>
         <li class="social__item">
@@ -183,7 +246,7 @@
             <p class="visually-hidden">
               Фейсбук
             </p>
-            <img class="social__pic" src="https://via.placeholder.com/150x150" alt="Фейсбук">
+            <img class="social__pic" src="img/icon-facebook.svg" width="6" height="18" alt="Фейсбук">
           </a>
         </li>
         <li class="social__sitem">
@@ -191,7 +254,7 @@
             <p class="visually-hidden">
               Ютуб
             </p>
-            <img class="social__pic" src="https://via.placeholder.com/150x150" alt="Ютуб">
+            <img class="social__pic" src="img/icon-youtube.svg" width="19" height="14" alt="Ютуб">
           </a>
         </li>
       </ul>
@@ -210,7 +273,12 @@
         <p class="visually-hidden">
           Разработано HTMLAcademy
         </p>
-        <img class="developer__pic" src="https://via.placeholder.com/150x150" alt="HTMLAcademy">
+        <svg class="developer__pic" width="27" height="35" viewBox="0 0 27 35" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+            fill="black" />
+        </svg>
       </a>
     </section>
     <!-- Разработано HTMLAcademy end -->
