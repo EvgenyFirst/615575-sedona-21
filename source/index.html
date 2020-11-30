@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="master" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -24,8 +24,10 @@
             <!-- Кнопка для закрытия навигационного меню будет реализовано псевдоэлементами-->
             <a class="menu__link">
               Главная
-              <span class="menu__link-btn menu__link-btn-hidden"></span>
             </a>
+            <button type="button" class="menu__link-btn menu__link-btn-hidden">
+              <span class="menu__link-btn-pic"></span>
+            </button>
           </li>
           <li class="menu__items">
             <a class="menu__link" href="catalog.html">
@@ -53,7 +55,9 @@
       <a class="menu-hide__logo" href="index.html">
         <img class="menu-hide__pic" src="img/logotype-mobile.svg" alt="Логотип «Седона»">
       </a>
-      <img class="menu-hide__burger" src="img/icon-menu.svg" alt="Кнопка меню «бургер»">
+      <button class="menu-hide__button-burger" type="button">
+        <img class="menu-hide__burger" src="img/icon-menu.svg" alt="Кнопка меню «бургер»">
+      </button>
     </div>
   </div>
   <!-- Навигационное меню (закрытое) end -->

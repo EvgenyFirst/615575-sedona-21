@@ -1,5 +1,4 @@
 // Навигационное меню (открытое) start //
-
 .menu__nav {
   background-color: $lite-blue-color;
 
@@ -34,12 +33,20 @@
 }
 
 .menu__link-btn {
-  background-image: url("../img/icon-btn-close.svg");
-  width: 22.2px;
-  height: 22.2px;
   position: absolute;
   top: 13px;
   right: 20px;
+
+
+  background: transparent;
+  border: none;
+}
+
+.menu__link-btn-pic {
+  display: block;
+  background-image: url("../img/icon-btn-close.svg");
+  width: 22.2px;
+  height: 22.2px;
 }
 
 .menu__link-btn-hidden {

@@ -1,0 +1,27 @@
+.city {
+  background-color: $lite-grey-color;
+  background-image: url("../img/background-mobile-catalog.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-top: -35px;
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 901px;
+  min-width: 320px;
+  height: 214px;
+
+  outline: 3px solid $special-border-blue-color; // специальные цыета для рамок по заданию
+  outline-offset: -3px; // специальные цыета для рамок по заданию
+}
+
+.city__wrapper {
+  padding-top: 108px;
+  padding-right: 20px;
+  padding-bottom: 67px;
+  padding-left: 20px;
+
+  display: flex;
+  justify-content: center;
+}
