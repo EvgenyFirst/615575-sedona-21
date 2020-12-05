@@ -1,9 +1,18 @@
 .interesting {
+  min-height: 287px;
+
   padding-right: 20px;
   padding-left: 20px;
 
   outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
   outline-offset: -3px; // специальные цыета для рамок по заданию
+}
+
+.interesting__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .interesting__header {
@@ -41,4 +50,28 @@
   justify-content: center;
 
   background-color: $lite-blue-color;
+}
+
+@media (min-width: $tablet-width) {
+  .interesting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 318px;
+  }
+
+  .interesting__group,
+  .interesting__link {
+    width: 498px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interesting {
+    min-height: 331px;
+
+    background-color: $white-color;
+  }
 }

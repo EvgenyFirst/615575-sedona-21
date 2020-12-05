@@ -3,8 +3,9 @@
   margin-right: auto;
   margin-left: auto;
 
-  max-width: 901px;
+  max-width: 767px;
   min-width: 320px;
+  min-height: 298px;
 
   outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
   outline-offset: -3px; // специальные цыета для рамок по заданию
@@ -17,6 +18,7 @@
 
 .reasons__triangle-top {
   display: block;
+
   background-image: url("../img/triangle-top.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -28,8 +30,11 @@
 
 .reasons__triangle-bottom {
   display: block;
+
   background-image: url("../img/triangle-bottom.svg");
   background-repeat: no-repeat;
+  background-position: center;
+
   max-width: 768px;
   min-width: 320px;
   height: 37px;
@@ -44,8 +49,15 @@
 }
 
 .reasons__block {
+  min-height: 200px;
+
   padding-right: 17px;
   padding-left: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .reasons__header {
@@ -54,6 +66,9 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .reasons__info {
@@ -64,13 +79,24 @@
   text-align: center;
 }
 
+.reasons__items,
+.reasons__items-special {
+  min-height: 211px;
+}
+
 .reasons__items-block {
   padding-right: 6px;
   padding-left: 6px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .reasons__items-block-add {
   border-bottom: 1px solid $lighter-grey-color;
+
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -90,6 +116,13 @@
   padding-left: 1px;
 }
 
+.reasons__items-block-special-one {
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+}
+
 .reasons__items-header {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -97,6 +130,8 @@
   line-height: 26px;
   text-align: center;
   color: $white-color;
+
+  margin: 0;
 }
 
 .reasons__items-number {
@@ -108,6 +143,9 @@
   color: $white-color;
 
   margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .reasons__items-info {
@@ -117,10 +155,15 @@
   line-height: 21px;
   text-align: center;
   color: $white-color;
+
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .reasons__city {
   display: block;
+
   background-color: #fcfcfc;
   background-image: url("../img/photo-city@1x1-mobile.jpg");
   background-repeat: no-repeat;
@@ -137,6 +180,8 @@
 .reasons__wrapper {
   display: flex;
   justify-content: center;
+
+  min-height: 416px;
 }
 
 .reasons__itemadd {
@@ -171,6 +216,7 @@
 
 .reasons__devil {
   display: block;
+
   background-color: #fcfcfc;
   background-image: url("../img/photo-bridge@1x1-mobile.jpg");
   background-repeat: no-repeat;
@@ -188,4 +234,225 @@
 .reasons__items-number-add,
 .reasons__items-info-add {
   color: $black-color;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons {
+    max-width: 1199px;
+    min-height: 263px;
+  }
+
+  .reasons__triangle-top {
+    background-image: url("../img/triangle-top-tablet-desktop.svg");
+
+    max-width: 1199px;
+  }
+
+  .reasons__header {
+    font-size: 21px;
+
+    padding-right: 124px;
+    padding-left: 124px;
+  }
+
+  .reasons__info {
+    padding-right: 124px;
+    padding-left: 124px;
+  }
+
+  .reasons__items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+  }
+
+  .reasons__items-header {
+    font-size: 21px;
+  }
+
+  .reasons__items-number {
+    font-size: 14px;
+    line-height: 10px;
+
+    padding-top: 9px;
+  }
+
+  .reasons__items-info {
+    font-size: 14px;
+
+    padding-top: 17px;
+  }
+
+  .reasons__city {
+    background-image: url("../img/photo-city@1x-tablet.jpg");
+
+    width: 512px;
+    height: 256px;
+  }
+
+  .reasons__wrapper {
+    min-height: 390px;
+  }
+
+  .reasons__triangle-bottom {
+    display: none;
+  }
+
+  .reasons__devil {
+    background-image: url("../img/photo-bridge@1x1-tablet.jpg");
+
+    width: 512px;
+    height: 256px;
+  }
+
+  .reasons__itemadd {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .reasons__itemadd-item {
+    &:nth-child(1) {
+      margin-top: -19px;
+
+      padding-right: 17px;
+
+      p {
+        padding-right: 31px;
+        padding-left: 21px;
+        position: relative;
+        top: -19px;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-top: -44px;
+
+      padding-left: 34px;
+
+      p {
+        padding-right: 9px;
+        padding-left: 5px;
+        position: relative;
+        top: -17px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-top: -27px;
+
+      padding-left: 9px;
+
+      p {
+        padding-right: 42px;
+        padding-left: 35px;
+        position: relative;
+        top: -13px;
+      }
+    }
+  }
+
+  .reasons__itemadd-item-header-set {
+    position: relative;
+    top: 6px;
+  }
+
+  .reasons__itemadd-item-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reasons__items-wrapper-special {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+
+  .reasons__items-block-add {
+    border-bottom: none;
+  }
+
+  .reasons__items-block-inner {
+    padding-top: 30px;
+  }
+
+  .reasons__items-special-location-one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .reasons__itemadd-item-location-two {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .reasons__itemadd-item-location-three {
+    grid-column: 3;
+  }
+
+  .reasons__itemadd-item-info {
+    text-align: center;
+  }
+
+  .reasons__itemadd-item-pic {
+    padding-right: 10px;
+  }
+
+  .reasons__itemadd-item-header {
+    font-size: 21px;
+
+    margin-top: 15px;
+
+    padding-right: 20px;
+  }
+
+  .reasons__items-some {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+    min-height: 256px;
+  }
+
+  .reasons__items-block-add-three {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  .reasons__items {
+    margin-top: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__block {
+    background-color: $white-color;
+  }
+
+  .reasons__header,
+  .reasons__info {
+    padding-right: 281px;
+    padding-left: 281px;
+  }
+
+  .reasons__city {
+    background-image: url("../img/photo-city@1x-desltop.jpg");
+
+    width: 800px;
+    max-width: 100%;
+    height: 256px;
+  }
+
+  .reasons__itemadd,
+  .reasons__wrapper {
+    background-color: $white-color;
+  }
+
+  .reasons__devil {
+    background-image: url("../img/photo-bridge@1x-desktop.jpg");
+
+    width: 800px;
+    max-width: 100%;
+    height: 256px;
+  }
 }

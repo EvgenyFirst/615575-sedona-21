@@ -34,6 +34,14 @@
               Фото и видео
             </a>
           </li>
+          <li class="menu__items menu__items-logo">
+            <a class="menu__logo" href="index.html">
+              <picture>
+                <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <img src="img/logotype-tablet.svg" alt="Логотип «Седона»">
+              </picture>
+            </a>
+          </li>
           <li class="menu__items">
             <a class="menu__link" href="form.html">
               Форма Отзыва
@@ -70,21 +78,55 @@
         Добро пожаловать в «Седону»
       </h2>
       <div class="welcome__wrapper">
-        <img class="welcome__welcome" src="img/welcome.svg" alt="Welcome">
+        <picture>
+          <source class="welcome__welcome" type="image/svg+xml" media="(min-width: 1200px)"
+            srcset="img/welcome-desktop.svg">
+          <source class="welcome__welcome" type="image/svg+xml" media="(min-width: 768px)"
+            srcset="img/welcome-tablet.svg">
+          <img src="img/welcome.svg" alt="Welcome">
+        </picture>
         <div class="welcome__group-gorgeous">
-          <img class="welcome__line" src="img/to-the-gorgeous-line.svg" width="17" height="1"
-            alt="-to the gorgeous-line">
-          <img class="welcome__gorgeous" src="img/to-the-gorgeous.svg" width="108" height="17" alt="-to the gorgeous-">
-          <img class="welcome__line" src="img/to-the-gorgeous-line.svg" width="17" height="1"
-            alt="-to the gorgeous-line">
+          <picture class="welcome__line">
+            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/to-the-gorgeous-line-desktop.svg">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/to-the-gorgeous-line-tablet.svg">
+            <img src="img/to-the-gorgeous-line.svg" alt="-to the gorgeous-line">
+          </picture>
+          <picture class="welcome__gorgeous">
+            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/to-the-gorgeous-desktop.svg">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/to-the-gorgeous-tablet.svg">
+            <img src="img/to-the-gorgeous.svg" alt="to the gorgeous">
+          </picture>
+          <picture class="welcome__line">
+            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/to-the-gorgeous-line-desktop.svg">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/to-the-gorgeous-line-tablet.svg">
+            <img src="img/to-the-gorgeous-line.svg" alt="to the gorgeous-line-">
+          </picture>
         </div>
-        <img class="welcome__sedona" src="img/sedona-header-background.svg" width="282" height="48" alt="«Sedona»">
+        <picture class="welcome__sedona">
+          <source class="welcome__sedona" type="image/svg+xml" media="(min-width: 1200px)"
+            srcset="img/sedona-header-background-desktop.svg">
+          <source class="welcome__sedona" type="image/svg+xml" media="(min-width: 768px)"
+            srcset="img/sedona-header-background-tablet.svg">
+          <img class="welcome__sedona" src="img/sedona-header-background.svg" alt="«Sedona»">
+        </picture>
         <div class="welcome__group-canyon">
-          <img class="welcome__quotes welcome__quotes-top" src="img/quotes-up.svg" width="8" height="5" alt="Кавычки">
-          <img class="welcome__canyon" src="img/because-the-grand-canyon-sucks.svg" width="173" height="45"
-            alt="«Because the grand canyon sucks!»">
-          <img class="welcome__quotes welcome__quotes-bottom" src="img/quotes-down.svg" width="8" height="5"
-            alt="Кавычки">
+          <picture class="welcome__quotes welcome__quotes-top">
+            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/quotes-up-desktop.svg">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/quotes-up-tablet.svg">
+            <img src="img/quotes-up.svg" alt="Кавычки">
+          </picture>
+          <picture class="welcome__canyon">
+            <source media="(min-width: 1200px)" type="image/svg+xml"
+              srcset="img/because-the-grand-canyon-sucks-desktop.svg">
+            <source media="(min-width: 768px)" type="image/svg+xml"
+              srcset="img/because-the-grand-canyon-sucks-tablet.svg">
+            <img src="img/because-the-grand-canyon-sucks.svg" alt="«Because the grand canyon sucks!»">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/quotes-down-desktop.svg">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/quotes-down-tablet.svg">
+            <img class="welcome__quotes welcome__quotes-bottom" src="img/quotes-up.svg" alt="Кавычки">
+          </picture>
         </div>
       </div>
     </section>
@@ -107,29 +149,35 @@
           Седона круче, чем гранд каньон!
         </h2>
       </div>
-      <span class="reasons__triangle-bottom"></span>
       <!-- — №1 — start -->
       <div class="reasons__items">
-        <div class="reasons__items-special">
-          <div class="reasons__items-block">
-            <h3 class="reasons__items-header">
-              НАСТОЯЩИЙ ГОРОДОК
-            </h3>
-            <h4 class="reasons__items-number">
-              — №1 —
-            </h4>
-            <p class="reasons__items-info">
-              СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ
-              ТЕЧЕТ СВОЯ ЖИЗНЬ
-            </p>
+        <div class="reasons__items-wrapper">
+          <div class="reasons__items-special reasons__items-block-inner">
+            <span class="reasons__triangle-bottom"></span>
+            <div class="reasons__items-block reasons__items-block-special reasons__items-block-special-one">
+              <h3 class="reasons__items-header">
+                НАСТОЯЩИЙ ГОРОДОК
+              </h3>
+              <h4 class="reasons__items-number">
+                — №1 —
+              </h4>
+              <p class="reasons__items-info">
+                СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ
+                ТЕЧЕТ СВОЯ ЖИЗНЬ
+              </p>
+            </div>
           </div>
+          <span class="reasons__city"></span>
         </div>
-        <span class="reasons__city"></span>
         <div class="reasons__wrapper">
           <ul class="reasons__itemadd">
             <li class="reasons__itemadd-item">
               <div class="reasons__itemadd-item-group">
-                <img class="reasons__itemadd-item-pic" src="img/icon-house.svg" width="39" height="36" alt="Жилье">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icon-house-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon-house-tablet.svg">
+                  <img class="reasons__itemadd-item-pic" src="img/icon-house.svg" alt="Жилье">
+                </picture>
                 <h4 class="reasons__itemadd-item-header">
                   Жилье
                 </h4>
@@ -140,9 +188,13 @@
                 кино!
               </p>
             </li>
-            <li class="reasons__itemadd-item">
+            <li class="reasons__itemadd-item reasons__itemadd-item-location-three">
               <div class="reasons__itemadd-item-group">
-                <img class="reasons__itemadd-item-pic" src="img/icon-gift.svg" width="39" height="36" alt="Сувениры">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icon-gift-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon-gift-tablet.svg">
+                  <img class="reasons__itemadd-item-pic" src="img/icon-gift.svg" alt="Сувениры">
+                </picture>
                 <h4 class="reasons__itemadd-item-header">
                   СУВЕНИРЫ
                 </h4>
@@ -152,10 +204,14 @@
                 местного производства!
               </p>
             </li>
-            <li class="reasons__itemadd-item">
+            <li class="reasons__itemadd-item reasons__itemadd-item-location-two">
               <div class="reasons__itemadd-item-group">
-                <img class="reasons__itemadd-item-pic" src="img/icon-burger.svg" width="40" height="34" alt="Еда">
-                <h4 class="reasons__itemadd-item-header">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icon-burger-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon-burger-tablet.svg">
+                  <img class="reasons__itemadd-item-pic" src="img/icon-burger.svg" alt="Еда">
+                </picture>
+                <h4 class="reasons__itemadd-item-header reasons__itemadd-item-header-set">
                   ЕДА
                 </h4>
               </div>
@@ -172,21 +228,23 @@
 
       <!-- — №2 — start -->
       <div class="reasons__items">
-        <div class="reasons__items-special">
-          <div class="reasons__items-block">
-            <h3 class="reasons__items-header">
-              ТАМ ЕСТЬ Мост дьявола
-            </h3>
-            <h4 class="reasons__items-number">
-              — №2 —
-            </h4>
-            <p class="reasons__items-info">
-              Да, по нему можно пройти! Если вы
-              осмелитесь, конечно
-            </p>
+        <div class="reasons__items-wrapper-special">
+          <div class="reasons__items-special">
+            <div class="reasons__items-block reasons__items-block-inner">
+              <h3 class="reasons__items-header">
+                ТАМ ЕСТЬ Мост дьявола
+              </h3>
+              <h4 class="reasons__items-number">
+                — №2 —
+              </h4>
+              <p class="reasons__items-info">
+                Да, по нему можно пройти! Если вы
+                осмелитесь, конечно
+              </p>
+            </div>
           </div>
+          <span class="reasons__devil reasons__items-special-location-one"></span>
         </div>
-        <span class="reasons__devil"></span>
       </div>
       <!-- — №2 — end -->
 
@@ -251,14 +309,16 @@
       <h2 class="visually-hidden">
         ЗАИНТЕРЕСОВАЛИСЬ?
       </h2>
-      <h1 class="interesting__header">
-        ЗАИНТЕРЕСОВАЛИСЬ?
-      </h1>
-      <p class="interesting__info">
-        Укажите предполагаемые даты
-        поездки, и мы покажем вам лучшие
-        предложения гостиниц в седоне
-      </p>
+      <div class="interesting__group">
+        <h1 class="interesting__header">
+          ЗАИНТЕРЕСОВАЛИСЬ?
+        </h1>
+        <p class="interesting__info">
+          Укажите предполагаемые даты
+          поездки, и мы покажем вам лучшие
+          предложения гостиниц в седоне
+        </p>
+      </div>
       <a class="interesting__link" href="#">
         НАЙТИ гостиницу
       </a>
@@ -270,7 +330,11 @@
       <h2 class="visually-hidden">
         Карта
       </h2>
-      <img class="map__pic" src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+        <img class="map__pic" src="img/map-mobile.jpg" alt="Карта">
+      </picture>
       <img class="map__marker" src="img/map-marker.svg" width="27" height="27" alt="Маркер">
     </section>
     <!-- Карта end -->
@@ -295,7 +359,7 @@
       </h2>
       <ul class="social__items">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link social__link-twitter" href="#">
             <p class="visually-hidden">
               Твиттер
             </p>
@@ -303,7 +367,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link social__link-facebook" href="#">
             <p class="visually-hidden">
               Фейсбук
             </p>
@@ -311,7 +375,7 @@
           </a>
         </li>
         <li class="social__sitem">
-          <a class="social__link" href="#">
+          <a class="social__link social__link-youtube" href="#">
             <p class="visually-hidden">
               Ютуб
             </p>

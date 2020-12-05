@@ -2,3 +2,9 @@
 .master {
   scroll-behavior: smooth;
 }
+
+@media (min-width: $desktop-width) {
+  .master {
+    background-color: $lite-grey-two-color;
+  }
+}

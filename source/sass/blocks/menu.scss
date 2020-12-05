@@ -1,4 +1,8 @@
 // Навигационное меню (открытое) start //
+.menu {
+  min-height: 223px;
+}
+
 .menu__nav {
   background-color: $lite-blue-color;
 
@@ -15,7 +19,7 @@
 }
 
 .menu__items {
-  min-height: 53px;
+  min-height: 55px;
 
   padding-top: 10px;
   padding-right: 20px;
@@ -24,6 +28,10 @@
 
   border-top: 1px solid $lighter-blue-color;
   border-bottom: 1px solid $darker-blue-color;
+}
+
+.menu__items-logo {
+  display: none;
 }
 
 .menu__items-btn-close {
@@ -37,14 +45,15 @@
   top: 13px;
   right: 20px;
 
-
   background: transparent;
   border: none;
 }
 
 .menu__link-btn-pic {
   display: block;
+
   background-image: url("../img/icon-btn-close.svg");
+
   width: 22.2px;
   height: 22.2px;
 }
@@ -74,6 +83,109 @@
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu {
+    min-height: 56px;
+  }
+
+  .menu__nav {
+    background-color: $white-color;
+
+    outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
+  }
+
+  .menu__nav-block {
+    padding-right: 27px;
+    padding-left: 49px;
+
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .menu__items {
+    min-height: 55px;
+
+    padding-top: 16px;
+    padding-right: 0;
+    padding-left: 0;
+
+    border-top: none;
+    border-bottom: none;
+
+    &:nth-child(2) {
+      padding-left: 26px;
+    }
+  }
+
+  .menu__items-logo {
+    display: block;
+
+    padding-top: 0;
+
+    position: relative;
+
+    width: 107px;
+    height: 94px;
+  }
+
+  .menu__link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $black-color;
+  }
+
+  .menu__items-bottom {
+    &::after {
+      content: "";
+      display: none;
+    }
+  }
+
+  .menu__logo {
+    position: absolute;
+    right: 1px;
+
+    width: 107px;
+    height: 94px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu {
+    min-height: 56px;
+  }
+
+  .menu__logo {
+    width: 186.6px;
+    height: 96.43px;
+
+    position: absolute;
+    right: -40px;
+  }
+
+  .menu__nav-block {
+    padding-right: 70px;
+    padding-left: 90px;
+  }
+
+  .menu__link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $black-color;
+  }
+
+  .menu__items-logo {
+    display: block;
+    padding-top: 0;
+    position: relative;
+    width: 107px;
+    height: 94px;
   }
 }
 // Навигационное меню (открытое) end //

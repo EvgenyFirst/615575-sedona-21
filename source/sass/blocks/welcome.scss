@@ -12,6 +12,11 @@
   min-width: 320px;
   height: 389px;
 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
   outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
   outline-offset: -3px; // специальные цыета для рамок по заданию
 }
@@ -27,9 +32,24 @@
   align-items: center;
 }
 
+.welcome__welcome {
+  width: 168px;
+  height: 45px;
+}
+
 .welcome__group-gorgeous {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.welcome__line,
+.welcome__gorgeous,
+.welcome__canyon,
+.welcome__quotes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -48,5 +68,45 @@
 
 .welcome__quotes-bottom {
   right: 3.93px;
-  bottom: 10px;
+  bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .welcome {
+    background-color: $lite-grey-color;
+    background-image: url("../img/background-tablet-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-top: -2px;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 768px;
+    height: 518px;
+
+    outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
+    outline-offset: -3px; // специальные цыета для рамок по заданию
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome {
+    background-color: $lite-grey-color;
+    background-image: url("../img/background-tablet-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 1200px;
+    min-width: 768px;
+    height: 518px;
+
+    outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
+    outline-offset: -3px; // специальные цыета для рамок по заданию
+  }
 }
