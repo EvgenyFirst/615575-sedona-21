@@ -1,4 +1,8 @@
 // Навигационное меню (закрытое) start //
+.menu-hide {
+  min-height: 56px;
+}
+
 .menu-hide__hide {
   position: relative;
 
@@ -33,5 +37,11 @@
 
 .menu__hidden {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-hide {
+    display: none;
+  }
 }
 // Навигационное меню (закрытое) end //

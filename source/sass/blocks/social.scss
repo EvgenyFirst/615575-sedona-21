@@ -15,12 +15,20 @@
 }
 
 .social__link {
-  width: 46px;
-  height: 48px;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
   background-color: $lite-blue-color;
+}
+
+.social__link-twitter,
+.social__link-youtube {
+  width: 46px;
+  height: 48px;
+}
+
+.social__link-facebook {
+  width: 47px;
+  height: 48px;
 }

@@ -13,5 +13,18 @@
 
 .map__marker {
   padding-top: 160px;
+
   position: absolute;
+}
+
+@media (min-width: $tablet-width) {
+  .map__marker {
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__marker {
+    padding-right: 5px;
+  }
 }
