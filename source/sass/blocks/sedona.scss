@@ -25,3 +25,16 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: $tablet-width) {
+  .sedona {
+    background-image: url("../img/background-tablet-desktop-form.jpg");
+
+    margin-top: -2px;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 768px;
+    height: 518px;
+  }
+}
