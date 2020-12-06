@@ -71,7 +71,7 @@
   bottom: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .welcome {
     background-color: $lite-grey-color;
     background-image: url("../img/background-tablet-desktop.jpg");

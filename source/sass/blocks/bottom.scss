@@ -27,6 +27,9 @@
   .bottom {
     min-height: 120px;
 
+    padding-right: 20px;
+    padding-left: 30px;
+
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
@@ -35,8 +38,8 @@
 
 @media (min-width: $desktop-width) {
   .bottom {
-    padding-right: 120.1px;
-    padding-left: 104px;
+    padding-right: 0;
+    padding-left: 0;
 
     background-color: $white-color;
   }
