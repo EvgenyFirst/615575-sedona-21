@@ -34,6 +34,14 @@
               Фото и видео
             </a>
           </li>
+          <li class="menu__items menu__items-logo">
+            <a class="menu__logo" href="index.html">
+              <picture>
+                <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <img src="img/logotype-tablet.svg" alt="Логотип «Седона»">
+              </picture>
+            </a>
+          </li>
           <li class="menu__items">
             <a class="menu__link" href="form.html">
               Форма Отзыва
@@ -70,7 +78,12 @@
         «Седона»
       </h2>
       <div class="city__wrapper">
-        <img class="city__main" src="img/sedona-header-background-form.svg" width="229" height="39" alt="«Седона»">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1200px)"
+            srcset="img/sedona-header-background-catalog-tablet.svg">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/sedona-header-background-tablet.svg">
+          <img class="city__main" src="img/sedona-header-background-form-catalog.svg" alt="«Седона»">
+        </picture>
       </div>
     </section>
     <!-- «Седона» end -->
@@ -96,83 +109,113 @@
             <span class="materials__lines-scenery-right"></span>
             <span class="materials__lines-scenery-left"></span>
           </div>
-          <span class="materials__scenery"></span>
-          <p class="materials__name">
-            неродные просторы
-          </p>
-          <p class="materials__author">
-            Автор фото: Борис
-          </p>
-          <div class="materials__social">
-            <button type="button" class="materials__button-like">
-              <img class="materials__like" src="img/icon-like.svg" width="23" height="21" alt="Лайк">
-            </button>
-            <p class="materials__number">
-              1350
-            </p>
+          <a href="#" class="materials__scenery"></a>
+          <div class="materials__cart-wrapper-one materials__cart-special materials__cart-wrapper">
+            <div class="materials__text">
+              <p class="materials__name">
+                неродные просторы
+              </p>
+              <p class="materials__author">
+                Автор фото: Борис
+              </p>
+            </div>
+            <div class="materials__social">
+              <button type="button" class="materials__button-like">
+                <picture>
+                  <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/icon-like-desktop.svg">
+                  <img class="materials__like" src="img/icon-like.svg" alt="Лайк">
+                </picture>
+              </button>
+              <p class="materials__number">
+                1350
+              </p>
+            </div>
           </div>
         </div>
-        <div class="materials__cart">
-          <div class="materials__lines">
-            <span class="materials__lines-vegetation-right"></span>
-            <span class="materials__lines-vegetation-left"></span>
+        <div class="materials__group">
+          <div class="materials__cart materials__cart-group">
+            <div class="materials__lines materials__lines-group">
+              <span class="materials__lines-vegetation-right"></span>
+              <span class="materials__lines-vegetation-left"></span>
+            </div>
+            <a href="#" class="materials__vegetation"></a>
+            <div class="materials__cart-wrapper-one materials__cart-wrapper">
+              <div class="materials__text">
+                <p class="materials__name">
+                  Местная растительность
+                </p>
+                <p class="materials__author">
+                  Автор фото: Сергей
+                </p>
+              </div>
+              <div class="materials__social">
+                <button type="button" class="materials__button-like">
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/icon-like-desktop.svg">
+                    <img class="materials__like" src="img/icon-like.svg" alt="Лайк">
+                  </picture>
+                </button>
+                <p class="materials__number">
+                  143
+                </p>
+              </div>
+            </div>
           </div>
-          <span class="materials__vegetation"></span>
-          <p class="materials__name">
-            Местная растительность
-          </p>
-          <p class="materials__author">
-            Автор фото: Сергей
-          </p>
-          <div class="materials__social">
-            <button type="button" class="materials__button-like">
-              <img class="materials__like" src="img/icon-like.svg" width="23" height="21" alt="Лайк">
-            </button>
-            <p class="materials__number">
-              143
-            </p>
+          <div class="materials__cart materials__cart-group">
+            <div class="materials__lines">
+              <span class="materials__lines-road-right"></span>
+              <span class="materials__lines-road-left materials__lines-group"></span>
+            </div>
+            <a href="#" class="materials__road"></a>
+            <div class="materials__cart-wrapper-two materials__cart-wrapper">
+              <div class="materials__text">
+                <p class="materials__name">
+                  Дорога на север
+                </p>
+                <p class="materials__author">
+                  Автор фото: Петр
+                </p>
+              </div>
+              <div class="materials__social">
+                <button type="button" class="materials__button-like">
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/icon-like-desktop.svg">
+                    <img class="materials__like" src="img/icon-like.svg" alt="Лайк">
+                  </picture>
+                </button>
+                <p class="materials__number">
+                  96
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="materials__cart">
-          <div class="materials__lines">
-            <span class="materials__lines-road-right"></span>
-            <span class="materials__lines-road-left"></span>
-          </div>
-          <span class="materials__road"></span>
-          <p class="materials__name">
-            Дорога на север
-          </p>
-          <p class="materials__author">
-            Автор фото: Петр
-          </p>
-          <div class="materials__social">
-            <button type="button" class="materials__button-like">
-              <img class="materials__like" src="img/icon-like.svg" width="23" height="21" alt="Лайк">
-            </button>
-            <p class="materials__number">
-              96
-            </p>
-          </div>
-        </div>
-        <div class="materials__cart">
-          <div class="materials__lines">
-            <span class="materials__lines-bridge-right"></span>
-            <span class="materials__lines-bridge-left"></span>
-          </div>
-          <span class="materials__bridge"></span>
-          <p class="materials__name">
-            Мост дьявола
-          </p>
-          <p class="materials__author">
-            Автор фото: Антон
-          </p>
-          <div class="materials__social">
-            <button type="button" class="materials__button-like">
-              <img class="materials__like" src="img/icon-like.svg" width="23" height="21" alt="Лайк">
-            </button>
-            <p class="materials__number">
-              254
-            </p>
+          <div class="materials__cart materials__cart-group">
+            <div class="materials__lines materials__lines-group">
+              <span class="materials__lines-bridge-right"></span>
+              <span class="materials__lines-bridge-left"></span>
+            </div>
+            <a href="#" class="materials__bridge"></a>
+            <div class="materials__cart-wrapper-one materials__cart-wrapper">
+              <div class="materials__text">
+                <p class="materials__name">
+                  Мост дьявола
+                </p>
+                <p class="materials__author">
+                  Автор фото: Антон
+                </p>
+              </div>
+              <div class="materials__social">
+                <button type="button" class="materials__button-like">
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/icon-like-desktop.svg">
+                    <img class="materials__like" src="img/icon-like.svg" alt="Лайк">
+                  </picture>
+                </button>
+                <p class="materials__number">
+                  254
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -185,26 +228,45 @@
           пока они не подорожали в очередной раз!
         </p>
         <div class="materials__wrapper-video-pic">
-          <img class="materials__video-pic" src="img/video-mobile.jpg" width="320" height="201" alt="Пейзаж">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/video-desktop.jpg">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/video-tablet.jpg">
+            <img class="materials__video-pic" src="img/video-mobile.jpg" alt="Пейзаж">
+          </picture>
         </div>
         <div class="materials__player" tabindex="0">
           <div class="materials__range">
-            <img class="materials__scale" src="img/scale-mobile.svg" width="235" height="3" alt="Шкала времени"
-              tabindex="0">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/scale-desktop.svg">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/scale-tablet.svg">
+              <img class="materials__scale" src="img/scale-mobile.svg" alt="Шкала времени" tabindex="0">
+            </picture>
             <button type="button" class="materials__-button-slider">
-              <img class="materials__slider" src="img/slider-mobile.svg" width="13" height="13" alt="Бегунок на шкале">
+              <picture>
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/slider-tablet-desktop.svg">
+                <img class="materials__slider" src="img/slider-mobile.svg" alt="Бегунок на шкале">
+              </picture>
             </button>
           </div>
           <div class="materials__navigation">
             <button type="button" class="materials__button-navigation">
-              <img class="materials__refresh" src="img/refresh-mobile.svg" width="16" height="20" alt="Обновить">
+              <picture>
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/refresh-tablet-desktop.svg">
+                <img class="materials__refresh" src="img/refresh-mobile.svg" alt="Обновить">
+              </picture>
             </button>
             <div class="materials__navigation-group">
               <button type="button" class="materials__button-navigation">
-                <img class="materials__сс" src="img/cc-mobile.svg" width="32" height="20" alt="СС">
+                <picture>
+                  <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/cc-tablet-desktop.svg">
+                  <img class="materials__сс" src="img/cc-mobile.svg" alt="СС">
+                </picture>
               </button>
               <button type="button" class="materials__button-navigation">
-                <img class="materials__full" src="img/resize-mobile.svg" width="20" height="20" alt="На весь экран">
+                <picture>
+                  <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/resize-tablet.svg">
+                  <img class="materials__full" src="img/resize-mobile.svg" alt="На весь экран">
+                </picture>
               </button>
             </div>
           </div>
@@ -234,7 +296,7 @@
       </h2>
       <ul class="social__items">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link social__link-twitter" href="#">
             <p class="visually-hidden">
               Твиттер
             </p>
@@ -242,7 +304,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link social__link-facebook" href="#">
             <p class="visually-hidden">
               Фейсбук
             </p>
@@ -250,7 +312,7 @@
           </a>
         </li>
         <li class="social__sitem">
-          <a class="social__link" href="#">
+          <a class="social__link social__link-youtube" href="#">
             <p class="visually-hidden">
               Ютуб
             </p>
