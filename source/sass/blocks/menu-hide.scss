@@ -3,6 +3,10 @@
   min-height: 56px;
 }
 
+.menu-hide__hide-top {
+  margin-top: -209px;
+}
+
 .menu-hide__hide {
   position: relative;
 
@@ -16,8 +20,8 @@
   padding-right: 20px;
   padding-left: 20px;
 
-  outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
-  outline-offset: -3px; // специальные цыета для рамок по заданию
+  // outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
+  // outline-offset: -3px; // специальные цыета для рамок по заданию
 }
 
 .menu-hide__hide-add {
@@ -27,16 +31,16 @@
 
 .menu-hide__button-burger {
   position: absolute;
-  top: 17px;
-  right: 20px;
+  top: 15px;
+  right: 14px;
 
   background: none;
 
   border: none;
-}
 
-.menu__hidden {
-  display: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: $tablet-width) {
