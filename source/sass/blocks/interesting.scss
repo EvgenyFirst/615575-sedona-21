@@ -1,11 +1,12 @@
 .interesting {
   min-height: 287px;
 
+  padding-top: 22px;
   padding-right: 20px;
   padding-left: 20px;
 
-  outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
-  outline-offset: -3px; // специальные цыета для рамок по заданию
+  // outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
+  // outline-offset: -3px; // специальные цыета для рамок по заданию
 }
 
 .interesting__group {
@@ -30,6 +31,8 @@
   line-height: 24px;
   text-align: center;
 
+  margin-top: 7px;
+
   padding-right: 9px;
   padding-left: 9px;
 }
@@ -43,6 +46,10 @@
   text-decoration: none;
   color: $white-color;
 
+  margin-top: 14px;
+  margin-right: 10px;
+  margin-left: 11px;
+
   padding-top: 14.5px;
   padding-bottom: 17.5px;
 
@@ -52,6 +59,10 @@
   background-color: $lite-blue-color;
 }
 
+.interesting__info-br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .interesting {
     display: flex;
@@ -59,12 +70,40 @@
     justify-content: center;
     align-items: center;
 
+    padding-top: 0;
+
     min-height: 318px;
   }
 
-  .interesting__group,
-  .interesting__link {
+  .interesting__header {
+    font-size: 30px;
+
+    margin-top: -26px;
+
+    padding-left: 1px;
+  }
+
+  .interesting__info {
+    position: relative;
+    top: 9px;
+
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+
+  .interesting__group {
     width: 498px;
+  }
+
+  .interesting__link {
+    width: 457px;
+
+    position: relative;
+    top: 17px;
+  }
+
+  .interesting__info-br {
+    display: block;
   }
 }
 
@@ -73,5 +112,21 @@
     min-height: 331px;
 
     background-color: $white-color;
+  }
+
+  .interesting__group {
+    min-height: 164px;
+  }
+
+  .interesting__header {
+    margin-top: -30px;
+  }
+
+  .interesting__info {
+    top: 4px;
+  }
+
+  .interesting__link {
+    top: -21px;
   }
 }

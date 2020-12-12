@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  margin-top: -35px;
+  margin-top: -32px;
   margin-right: auto;
   margin-left: auto;
 
@@ -17,12 +17,16 @@
   flex-direction: column;
   align-items: center;
 
-  outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
-  outline-offset: -3px; // специальные цыета для рамок по заданию
+  //outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
+  // outline-offset: -3px; // специальные цыета для рамок по заданию
 }
 
 .welcome__wrapper {
-  padding-top: 35px;
+  width: 100%;
+  min-width: 320px;
+
+  margin-top: -49px;
+
   padding-right: 20px;
   padding-left: 20px;
 
@@ -30,17 +34,23 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  position: relative;
 }
 
 .welcome__welcome {
-  width: 168px;
-  height: 45px;
+  margin-left: 0;
 }
 
 .welcome__group-gorgeous {
+  padding-bottom: 5px;
+  padding-left: 2px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
 }
 
 .welcome__line,
@@ -53,8 +63,36 @@
   align-items: center;
 }
 
+.welcome__line {
+  position: absolute;
+  top: 5px;
+}
+
+.welcome__line-left {
+  left: -24px;
+}
+
+.welcome__line-right {
+  left: 115px;
+}
+
+.welcome__gorgeous {
+  padding-right: 2px;
+  padding-bottom: 1px;
+}
+
+.welcome__sedona {
+  padding-right: 2px;
+
+  position: relative;
+  top: 24px;
+}
+
 .welcome__group-canyon {
   position: relative;
+  top: 53px;
+
+  padding-right: 4px;
 }
 
 .welcome__quotes {
@@ -62,12 +100,12 @@
 }
 
 .welcome__quotes-top {
-  top: 0;
-  left: -3.93px;
+  bottom: 44px;
+  left: -6.93px;
 }
 
 .welcome__quotes-bottom {
-  right: 3.93px;
+  right: 7.93px;
   bottom: 5px;
 }
 
@@ -87,8 +125,40 @@
     min-width: 768px;
     height: 518px;
 
-    outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
-    outline-offset: -3px; // специальные цыета для рамок по заданию
+    // outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
+    // outline-offset: -3px; // специальные цыета для рамок по заданию
+  }
+
+  .welcome__wrapper {
+    margin-top: -117px;
+  }
+
+  .welcome__line-left {
+    top: 14px;
+    left: -40px;
+  }
+
+  .welcome__line-right {
+    top: 14px;
+    left: 187px;
+  }
+
+  .welcome__sedona {
+    top: 47px;
+  }
+
+  .welcome__group-canyon {
+    top: 103px;
+  }
+
+  .welcome__quotes-top {
+    bottom: 69px;
+    left: -11.93px;
+  }
+
+  .welcome__quotes-bottom {
+    right: 13.93px;
+    bottom: 6px;
   }
 }
 
@@ -106,7 +176,19 @@
     min-width: 768px;
     height: 518px;
 
-    outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
-    outline-offset: -3px; // специальные цыета для рамок по заданию
+    // outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
+    // outline-offset: -3px; // специальные цыета для рамок по заданию
+  }
+
+  .welcome__wrapper {
+    min-height: 637px;
+  }
+
+  .welcome__group-gorgeous {
+    padding-bottom: 0;
+  }
+
+  .welcome__sedona {
+    top: 50px;
   }
 }

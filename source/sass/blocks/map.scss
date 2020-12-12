@@ -1,14 +1,15 @@
 .map {
-  background-color: $lite-grey-color;
-  margin-top: 0;
+  margin-top: -18px;
 
   position: relative;
 
   display: flex;
   justify-content: center;
 
-  outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
-  outline-offset: -3px; // специальные цыета для рамок по заданию
+  background-color: $lite-grey-color;
+
+  // outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
+  // outline-offset: -3px; // специальные цыета для рамок по заданию
 }
 
 .map__marker {
@@ -18,8 +19,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map {
+    margin-top: 0;
+  }
+
   .map__marker {
-    padding-right: 40px;
+    padding-top: 162px;
+    padding-right: 5px;
   }
 }
 
