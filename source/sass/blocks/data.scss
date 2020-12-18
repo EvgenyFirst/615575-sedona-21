@@ -12,12 +12,11 @@
   line-height: 24px;
   color: $black-color;
   text-transform: uppercase;
-}
 
-@media (min-width: $desktop-width) {
-  .data {
-    max-width: 1200px;
+  @media (min-width: $desktop-width) {
     width: 1200px;
+    max-width: 1200px;
+
     margin-right: auto;
     margin-left: auto;
 

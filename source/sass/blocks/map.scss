@@ -10,27 +10,22 @@
 
   // outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
   // outline-offset: -3px; // специальные цыета для рамок по заданию
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .map__marker {
   padding-top: 160px;
 
   position: absolute;
-}
 
-@media (min-width: $tablet-width) {
-  .map {
-    margin-top: 0;
-  }
-
-  .map__marker {
+  @media (min-width: $tablet-width) {
     padding-top: 162px;
     padding-right: 5px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .map__marker {
+  @media (min-width: $desktop-width) {
     padding-right: 5px;
   }
 }

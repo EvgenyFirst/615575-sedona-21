@@ -1,6 +1,14 @@
 // Навигационное меню (открытое) start //
 .menu {
   min-height: 223px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 56px;
+  }
 }
 
 .menu__nav {
@@ -8,6 +16,12 @@
 
   // outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
   // outline-offset: -3px; // специальные цыета для рамок по заданию
+
+  @media (min-width: $tablet-width) {
+    background-color: $white-color;
+
+    // outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
+  }
 }
 
 .menu__nav-block {
@@ -16,6 +30,20 @@
   padding-left: 0;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 27px;
+    padding-left: 49px;
+
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 70px;
+    padding-left: 90px;
+  }
 }
 
 .menu__items {
@@ -28,10 +56,95 @@
 
   border-top: 1px solid $lighter-blue-color;
   border-bottom: 1px solid $darker-blue-color;
+
+  &:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      right: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 75px;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      right: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 44px;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      right: 10px;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      left: 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 24px;
+    }
+  }
+
+  &:nth-child(5) {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      top: 8px;
+      left: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 55px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 55px;
+
+    padding-top: 16px;
+    padding-right: 0;
+    padding-left: 0;
+
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 .menu__items-logo {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    width: 107px;
+    height: 94px;
+
+    padding-top: 0;
+
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    width: 107px;
+    height: 94px;
+
+    padding-top: 0;
+
+    position: relative;
+  }
 }
 
 .menu__items-btn-close {
@@ -68,6 +181,20 @@
   line-height: 40px;
   text-decoration: none;
   color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $black-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $black-color;
+  }
 }
 
 .menu__link-default {
@@ -91,6 +218,28 @@
     position: absolute;
     left: 0;
     bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.menu__logo {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 1px;
+
+    width: 107px;
+    height: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 186.6px;
+    height: 96.43px;
+
+    position: absolute;
+    right: -40px;
   }
 }
 
@@ -98,145 +247,4 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
-  .menu {
-    min-height: 56px;
-  }
-
-  .menu__nav {
-    background-color: $white-color;
-
-    // outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
-  }
-
-  .menu__nav-block {
-    padding-right: 27px;
-    padding-left: 49px;
-
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .menu__items {
-    min-height: 55px;
-
-    padding-top: 16px;
-    padding-right: 0;
-    padding-left: 0;
-
-    border-top: none;
-    border-bottom: none;
-
-    &:nth-child(1) {
-      position: relative;
-      right: 41px;
-    }
-
-    &:nth-child(2) {
-      position: relative;
-      right: 25px;
-    }
-
-    &:nth-child(3) {
-      position: relative;
-      right: 10px;
-    }
-
-    &:nth-child(4) {
-      position: relative;
-      left: 9px;
-    }
-
-    &:nth-child(5) {
-      position: relative;
-      left: 21px;
-    }
-  }
-
-  .menu__items-logo {
-    display: block;
-
-    padding-top: 0;
-
-    position: relative;
-
-    width: 107px;
-    height: 94px;
-  }
-
-  .menu__link {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
-    color: $black-color;
-  }
-
-  .menu__items-bottom {
-    &::after {
-      content: "";
-      display: none;
-    }
-  }
-
-  .menu__logo {
-    position: absolute;
-    right: 1px;
-
-    width: 107px;
-    height: 94px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .menu {
-    min-height: 56px;
-  }
-
-  .menu__items {
-    &:nth-child(1) {
-      right: 75px;
-    }
-
-    &:nth-child(2) {
-      right: 44px;
-    }
-
-    &:nth-child(4) {
-      left: 24px;
-    }
-
-    &:nth-child(5) {
-      left: 55px;
-    }
-  }
-
-  .menu__logo {
-    width: 186.6px;
-    height: 96.43px;
-
-    position: absolute;
-    right: -40px;
-  }
-
-  .menu__nav-block {
-    padding-right: 70px;
-    padding-left: 90px;
-  }
-
-  .menu__link {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
-    color: $black-color;
-  }
-
-  .menu__items-logo {
-    display: block;
-    padding-top: 0;
-    position: relative;
-    width: 107px;
-    height: 94px;
-  }
-}
 // Навигационное меню (открытое) end //

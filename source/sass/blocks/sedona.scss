@@ -2,7 +2,8 @@
   background-color: $lite-grey-color;
   background-image: url("../img/background-mobile-form.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: -57px;
 
   margin-top: -35px;
   margin-right: auto;
@@ -12,29 +13,40 @@
   min-width: 320px;
   height: 214px;
 
-  outline: 3px solid $special-border-blue-color; // специальные цыета для рамок по заданию
-  outline-offset: -3px; // специальные цыета для рамок по заданию
-}
+  // outline: 3px solid $special-border-blue-color; // специальные цыета для рамок по заданию
+  // outline-offset: -3px; // специальные цыета для рамок по заданию
 
-.sedona__wrapper {
-  padding-top: 108px;
-  padding-right: 20px;
-  padding-bottom: 67px;
-  padding-left: 20px;
-
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: $tablet-width) {
-  .sedona {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/background-tablet-desktop-form.jpg");
+    background-position-y: -229px;
 
     margin-top: -2px;
 
     width: 100%;
     max-width: 100%;
     min-width: 768px;
-    height: 518px;
+    min-height: 291px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position-y: -215px;
+  }
+}
+
+.sedona__wrapper {
+  padding-top: 52px;
+  padding-right: 20px;
+  padding-bottom: 67px;
+  padding-left: 19px;
+
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
   }
 }
