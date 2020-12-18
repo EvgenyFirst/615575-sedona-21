@@ -1,6 +1,10 @@
 // Навигационное меню (закрытое) start //
 .menu-hide {
   min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .menu-hide__hide-top {
@@ -43,9 +47,4 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .menu-hide {
-    display: none;
-  }
-}
 // Навигационное меню (закрытое) end //

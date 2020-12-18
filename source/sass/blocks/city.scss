@@ -14,6 +14,16 @@
 
   outline: 3px solid $special-border-blue-color; // специальные цыета для рамок по заданию
   outline-offset: -3px; // специальные цыета для рамок по заданию
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/background-tablet-desktop-catalog.jpg");
+
+    margin-top: 0;
+
+    width: 100%;
+    max-width: 100%;
+    height: 518px;
+  }
 }
 
 .city__wrapper {
@@ -24,16 +34,4 @@
 
   display: flex;
   justify-content: center;
-}
-
-@media (min-width: $tablet-width) {
-  .city {
-    background-image: url("../img/background-tablet-desktop-catalog.jpg");
-
-    margin-top: 0;
-
-    width: 100%;
-    max-width: 100%;
-    height: 518px;
-  }
 }

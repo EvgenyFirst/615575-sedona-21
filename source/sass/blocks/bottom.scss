@@ -13,6 +13,27 @@
 
   // outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
   // outline-offset: -3px; // специальные цыета для рамок по заданию
+
+  @media (min-width: $tablet-width) {
+    min-height: 120px;
+
+    padding-right: 20px;
+    padding-left: 30px;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+
+    position: relative;
+    bottom: 6px;
+
+    background-color: $white-color;
+  }
 }
 
 .bottom__visit {
@@ -21,6 +42,36 @@
   line-height: 26px;
   text-decoration: none;
   color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -28px;
+    margin-left: -44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 94px;
+    margin-left: -24px;
+  }
+}
+
+.bottom__social {
+  @media (min-width: $tablet-width) {
+    margin-top: -19px;
+    margin-right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 103px;
+    margin-right: 2px;
+  }
+}
+
+.bottom__developer-link {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 2px;
+    right: 3px;
+  }
 }
 
 .bottom__social-items {
@@ -66,6 +117,15 @@
 
   margin-top: -9px;
   margin-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -28px;
+    margin-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 87px;
+  }
 }
 
 .bottom__developer-developed {
@@ -76,57 +136,19 @@
   margin-top: 5px;
 }
 
-@media (min-width: $tablet-width) {
-  .bottom {
-    min-height: 120px;
+.bottom__catalog {
+  margin-top: 51px;
+  margin-left: -4px;
 
-    padding-right: 20px;
-    padding-left: 30px;
-
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+    margin-left: 0;
   }
 
-  .bottom__visit {
-    margin-top: -28px;
-    margin-left: -44px;
-  }
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+    margin-left: 0;
 
-  .bottom__social {
-    margin-top: -5px;
-    margin-right: 3px;
-  }
-
-  .bottom__developer-link {
-    position: relative;
-    top: 2px;
-    right: 3px;
-  }
-
-  .bottom__developer {
-    margin-top: -20px;
-    margin-left: 36px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .bottom {
-    padding-right: 0;
-    padding-left: 0;
-
-    position: relative;
-    bottom: 6px;
-
-    background-color: $white-color;
-  }
-
-  .bottom__visit {
-    margin-top: -16px;
-    margin-left: -24px;
-  }
-
-  .bottom__developer {
-    margin-top: -20px;
+    padding-bottom: 15px;
   }
 }
