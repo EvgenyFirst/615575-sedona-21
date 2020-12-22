@@ -26,7 +26,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 3px;
     padding-right: 0;
     padding-left: 0;
 
@@ -34,39 +33,6 @@
     bottom: 6px;
 
     background-color: $white-color;
-  }
-}
-
-.bottom__form {
-  margin-top: 51px;
-  margin-left: -4px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 75px;
-    margin-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 5px;
-    margin-left: 0;
-
-    padding-top: 80px;
-    padding-bottom: 15px;
-  }
-}
-
-.bottom__catalog {
-  margin-top: 33px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 38px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -43px;
-
-    padding-top: 83px;
-    padding-bottom: 22px;
   }
 }
 
@@ -83,7 +49,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -23px;
+    margin-top: 94px;
     margin-left: -24px;
   }
 }
@@ -95,8 +61,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -13px;
+    margin-top: 103px;
     margin-right: 2px;
+  }
+}
+
+.bottom__developer-link {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 2px;
+    right: 3px;
   }
 }
 
@@ -126,14 +100,6 @@
   background-color: $lite-blue-color;
 }
 
-.bottom__developer-link {
-  @media (min-width: $tablet-width) {
-    position: relative;
-    top: 2px;
-    right: 3px;
-  }
-}
-
 .bottom__social-link-twitter,
 .bottom__social-link-youtube {
   width: 46px;
@@ -158,7 +124,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -22px;
+    margin-top: 87px;
   }
 }
 
@@ -168,4 +134,34 @@
 
 .bottom__developer-pic {
   margin-top: 5px;
+}
+
+.bottom__fprm {
+  margin-top: 51px;
+  margin-left: -4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+    margin-left: 0;
+
+    padding-bottom: 15px;
+  }
+}
+
+.bottom__catalog {
+  margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -43px;
+    padding-bottom: 22px;
+  }
 }

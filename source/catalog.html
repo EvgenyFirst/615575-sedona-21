@@ -19,6 +19,7 @@
     <div class="menu__block">
       <!-- Навигационное меню (открытое) start -->
       <nav class="menu__nav">
+        <!-- menu__hidden -->
         <ul class="menu__nav-block">
           <li class="menu__items menu__items-btn-close">
             <!-- Кнопка для закрытия навигационного меню будет реализовано псевдоэлементами-->
@@ -30,7 +31,7 @@
             </button>
           </li>
           <li class="menu__items">
-            <a class="menu__link">
+            <a class="menu__link menu__link-default">
               Фото и видео
             </a>
           </li>
@@ -59,7 +60,9 @@
   </header>
   <!-- Навигационное меню (закрытое) start -->
   <div class="menu-hide">
-    <div class="menu-hide__hide menu-hide__hide-add">
+    <!--  menu-hide__hide-top -->
+    <div class="menu-hide__hide menu-hide__hide-add ">
+      <!--  menu-hide__hide-add -->
       <a class="menu-hide__logo" href="index.html">
         <img class="menu-hide__pic" src="img/logotype-mobile.svg" alt="Логотип «Седона»">
       </a>
@@ -82,7 +85,7 @@
           <source type="image/svg+xml" media="(min-width: 1200px)"
             srcset="img/sedona-header-background-catalog-tablet.svg">
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/sedona-header-background-tablet.svg">
-          <img class="city__main" src="img/sedona-header-background-form-catalog.svg" alt="«Седона»">
+          <img src="img/sedona-header-background-form-catalog.svg" alt="«Седона»"> <!-- city__main -->
         </picture>
       </div>
     </section>
@@ -103,7 +106,7 @@
           Фотографии помогут вам забыть о политике и экономике.
         </p>
       </div>
-      <div class="materials__block">
+      <div class="materials__block materials__block-cart">
         <div class="materials__cart">
           <div class="materials__lines">
             <span class="materials__lines-scenery-right"></span>
@@ -111,7 +114,7 @@
           </div>
           <a href="#" class="materials__scenery"></a>
           <div class="materials__cart-wrapper-one materials__cart-special materials__cart-wrapper">
-            <div class="materials__text">
+            <div>
               <p class="materials__name">
                 неродные просторы
               </p>
@@ -119,8 +122,8 @@
                 Автор фото: Борис
               </p>
             </div>
-            <div class="materials__social">
-              <button type="button" class="materials__button-like">
+            <div class="materials__social" tabindex="-1">
+              <button type="button" class="materials__button-like" tabindex="0">
                 <picture>
                   <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/icon-like-desktop.svg">
                   <img class="materials__like" src="img/icon-like.svg" alt="Лайк">
@@ -140,7 +143,7 @@
             </div>
             <a href="#" class="materials__vegetation"></a>
             <div class="materials__cart-wrapper-one materials__cart-wrapper">
-              <div class="materials__text">
+              <div>
                 <p class="materials__name">
                   Местная растительность
                 </p>
@@ -168,7 +171,7 @@
             </div>
             <a href="#" class="materials__road"></a>
             <div class="materials__cart-wrapper-two materials__cart-wrapper">
-              <div class="materials__text">
+              <div>
                 <p class="materials__name">
                   Дорога на север
                 </p>
@@ -196,7 +199,7 @@
             </div>
             <a href="#" class="materials__bridge"></a>
             <div class="materials__cart-wrapper-one materials__cart-wrapper">
-              <div class="materials__text">
+              <div>
                 <p class="materials__name">
                   Мост дьявола
                 </p>
@@ -219,17 +222,19 @@
           </div>
         </div>
       </div>
-      <div class="materials__block">
+      <div class="materials__block materials__block-think">
         <h1 class="materials__header">
           Все еще сомневаетесь?
         </h1>
-        <p class="materials__info">
+        <p class="materials__info materials__info-think">
           Смотрите видеопрезентацию и скорее за билетами,
           пока они не подорожали в очередной раз!
         </p>
         <div class="materials__wrapper-video-pic">
+          <span class="materials__lines-video-right"></span>
+          <span class="materials__lines-video-left"></span>
           <picture>
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/video-desktop.jpg">
+            <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/video-desktop.jpg">
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/video-tablet.jpg">
             <img class="materials__video-pic" src="img/video-mobile.jpg" alt="Пейзаж">
           </picture>
@@ -244,28 +249,28 @@
             <button type="button" class="materials__-button-slider">
               <picture>
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/slider-tablet-desktop.svg">
-                <img class="materials__slider" src="img/slider-mobile.svg" alt="Бегунок на шкале">
+                <img src="img/slider-mobile.svg" alt="Бегунок на шкале">
               </picture>
             </button>
           </div>
           <div class="materials__navigation">
-            <button type="button" class="materials__button-navigation">
+            <button type="button" class="materials__button-navigation materials__button-navigation-refresh">
               <picture>
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/refresh-tablet-desktop.svg">
-                <img class="materials__refresh" src="img/refresh-mobile.svg" alt="Обновить">
+                <img src="img/refresh-mobile.svg" alt="Обновить">
               </picture>
             </button>
             <div class="materials__navigation-group">
-              <button type="button" class="materials__button-navigation">
+              <button type="button" class="materials__button-navigation materials__button-сс">
                 <picture>
                   <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/cc-tablet-desktop.svg">
-                  <img class="materials__сс" src="img/cc-mobile.svg" alt="СС">
+                  <img src="img/cc-mobile.svg" alt="СС">
                 </picture>
               </button>
-              <button type="button" class="materials__button-navigation">
+              <button type="button" class="materials__button-navigation materials__button-full">
                 <picture>
                   <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/resize-tablet.svg">
-                  <img class="materials__full" src="img/resize-mobile.svg" alt="На весь экран">
+                  <img src="img/resize-mobile.svg" alt="На весь экран">
                 </picture>
               </button>
             </div>
@@ -278,7 +283,7 @@
   </main>
 
   <!-- Подвал сайта start -->
-  <footer class="bottom">
+  <footer class="bottom bottom__catalog">
     <h2 class="visually-hidden">
       Подвал сайта
     </h2>
@@ -290,33 +295,33 @@
     <!-- #visitSEDONA end -->
 
     <!-- Социальные сети start -->
-    <section class="social">
+    <section class="bottom__social">
       <h2 class="visually-hidden">
         Социальные сети
       </h2>
-      <ul class="social__items">
-        <li class="social__item">
-          <a class="social__link social__link-twitter" href="#">
+      <ul class="bottom__social-items">
+        <li class="bottom__social-item">
+          <a class="bottom__social-link bottom__social-link-twitter" href="#">
             <p class="visually-hidden">
               Твиттер
             </p>
-            <img class="social__pic" src="img/icon-twitter.svg" width="17" height="14" alt="Твиттер">
+            <img class="bottom__social-pic" src="img/icon-twitter.svg" width="17" height="14" alt="Твиттер">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link-facebook" href="#">
+        <li class="bottom__social-item">
+          <a class="bottom__social-link bottom__social-link-facebook" href="#">
             <p class="visually-hidden">
               Фейсбук
             </p>
-            <img class="social__pic" src="img/icon-facebook.svg" width="6" height="18" alt="Фейсбук">
+            <img class="bottom__social-pic" src="img/icon-facebook.svg" width="8" height="18" alt="Фейсбук">
           </a>
         </li>
-        <li class="social__sitem">
-          <a class="social__link social__link-youtube" href="#">
+        <li class="bottom__social-item">
+          <a class="bottom__social-link bottom__social-link-youtube" href="#">
             <p class="visually-hidden">
               Ютуб
             </p>
-            <img class="social__pic" src="img/icon-youtube.svg" width="19" height="14" alt="Ютуб">
+            <img class="bottom__social-pic" src="img/icon-youtube.svg" width="19" height="14" alt="Ютуб">
           </a>
         </li>
       </ul>
@@ -324,18 +329,18 @@
     <!-- Социальные сети end -->
 
     <!-- Разработано HTMLAcademy start -->
-    <section class="developer">
+    <section class="bottom__developer">
       <h2 class="visually-hidden">
         Разработано HTMLAcademy
       </h2>
-      <p class="developer__developed">
+      <p class="bottom__developer-developed">
         Разработано
       </p>
-      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="bottom__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="visually-hidden">
           Разработано HTMLAcademy
         </p>
-        <svg class="developer__pic" width="27" height="35" viewBox="0 0 27 35" fill="none"
+        <svg class="bottom__developer-pic" width="27" height="35" viewBox="0 0 27 35" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"

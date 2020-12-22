@@ -1,9 +1,7 @@
 .interesting {
   min-height: 287px;
 
-  margin-top: -11px;
-
-  padding-top: 2px;
+  padding-top: 22px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -53,7 +51,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
 
-    margin-top: -5px;
+    margin-top: -26px;
 
     padding-left: 1px;
   }
@@ -84,15 +82,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 6px;
-  }
-}
-
-.interesting__info-br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
+    top: 4px;
   }
 }
 
@@ -106,6 +96,8 @@
   color: $white-color;
 
   margin-top: 14px;
+  margin-right: 10px;
+  margin-left: 11px;
 
   padding-top: 14.5px;
   padding-bottom: 17.5px;
@@ -123,6 +115,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -18px;
+    top: -21px;
+  }
+}
+
+.interesting__info-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
