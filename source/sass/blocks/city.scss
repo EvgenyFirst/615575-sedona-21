@@ -2,7 +2,8 @@
   background-color: $lite-grey-color;
   background-image: url("../img/background-mobile-catalog.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: -58px;
 
   margin-top: -35px;
   margin-right: auto;
@@ -12,11 +13,12 @@
   min-width: 320px;
   height: 214px;
 
-  outline: 3px solid $special-border-blue-color; // специальные цыета для рамок по заданию
-  outline-offset: -3px; // специальные цыета для рамок по заданию
+  // outline: 3px solid $special-border-blue-color; // специальные цыета для рамок по заданию
+  // outline-offset: -3px; // специальные цыета для рамок по заданию
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/background-tablet-desktop-catalog.jpg");
+    background-position-y: -231px;
 
     margin-top: 0;
 
@@ -24,14 +26,26 @@
     max-width: 100%;
     height: 518px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-position-y: -217px;
+  }
 }
 
 .city__wrapper {
-  padding-top: 108px;
+  padding-top: 52px;
   padding-right: 20px;
   padding-bottom: 67px;
   padding-left: 20px;
 
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 97px;
+  }
 }

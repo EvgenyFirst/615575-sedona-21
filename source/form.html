@@ -85,7 +85,7 @@
           <source type="image/svg+xml" media="(min-width: 1200px)"
             srcset="img/sedona-header-background-form-desktop.svg">
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/sedona-header-background-form-tablet.svg">
-          <img class="sedona__main" src="img/sedona-header-background-form-catalog.svg" alt="«Седона»">
+          <img src="img/sedona-header-background-form-catalog.svg" alt="«Седона»"> <!-- sedona__main -->
         </picture>
       </div>
     </section>
@@ -109,7 +109,7 @@
         </p>
       </div>
       <div class="reviews__menu">
-        <form class="reviews__form" action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post"> <!-- reviews__form -->
           <div class="reviews__form-wrapper">
             <fieldset class="reviews__style reviews__group">
               <legend class="reviews__legend">
@@ -140,7 +140,7 @@
               </ul>
             </fieldset>
             <fieldset class="reviews__style reviews__style-group reviews__style-contact reviews__group">
-              <legend class="reviews__legend reviews__legend-group reviews__legend-contact">
+              <legend class="reviews__legend reviews__legend-contact"> <!-- reviews__legend-group -->
                 Контактная информация:
               </legend>
               <ul class="reviews__items reviews__items-contact">
@@ -152,7 +152,7 @@
                   </p>
                 </li>
                 <li class="reviews__li">
-                  <p class="reviews__data reviews__data-email reviews__data-email">
+                  <p class="reviews__data reviews__data-email">
                     <label class="reviews__label reviews__label-email" for="user-email">Электронная почта*:</label>
                     <input class="reviews__input reviews__input-email" id="user-email" type="email" name="userEmail"
                       placeholder="Введите e-mail" required tabindex="0">
@@ -189,7 +189,7 @@
               </ul>
             </fieldset>
             <fieldset class="reviews__style reviews__style-attractions reviews__style-group reviews__group">
-              <legend class="reviews__legend reviews__legend-attractions reviews__legend-group reviews__legend-special">
+              <legend class="reviews__legend reviews__legend-attractions reviews__legend-special"> <!-- reviews__legend-group -->
                 посещенные достопримечательности:
               </legend>
               <ul class="reviews__items reviews__items-place">
@@ -253,7 +253,7 @@
   </main>
 
   <!-- Подвал сайта start -->
-  <footer class="bottom bottom__catalog">
+  <footer class="bottom bottom__form">
     <h2 class="visually-hidden">
       Подвал сайта
     </h2>

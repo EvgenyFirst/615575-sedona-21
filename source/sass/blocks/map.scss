@@ -11,7 +11,11 @@
   // outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
   // outline-offset: -3px; // специальные цыета для рамок по заданию
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
   }
 }
 
