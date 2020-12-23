@@ -19,6 +19,13 @@
   }
 }
 
+.map__pic {
+  @media (min-width: $tablet-width) {
+    height: 350px;
+    object-fit: cover;
+  }
+}
+
 .map__marker {
   padding-top: 160px;
 
