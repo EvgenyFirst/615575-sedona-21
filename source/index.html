@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no, width = device-width">
+  <link rel="icon" href="img/favicon-16x16.ico" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon-32x32.ico" sizes="32x32">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <title>HTML Academy: Седона</title>
@@ -341,9 +343,9 @@
         Карта
       </h2>
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
-        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
-        <img class="map__pic" src="img/map-mobile.jpg" alt="Карта">
+        <source media="(min-width: 1200px)" srcset="img/map-desktop-1x.jpg 1x, img/map-desktop-2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet-1x.jpg 1x, img/map-tablet-2x.jpg 2x">
+        <img class="map__pic" src="img/map-mobile-1x.jpg" srcset="img/map-mobile-2x.jpg 2x" alt="Карта">
       </picture>
       <img class="map__marker" src="img/map-marker.svg" width="27" height="27" alt="Маркер">
     </section>
