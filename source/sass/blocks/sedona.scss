@@ -23,7 +23,7 @@
   // outline-offset: -3px; // специальные цыета для рамок по заданию
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/background-tablet-desktop-form-1x.jpg");
+    background-image: url("../img/background-form-tablet-desktop-1x.jpg");
     background-position-y: -229px;
 
     margin-top: -2px;
@@ -34,7 +34,7 @@
     min-height: 291px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-tablet-desktop-form-2x.jpg");
+      background-image: url("../img/background-form-tablet-desktop-2x.jpg");
       background-size: 1200px 519px;
     }
   }

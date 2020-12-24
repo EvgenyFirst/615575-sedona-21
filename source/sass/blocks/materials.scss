@@ -121,7 +121,7 @@
   background-color: $white-color;
 
   width: 20px;
-  height: 280px;
+  height: 281px;
 
   @media (min-width: $tablet-width) {
     width: 60px;
@@ -141,7 +141,7 @@
 
 .materials__scenery {
   display: block;
-  background-image: url("../img/scenery-mobile.jpg");
+  background-image: url("../img/scenery-catalog-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -151,11 +151,21 @@
   max-width: 845px;
   height: 280px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/scenery-catalog-mobile-2x.jpg");
+    background-size: 845px auto;
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url("../img/scenery-tablet-desktop-catalog.jpg");
+    background-image: url("../img/scenery-catalog-tablet-desktop-1x.jpg");
 
     max-width: 1204px;
     height: 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/scenery-catalog-tablet-desktop-2x.jpg");
+      background-size: 1204px auto;
+    }
   }
 }
 
@@ -371,7 +381,7 @@
 
 .materials__vegetation {
   display: block;
-  background-image: url("../img/vegetation-mobile.jpg");
+  background-image: url("../img/vegetation-catalog-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -383,19 +393,34 @@
   min-width: 320px;
   height: 280px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/vegetation-catalog-mobile-2x.jpg");
+    background-size: 426px auto;
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url("../img/vegetation-tablet-catalog.jpg");
+    background-image: url("../img/vegetation-catalog-tablet-1x.jpg");
 
     max-width: 398px;
     min-width: 309px;
     height: 267px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/vegetation-catalog-tablet-2x.jpg");
+      background-size: 398px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/vegetation-desktop-catalog.jpg");
+    background-image: url("../img/vegetation-catalog-desktop-1x.jpg");
 
     max-width: 400px;
     height: 267px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/vegetation-catalog-desktop-2x.jpg");
+      background-size: 400px auto;
+    }
   }
 }
 
@@ -451,7 +476,7 @@
 
 .materials__road {
   display: block;
-  background-image: url("../img/road-mobile.jpg");
+  background-image: url("../img/road-catalog-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -463,19 +488,34 @@
   min-width: 320px;
   height: 280px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/road-catalog-mobile-2x.jpg");
+    background-size: 426px auto;
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url("../img/road-tablet-catalog.jpg");
+    background-image: url("../img/road-catalog-tablet-1x.jpg");
 
     max-width: none;
     min-width: 326px;
     height: 265px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/road-catalog-tablet-2x.jpg");
+      background-size: auto 265px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/road-desktop-catalog.jpg");
+    background-image: url("../img/road-catalog-desktop-1x.jpg");
 
     max-width: 400px;
     height: 265px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/road-catalog-desktop-2x.jpg");
+      background-size: 400px 265px;
+    }
   }
 }
 
@@ -515,7 +555,7 @@
 
 .materials__bridge {
   display: block;
-  background-image: url("../img/bridge-mobile.jpg");
+  background-image: url("../img/bridge-catalog-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -527,19 +567,34 @@
   min-width: 320px;
   height: 280px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bridge-catalog-mobile-2x.jpg");
+    background-size: 427px auto;
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url("../img/bridge-tablet-catalog.jpg");
+    background-image: url("../img/bridge-catalog-tablet-1x.jpg");
 
     max-width: 398px;
     height: 267px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bridge-catalog-tablet-2x.jpg");
+      background-size: 398px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/bridge-desktop-catalog.jpg");
+    background-image: url("../img/bridge-catalog-desktop-1x.jpg");
 
     width: 400px;
     min-width: 400px;
     height: 267px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bridge-catalog-desktop-2x.jpg");
+      background-size: 400px auto;
+    }
   }
 }
 
@@ -591,7 +646,7 @@
 }
 
 .materials__video-pic {
-  width: 766px;
+  width: 648px;
 
   @media (min-width: $desktop-width) {
     width: 800px;

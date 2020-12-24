@@ -1,7 +1,7 @@
 .interesting {
   min-height: 287px;
 
-  margin-top: -11px;
+  margin-top: 1px;
 
   padding-top: 2px;
   padding-right: 20px;
@@ -53,13 +53,13 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
 
-    margin-top: -5px;
+    margin-top: -28px;
 
     padding-left: 1px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -30px;
+    margin-top: -52px;
   }
 }
 
@@ -123,6 +123,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -18px;
+    top: -28px;
   }
 }
