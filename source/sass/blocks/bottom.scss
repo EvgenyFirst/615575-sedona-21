@@ -11,6 +11,8 @@
   justify-items: center;
   grid-template-rows: 1fr 1fr 1fr;
 
+  background-color: wheat;
+
   // outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
   // outline-offset: -3px; // специальные цыета для рамок по заданию
 
@@ -59,14 +61,19 @@
   margin-top: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 38px;
+    margin-top: 52px;
+
+    min-height: 91px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -43px;
 
-    padding-top: 83px;
-    padding-bottom: 22px;
+    padding-top: 68px;
+    padding-bottom: 0;
+
+    position: relative;
+    top: 8px;
   }
 }
 
