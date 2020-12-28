@@ -77,8 +77,8 @@
 
   margin-top: -49px;
 
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 
   display: flex;
   justify-content: center;
@@ -88,12 +88,19 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-top: -117px;
+    margin-top: -101px;
   }
 }
 
 .welcome__welcome {
+  margin-top: -13px;
+  margin-bottom: 8px;
   margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 189px;
+    height: 45px;
+  }
 }
 
 .welcome__group-gorgeous {
@@ -121,6 +128,17 @@
   align-items: center;
 }
 
+.welcome__canyon {
+  @media (min-width: $tablet-width) {
+    width: 284px;
+    height: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 283px;
+  }
+}
+
 .welcome__line {
   position: absolute;
   top: 5px;
@@ -130,6 +148,9 @@
   left: -24px;
 
   @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 3px;
+
     top: 14px;
     left: -40px;
   }
@@ -139,6 +160,9 @@
   left: 115px;
 
   @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 3px;
+
     top: 14px;
     left: 187px;
   }
@@ -147,6 +171,18 @@
 .welcome__gorgeous {
   padding-right: 2px;
   padding-bottom: 1px;
+
+  position: relative;
+  bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+    height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 176px;
+  }
 }
 
 .welcome__sedona {
@@ -156,17 +192,22 @@
   top: 24px;
 
   @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 80px;
+
     top: 47px;
   }
 
   @media (min-width: $desktop-width) {
+    height: 81px;
+
     top: 50px;
   }
 }
 
 .welcome__group-canyon {
   position: relative;
-  top: 53px;
+  top: 60px;
 
   padding-right: 4px;
 
@@ -184,6 +225,9 @@
   left: -6.93px;
 
   @media (min-width: $tablet-width) {
+    width: 15px;
+    height: 11px;
+
     bottom: 69px;
     left: -11.93px;
   }
@@ -194,6 +238,9 @@
   bottom: 5px;
 
   @media (min-width: $tablet-width) {
+    width: 15px;
+    height: 10px;
+
     right: 13.93px;
     bottom: 6px;
   }
