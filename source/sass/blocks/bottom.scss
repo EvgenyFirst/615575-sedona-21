@@ -11,8 +11,6 @@
   justify-items: center;
   grid-template-rows: 1fr 1fr 1fr;
 
-  background-color: wheat;
-
   // outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
   // outline-offset: -3px; // специальные цыета для рамок по заданию
 
@@ -150,6 +148,12 @@
 .bottom__social-link-facebook {
   width: 47px;
   height: 48px;
+}
+
+.bottom__social-twitter-pic,
+.bottom__social-facebook-pic,
+.bottom__social-youtube-pic {
+  fill: $white-color;
 }
 
 .bottom__developer {

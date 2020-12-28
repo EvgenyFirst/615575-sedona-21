@@ -38,11 +38,13 @@
             </a>
           </li>
           <li class="menu__items menu__items-logo">
+            <p class="menu__items-logo__mobile menu__items-logo-tablet-desktop">
+              Логотип «Седона»
+            </p>
             <a class="menu__logo" href="index.html">
-              <picture>
-                <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <img src="img/logotype-tablet.svg" alt="Логотип «Седона»">
-              </picture>
+              <svg width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#pic-logo-sedona-tablet"></use>
+              </svg>
             </a>
           </li>
           <li class="menu__items">
@@ -61,15 +63,27 @@
     </div>
   </header>
   <!-- Навигационное меню (закрытое) start -->
-  <div class="menu-hide">
+  <div class="menu-hide menu-hide-hidden">
     <!--  menu-hide__hide-top -->
-    <div class="menu-hide__hide menu-hide__hide-add">
+    <div class="menu-hide__hide">
       <!--  menu-hide__hide-add -->
-      <a class="menu-hide__logo" href="index.html">
-        <img class="menu-hide__pic" src="img/logotype-mobile.svg" alt="Логотип «Седона»">
+      <p class="visually-hidden">
+        Логотип «Седона»
+      </p>
+      <a class="menu-hide__logo menu-hide__logo-hidden" href="index.html">
+        <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
+        </svg>
       </a>
-      <button class="menu-hide__button-burger" type="button">
-        <img class="menu-hide__burger" src="img/icon-menu.svg" alt="Кнопка меню «бургер»">
+
+      <p class="visually-hidden">
+        Кнопка меню «бургер»
+      </p>
+      <button class="menu-hide__button-burger menu-hide__burger-hidden" type="button">
+        <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#pic-btn-burger"></use>
+        </svg>
+        <!-- menu-hide__burger-hidden -->
       </button>
     </div>
   </div>
@@ -83,54 +97,42 @@
         Добро пожаловать в «Седону»
       </h2>
       <div class="welcome__wrapper">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/welcome-desktop.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/welcome-tablet.svg">
-          <img class="welcome__welcome" src="img/welcome.svg" alt="Welcome">
-        </picture>
+        <p class="visually-hidden">
+          Welcome to the gorgeous
+        </p>
+        <svg class="welcome__welcome" width="116" height="28" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#pic-welcome"></use>
+        </svg>
         <div class="welcome__group-gorgeous">
-          <picture>
-            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/to-the-gorgeous-line-desktop.svg">
-            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/to-the-gorgeous-line-tablet.svg">
-            <img class="welcome__line welcome__line-left" src="img/to-the-gorgeous-line.svg"
-              alt="-to the gorgeous-line">
-          </picture>
-          <picture>
-            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/to-the-gorgeous-desktop.svg">
-            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/to-the-gorgeous-tablet.svg">
-            <img class="welcome__gorgeous" src="img/to-the-gorgeous.svg" alt="to the gorgeous">
-          </picture>
-          <picture>
-            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/to-the-gorgeous-line-desktop.svg">
-            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/to-the-gorgeous-line-tablet.svg">
-            <img class="welcome__line welcome__line-right" src="img/to-the-gorgeous-line.svg"
-              alt="to the gorgeous-line-">
-          </picture>
+          <svg class="welcome__line welcome__line-left" width="18" height="3" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#pic-welcome-line"></use>
+          </svg>
+          <svg class="welcome__gorgeous" width="108" height="19" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#pic-welcome-gorgeous"></use>
+          </svg>
+          <svg class="welcome__line welcome__line-right" width="18" height="3" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#pic-welcome-line"></use>
+          </svg>
         </div>
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/sedona-header-background-desktop.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/sedona-header-background-tablet.svg">
-          <img class="welcome__sedona" src="img/sedona-header-background.svg" alt="«Sedona»">
-        </picture>
+        <p class="visually-hidden">
+          Sedona!
+        </p>
+        <svg class="welcome__sedona" width="282" height="49" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#pic-welcome-sedona"></use>
+        </svg>
         <div class="welcome__group-canyon">
-          <picture>
-            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/quotes-up-desktop.svg">
-            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/quotes-up-tablet.svg">
-            <img class="welcome__quotes welcome__quotes-top" src="img/quotes-up.svg" alt="Кавычки">
-          </picture>
-          <picture>
-            <source media="(min-width: 1200px)" type="image/svg+xml"
-              srcset="img/because-the-grand-canyon-sucks-desktop.svg">
-            <source media="(min-width: 768px)" type="image/svg+xml"
-              srcset="img/because-the-grand-canyon-sucks-tablet.svg">
-            <img class="welcome__canyon" src="img/because-the-grand-canyon-sucks.svg"
-              alt="«Because the grand canyon sucks!»">
-          </picture>
-          <picture>
-            <source media="(min-width: 1200px)" type="image/svg+xml" srcset="img/quotes-down-desktop.svg">
-            <source media="(min-width: 768px)" type="image/svg+xml" srcset="img/quotes-down-tablet.svg">
-            <img class="welcome__quotes welcome__quotes-bottom" src="img/quotes-up.svg" alt="Кавычки">
-          </picture>
+          <p class="visually-hidden">
+            Because the grand canyon sucks!
+          </p>
+          <svg class="welcome__quotes welcome__quotes-top" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#icon-quotes-top"></use>
+          </svg>
+          <svg class="welcome__canyon" width="174" height="46" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#pic-because-the-grand-canyon-sucks"></use>
+          </svg>
+          <svg class="welcome__quotes welcome__quotes-bottom" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#icon-quotes-bottom"></use>
+          </svg>
         </div>
       </div>
     </section>
@@ -159,7 +161,6 @@
           <div class="reasons__items-special reasons__items-block-inner">
             <span class="reasons__triangle-bottom"></span>
             <div class="reasons__items-block reasons__items-block-special-one">
-              <!--  reasons__items-block-special -->
               <h3 class="reasons__items-header">
                 НАСТОЯЩИЙ<br class="reasons__items-br"> ГОРОДОК
               </h3>
@@ -178,11 +179,10 @@
           <ul class="reasons__itemadd">
             <li class="reasons__itemadd-item reasons__itemadd-item-home">
               <div class="reasons__itemadd-item-group">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/icon-house-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/icon-house-tablet.svg">
-                  <img class="reasons__itemadd-item-pic" src="img/icon-house.svg" alt="Жилье">
-                </picture>
+                <svg class="reasons__itemadd-item-pic reasons__itemadd-item-pic-house" width="39" height="37"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-house"></use>
+                </svg>
                 <h4 class="reasons__itemadd-item-header reasons__itemadd-item-header-home">
                   Жилье
                 </h4>
@@ -195,11 +195,10 @@
             </li>
             <li class="reasons__itemadd-item reasons__itemadd-item-location-three">
               <div class="reasons__itemadd-item-group">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/icon-gift-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/icon-gift-tablet.svg">
-                  <img class="reasons__itemadd-item-pic" src="img/icon-gift.svg" alt="Сувениры">
-                </picture>
+                <svg class="reasons__itemadd-item-pic reasons__itemadd-item-pic-gift" width="32" height="38"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-gift"></use>
+                </svg>
                 <h4 class="reasons__itemadd-item-header reasons__itemadd-item-header-gift">
                   СУВЕНИРЫ
                 </h4>
@@ -211,12 +210,10 @@
             </li>
             <li class="reasons__itemadd-item reasons__itemadd-item-location-two">
               <div class="reasons__itemadd-item-group">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/icon-burger-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/icon-burger-tablet.svg">
-                  <img class="reasons__itemadd-item-pic reasons__itemadd-item-pic-eat" src="img/icon-burger.svg"
-                    alt="Еда">
-                </picture>
+                <svg class="reasons__itemadd-item-pic reasons__itemadd-item-pic-eat" width="40" height="35"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-burger"></use>
+                </svg>
                 <h4
                   class="reasons__itemadd-item-header reasons__itemadd-item-header-set reasons__itemadd-item-header-burger">
                   ЕДА
@@ -262,10 +259,12 @@
             <h3 class="reasons__items-header reasons__items-header-add reasons__items-block-add-three">
               НЕБОЛЬШАЯ<br class="reasons__peace-road-people"> ПЛОЩАДЬ
             </h3>
-            <h4 class="reasons__items-number reasons__items-number-add reasons__items-block-add-three">
+            <h4
+              class="reasons__items-number reasons__items-number-add reasons__items-block-add-three reasons__items-block-add-three-number">
               — №3 —
             </h4>
-            <p class="reasons__items-info reasons__items-info-add reasons__items-block-add-three">
+            <p
+              class="reasons__items-info reasons__items-info-add reasons__items-block-add-three reasons__items-block-add-three-info">
               ВСЕ интересные места находятся
               очень близко
             </p>
@@ -276,7 +275,8 @@
         <!-- — №4 — start -->
         <div class="reasons__items-two reasons__items-wrapper-main">
           <div class="reasons__items-block reasons__items-block-add reasons__items-inner-main">
-            <h3 class="reasons__items-header reasons__items-header-add reasons__items-block-add-four">
+            <h3
+              class="reasons__items-header reasons__items-header-add reasons__items-block-add-four reasons__items-block-add-four-road">
               КРАСИВАЯ<br class="reasons__peace-road-people"> ДОРОГА
             </h3>
             <h4
@@ -293,7 +293,7 @@
         <!-- — №4 — end -->
 
         <!-- — №5 — start -->
-        <div class="reasons__items-three reasons__items-wrapper-main">
+        <div class="reasons__items-three reasons__items-wrapper-main reasons__items-wrapper-main-five">
           <div class="reasons__items-block reasons__items-inner-main">
             <h3
               class="reasons__items-header reasons__items-header-add reasons__items-header-people reasons__items-block-add-five">
@@ -343,11 +343,20 @@
         Карта
       </h2>
       <picture>
+        <source type="image/webp" media="(min-width: 1200px)"
+          srcset="img/map-desktop-1x.webp 1x, img/map-desktop-2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/map-tablet-1x.webp 1x, img/map-tablet-2x.webp 2x">
+        <source type="image/webp" srcset="img/map-mobile-1x.webp 1x, img/map-mobile-2x.webp 2x">
+
         <source media="(min-width: 1200px)" srcset="img/map-desktop-1x.jpg 1x, img/map-desktop-2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/map-tablet-1x.jpg 1x, img/map-tablet-2x.jpg 2x">
         <img class="map__pic" src="img/map-mobile-1x.jpg" srcset="img/map-mobile-2x.jpg 2x" alt="Карта">
       </picture>
-      <img class="map__marker" src="img/map-marker.svg" width="27" height="27" alt="Маркер">
+      <svg class="map__marker" width="27" height="27" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#marker-pic"></use>
+      </svg>
+
     </section>
     <!-- Карта end -->
   </main>
@@ -375,7 +384,10 @@
             <p class="visually-hidden">
               Твиттер
             </p>
-            <img class="bottom__social-pic" src="img/icon-twitter.svg" width="17" height="14" alt="Твиттер">
+            <svg class="bottom__social-pic bottom__social-twitter-pic" width="18" height="15"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#twitter-pic"></use>
+            </svg>
           </a>
         </li>
         <li class="bottom__social-item">
@@ -383,7 +395,10 @@
             <p class="visually-hidden">
               Фейсбук
             </p>
-            <img class="bottom__social-pic" src="img/icon-facebook.svg" width="8" height="18" alt="Фейсбук">
+            <svg class="bottom__social-pic bottom__social-facebook-pic" width="9" height="19"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#facebook-pic"></use>
+            </svg>
           </a>
         </li>
         <li class="bottom__social-item">
@@ -391,7 +406,10 @@
             <p class="visually-hidden">
               Ютуб
             </p>
-            <img class="bottom__social-pic" src="img/icon-youtube.svg" width="19" height="14" alt="Ютуб">
+            <svg class="bottom__social-pic bottom__social-youtube-pic" width="20" height="14"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#youtube-pic"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -410,11 +428,8 @@
         <p class="visually-hidden">
           Разработано HTMLAcademy
         </p>
-        <svg class="bottom__developer-pic" width="27" height="35" viewBox="0 0 27 35" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-            fill="black" />
+        <svg class="bottom__developer-pic" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#developer-pic"></use>
         </svg>
       </a>
     </section>
