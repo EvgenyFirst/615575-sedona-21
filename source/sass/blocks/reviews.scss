@@ -12,6 +12,14 @@
   }
 }
 
+.reviews-no-js {
+  margin-top: -57px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -58px;
+  }
+}
+
 .reviews__triangle {
   display: block;
   background-image: url("../img/triangle-top.svg");
@@ -194,7 +202,7 @@
 
       order: 1;
 
-      margin-right: 0;
+      margin-right: -2px;
 
       position: relative;
       top: 1px;
@@ -417,6 +425,14 @@
     top: 35px;
     right: 0;
     bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
+    }
   }
 
   &::before {
@@ -431,25 +447,15 @@
 
     position: absolute;
     right: 17px;
-    bottom: 15px;
+    bottom: 12px;
 
     z-index: 1;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      top: 36px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
 
     padding-top: 1px;
-
-    &::after {
-      top: 34px;
-    }
   }
 }
 
@@ -465,8 +471,8 @@
   @media (min-width: $desktop-width) {
     padding-right: 26px;
 
-    top: 53px;
-    left: -179px;
+    top: 56px;
+    left: -164px;
   }
 }
 
@@ -480,6 +486,9 @@
 
   @media (min-width: $desktop-width) {
     min-width: 201px;
+
+    position: relative;
+    top: 11px;
   }
 }
 
@@ -653,7 +662,7 @@
   }
 }
 
-.reviews__label-radio {
+.reviews__input-radio {
   margin-right: 26px;
 
   &:hover {
@@ -661,7 +670,7 @@
   }
 }
 
-.reviews__input-radio {
+.reviews__label-radio {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -669,10 +678,90 @@
   color: $black-color;
   text-transform: none;
 
+  user-select: none;
+
   &:hover {
     cursor: pointer;
   }
 }
+
+//
+
+.reviews__input-radio-visually-hiddenn:not(:focus):not(:active),
+.reviews__input-radio-visually-hiddenn {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.reviews__data-custom-radio {
+  .reviews__label-radio {
+    position: relative;
+
+    &::before {
+      content: " ";
+      display: inline-block;
+
+      width: 52px;
+      height: 52px;
+
+      position: absolute;
+      top: -11px;
+      left: -77px;
+
+      border-radius: 50%;
+
+      background-color: $lite-grey-one-color;
+
+      @media (min-width: $tablet-width) {
+        top: -15px;
+        left: -72px;
+      }
+    }
+
+    &::after {
+      content: " ";
+      display: inline-block;
+
+      width: 22px;
+      height: 22px;
+
+      position: absolute;
+      top: 4px;
+      left: -61px;
+
+      background-image: url("../img/radio-on.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 0;
+        left: -57px;
+      }
+    }
+  }
+}
+
+.reviews__input-radio-visually-hidden {
+  &:checked + .reviews__label-radio {
+    &::after {
+      content: " ";
+    }
+  }
+
+  + .reviews__label-radio {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+//
 
 .reviews__style-attractions {
   padding-top: 15px;
@@ -702,7 +791,7 @@
   }
 }
 
-.reviews__label-checkbox {
+.reviews__input-checkbox {
   margin-right: 24px;
 
   &:hover {
@@ -710,7 +799,7 @@
   }
 }
 
-.reviews__input-checkbox {
+.reviews__label-checkbox {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -718,8 +807,86 @@
   color: $black-color;
   text-transform: none;
 
+  position: relative;
+  left: 18px;
+
   &:hover {
     cursor: pointer;
+  }
+}
+
+.reviews__input-checkbox-visually-hidden:not(:focus):not(:active),
+.reviews__input-checkbox-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.reviews__data-custom-checkbox {
+  .reviews__label-checkbox {
+    position: relative;
+
+    &::before {
+      content: " ";
+      display: inline-block;
+
+      position: absolute;
+      top: -12px;
+      left: -80px;
+
+      height: 46px;
+      width: 46px;
+
+      border-radius: 5px;
+      border: 5px solid $lite-grey-one-color;
+
+      background-color: $lite-grey-one-color;
+
+      @media (min-width: $tablet-width) {
+        top: -14px;
+      }
+    }
+
+    &::after {
+      content: " ";
+      display: inline-block;
+
+      width: 24px;
+      height: 17px;
+
+      position: absolute;
+      top: 9px;
+      left: -63px;
+
+      transform: rotate(5deg);
+
+      background-image: url("../img/checkbox-on.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 5px;
+      }
+    }
+  }
+}
+
+.reviews__input-checkbox-visually-hidden {
+  &:checked + .reviews__label-checkbox {
+    &::after {
+      content: " ";
+    }
+  }
+
+  + .reviews__label-checkbox {
+    &::after {
+      content: none;
+    }
   }
 }
 
@@ -732,8 +899,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 45px;
       margin-top: 30px;
+      margin-left: 61px;
     }
   }
 
@@ -750,7 +917,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: -46px;
+      margin-left: -52px;
 
       position: relative;
       bottom: 6px;
@@ -775,7 +942,7 @@
       position: relative;
       top: 2px;
       bottom: 19px;
-      left: 25px;
+      left: 15px;
     }
   }
 
@@ -796,7 +963,7 @@
       margin-left: -17px;
 
       position: relative;
-      right: 7px;
+      right: 25px;
       bottom: -3px;
     }
   }

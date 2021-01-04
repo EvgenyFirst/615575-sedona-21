@@ -38,15 +38,20 @@
             </a>
           </li>
           <li class="menu__items menu__items-logo">
+            <p class="menu__items-logo__mobile menu__items-logo-tablet-desktop">
+              Логотип «Седона»
+            </p>
             <a class="menu__logo" href="index.html">
-              <picture>
-                <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <img src="img/logotype-tablet.svg" alt="Логотип «Седона»">
-              </picture>
+              <svg class="menu__logo-triangle-desktop" width="187" height="97" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#pic-logo-triangle-desktop"></use>
+              </svg>
+              <svg class="menu__logo-master" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#pic-logo-sedona-tablet"></use>
+              </svg>
             </a>
           </li>
-          <li class="menu__items menu__link-default">
-            <a class="menu__link">
+          <li class="menu__items">
+            <a class="menu__link menu__link-default">
               Форма Отзыва
             </a>
           </li>
@@ -61,15 +66,27 @@
     </div>
   </header>
   <!-- Навигационное меню (закрытое) start -->
-  <div class="menu-hide">
+  <div class="menu-hide menu-hide-hidden-no-js">
     <!--  menu-hide__hide-top -->
-    <div class="menu-hide__hide menu-hide__hide-add ">
+    <div class="menu-hide__hide">
       <!--  menu-hide__hide-add -->
-      <a class="menu-hide__logo" href="index.html">
-        <img class="menu-hide__pic" src="img/logotype-mobile.svg" alt="Логотип «Седона»">
+      <p class="visually-hidden">
+        Логотип «Седона»
+      </p>
+      <a class="menu-hide__logo menu-hide__logo-hidden-form-no-js" href="index.html">
+        <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
+        </svg>
       </a>
-      <button class="menu-hide__button-burger" type="button">
-        <img class="menu-hide__burger" src="img/icon-menu.svg" alt="Кнопка меню «бургер»">
+
+      <p class="visually-hidden">
+        Кнопка меню «бургер»
+      </p>
+      <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
+        <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#pic-btn-burger"></use>
+        </svg>
+        <!-- menu-hide__burger-hidden-no-js -->
       </button>
     </div>
   </div>
@@ -78,23 +95,23 @@
 
   <main class="content">
     <!-- «Седона» start -->
-    <section class="sedona">
+    <section class="sedona sedona__no-js">
       <h2 class="visually-hidden">
         «Седона»
       </h2>
-      <div class="sedona__wrapper">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1200px)"
-            srcset="img/sedona-header-background-form-desktop.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/sedona-header-background-form-tablet.svg">
-          <img src="img/sedona-header-background-form-catalog.svg" alt="«Седона»"> <!-- sedona__main -->
-        </picture>
+      <div class="sedona__wrapper sedona__wrapper-no-js">
+        <p class="visually-hidden">
+          «Седона»
+        </p>
+        <svg class="sedona__header-background-form" width="229" height="39" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#pic-sedona-header-background-form-catalog"></use>
+        </svg> <!-- sedona__main -->
       </div>
     </section>
     <!-- «Седона» end -->
 
     <!-- Оставьте свой отзыв start -->
-    <section class="reviews">
+    <section class="reviews reviews-no-js">
       <h2 class="visually-hidden">
         Оставьте свой отзыв
       </h2>
@@ -106,12 +123,13 @@
         <p class="reviews__info">
           Помогите нашим отелям стать лучше!
           оставьте отзыв о них,<br class="reviews__info-br"> <span>а также о
-          посещенных вами
-          достопримечаттельностях</span>
+            посещенных вами
+            достопримечаттельностях</span>
         </p>
       </div>
       <div class="reviews__menu">
-        <form action="https://echo.htmlacademy.ru" method="post"> <!-- reviews__form -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <!-- reviews__form -->
           <div class="reviews__form-wrapper">
             <fieldset class="reviews__style reviews__group">
               <legend class="reviews__legend">
@@ -121,35 +139,37 @@
                 <li class="reviews__li">
                   <p class="reviews__data reviews__data-info">
                     <label class="reviews__label reviews__label-my-data" for="user-name">ИМЯ*:</label>
-                    <input class="reviews__input reviews__input-my-data reviews__input-user-name" id="user-name" type="text" name="userName" placeholder="Петр" required
-                      tabindex="0">
+                    <input class="reviews__input reviews__input-my-data reviews__input-user-name" id="user-name"
+                      type="text" name="userName" placeholder="Петр" required tabindex="0">
                   </p>
                 </li>
                 <li class="reviews__li">
                   <p class="reviews__data reviews__data-info">
                     <label class="reviews__label reviews__label-my-data" for="user-surname">ФАМИЛИЯ*:</label>
-                    <input class="reviews__input reviews__input-my-data reviews__input-user-surname" id="user-surname" type="text" name="userSurname" placeholder="Иванов"
-                      required tabindex="0">
+                    <input class="reviews__input reviews__input-my-data reviews__input-user-surname" id="user-surname"
+                      type="text" name="userSurname" placeholder="Иванов" required tabindex="0">
                   </p>
                 </li>
                 <li class="reviews__li">
                   <p class="reviews__data reviews__data-info">
                     <label class="reviews__label reviews__label-my-data" for="user-patronymic">Отчество:</label>
-                    <input class="reviews__input reviews__input-special reviews__input-my-data reviews__input-user-patronymic" id="user-patronymic" type="text"
-                      name="userPatronymic" placeholder="Александрович" tabindex="0">
+                    <input
+                      class="reviews__input reviews__input-special reviews__input-my-data reviews__input-user-patronymic"
+                      id="user-patronymic" type="text" name="userPatronymic" placeholder="Александрович" tabindex="0">
                   </p>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="reviews__style reviews__style-group reviews__style-contact reviews__group">
-              <legend class="reviews__legend reviews__legend-contact"> <!-- reviews__legend-group -->
+              <legend class="reviews__legend reviews__legend-contact">
                 Контактная информация:
               </legend>
               <ul class="reviews__items reviews__items-contact">
                 <li class="reviews__li">
                   <p class="reviews__data reviews__data-contact reviews__data-phone">
-                    <label class="reviews__label reviews__label-contact" for="user-phone"><span class="reviews__label-contact-hidden">Контактный</span> телефон*:</label>
-                    <input class="reviews__input reviews__input-contact" id="user-phone" type="text" name="userPhone"
+                    <label class="reviews__label reviews__label-contact" for="user-phone"><span
+                        class="reviews__label-contact-hidden">Контактный</span> телефон*:</label>
+                    <input class="reviews__input reviews__input-contact" id="user-phone" type="tel" name="userPhone"
                       placeholder="Введите телефон" required tabindex="0">
                   </p>
                 </li>
@@ -169,58 +189,60 @@
               </legend>
               <ul class="reviews__items reviews__items-emotions">
                 <li class="reviews__li reviews__li-emotions">
-                  <p class="reviews__data">
-                    <input class="reviews__label-radio" value="positive" type="radio" name="impression"
-                      id="filter-positive" checked>
-                    <label class="reviews__input-radio" for="filter-positive">Скорее положительное</label>
+                  <p class="reviews__data reviews__data-custom-radio">
+                    <input class="reviews__input-radio reviews__input-radio-visually-hidden" value="positive"
+                      type="radio" name="impression" id="filter-positive" checked>
+                    <label class="reviews__label-radio" for="filter-positive">Скорее положительное</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-emotions">
-                  <p class="reviews__data">
-                    <input class="reviews__label-radio" value="negative" type="radio" name="impression"
-                      id="filter-negative">
-                    <label class="reviews__input-radio" for="filter-negative">Скорее отрицательное</label>
+                  <p class="reviews__data reviews__data-custom-radio">
+                    <input class="reviews__input-radio reviews__input-radio-visually-hidden" value="negative"
+                      type="radio" name="impression" id="filter-negative">
+                    <label class="reviews__label-radio" for="filter-negative">Скорее отрицательное</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-emotions">
-                  <p class="reviews__data">
-                    <input class="reviews__label-radio" value="hard" type="radio" name="impression" id="filter-hard">
-                    <label class="reviews__input-radio" for="filter-hard">Затрудняюсь ответить</label>
+                  <p class="reviews__data reviews__data-custom-radio">
+                    <input class="reviews__input-radio reviews__input-radio-visually-hidden" value="hard" type="radio"
+                      name="impression" id="filter-hard">
+                    <label class="reviews__label-radio" for="filter-hard">Затрудняюсь ответить</label>
                   </p>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="reviews__style reviews__style-attractions reviews__style-group reviews__group">
-              <legend class="reviews__legend reviews__legend-attractions reviews__legend-special"> <!-- reviews__legend-group -->
+              <legend class="reviews__legend reviews__legend-attractions reviews__legend-special">
+                <!-- reviews__legend-group -->
                 посещенные достопримечательности:
               </legend>
               <ul class="reviews__items reviews__items-place">
                 <li class="reviews__li reviews__li-attractions">
-                  <p class="reviews__data">
-                    <input class="reviews__label-checkbox" value="bridge" type="checkbox" name="emotion"
-                      id="filter-bridge" checked>
-                    <label class="reviews__input-checkbox" for="filter-bridge">Мост Дьявола</label>
+                  <p class="reviews__data reviews__data-custom-checkbox">
+                    <input class="reviews__input-checkbox reviews__input-checkbox-visually-hidden" value="bridge"
+                      type="checkbox" name="emotion" id="filter-bridge" checked>
+                    <label class="reviews__label-checkbox" for="filter-bridge">Мост Дьявола</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-attractions">
-                  <p class="reviews__data">
-                    <input class="reviews__label-checkbox" value="mountain" type="checkbox" name="emotion"
-                      id="filter-mountain" checked>
-                    <label class="reviews__input-checkbox" for="filter-mountain">Гора-Колокол</label>
+                  <p class="reviews__data reviews__data-custom-checkbox">
+                    <input class="reviews__input-checkbox reviews__input-checkbox-visually-hidden" value="mountain"
+                      type="checkbox" name="emotion" id="filter-mountain" checked>
+                    <label class="reviews__label-checkbox" for="filter-mountain">Гора-Колокол</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-attractions">
-                  <p class="reviews__data">
-                    <input class="reviews__label-checkbox" value="slide" type="checkbox" name="emotion"
-                      id="filter-slide" checked>
-                    <label class="reviews__input-checkbox" for="filter-slide">Слайд-парк</label>
+                  <p class="reviews__data reviews__data-custom-checkbox">
+                    <input class="reviews__input-checkbox reviews__input-checkbox-visually-hidden" value="slide"
+                      type="checkbox" name="emotion" id="filter-slide" checked>
+                    <label class="reviews__label-checkbox" for="filter-slide">Слайд-парк</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-attractions">
-                  <p class="reviews__data">
-                    <input class="reviews__label-checkbox" value="rocks" type="checkbox" name="emotion"
-                      id="filter-rocks">
-                    <label class="reviews__input-checkbox" for="filter-rocks">Красные скалы</label>
+                  <p class="reviews__data reviews__data-custom-checkbox">
+                    <input class="reviews__input-checkbox reviews__input-checkbox-visually-hidden" value="rocks"
+                      type="checkbox" name="emotion" id="filter-rocks">
+                    <label class="reviews__label-checkbox" for="filter-rocks">Красные скалы</label>
                   </p>
                 </li>
               </ul>
@@ -277,7 +299,10 @@
             <p class="visually-hidden">
               Твиттер
             </p>
-            <img class="bottom__social-pic" src="img/icon-twitter.svg" width="17" height="14" alt="Твиттер">
+            <svg class="bottom__social-pic bottom__social-twitter-pic" width="18" height="15"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#twitter-pic"></use>
+            </svg>
           </a>
         </li>
         <li class="bottom__social-item">
@@ -285,7 +310,10 @@
             <p class="visually-hidden">
               Фейсбук
             </p>
-            <img class="bottom__social-pic" src="img/icon-facebook.svg" width="8" height="18" alt="Фейсбук">
+            <svg class="bottom__social-pic bottom__social-facebook-pic" width="9" height="19"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#facebook-pic"></use>
+            </svg>
           </a>
         </li>
         <li class="bottom__social-item">
@@ -293,7 +321,10 @@
             <p class="visually-hidden">
               Ютуб
             </p>
-            <img class="bottom__social-pic" src="img/icon-youtube.svg" width="19" height="14" alt="Ютуб">
+            <svg class="bottom__social-pic bottom__social-youtube-pic" width="20" height="14"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#youtube-pic"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -312,11 +343,8 @@
         <p class="visually-hidden">
           Разработано HTMLAcademy
         </p>
-        <svg class="bottom__developer-pic" width="27" height="35" viewBox="0 0 27 35" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-            fill="black" />
+        <svg class="bottom__developer-pic" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#developer-pic"></use>
         </svg>
       </a>
     </section>

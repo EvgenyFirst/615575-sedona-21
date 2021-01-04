@@ -48,17 +48,22 @@
 }
 
 // если js не актиыен\сломался и тп
-.menu-hide__burger-hidden {
+.menu-hide__burger-hidden-no-js {
   display: none;
 }
 
-.menu-hide-hidden {
+.menu-hide-hidden-no-js {
   margin-top: -73px;
 }
 
-.menu-hide__logo-hidden {
+.menu-hide__logo-hidden-no-js {
   position: relative;
   top: 59px;
+}
+
+.menu-hide__logo-hidden-form-no-js {
+  position: relative;
+  top: 55px;
 }
 // если js не актиыен\сломался и тп
 
