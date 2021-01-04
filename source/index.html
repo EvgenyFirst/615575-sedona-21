@@ -42,7 +42,10 @@
               Логотип «Седона»
             </p>
             <a class="menu__logo" href="index.html">
-              <svg width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+              <svg class="menu__logo-triangle-desktop" width="187" height="97" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#pic-logo-triangle-desktop"></use>
+              </svg>
+              <svg class="menu__logo-master" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#pic-logo-sedona-tablet"></use>
               </svg>
             </a>
@@ -63,14 +66,14 @@
     </div>
   </header>
   <!-- Навигационное меню (закрытое) start -->
-  <div class="menu-hide menu-hide-hidden">
+  <div class="menu-hide menu-hide-hidden-no-js">
     <!--  menu-hide__hide-top -->
     <div class="menu-hide__hide">
       <!--  menu-hide__hide-add -->
       <p class="visually-hidden">
         Логотип «Седона»
       </p>
-      <a class="menu-hide__logo menu-hide__logo-hidden" href="index.html">
+      <a class="menu-hide__logo menu-hide__logo-hidden-no-js" href="index.html">
         <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
         </svg>
@@ -79,11 +82,11 @@
       <p class="visually-hidden">
         Кнопка меню «бургер»
       </p>
-      <button class="menu-hide__button-burger menu-hide__burger-hidden" type="button">
+      <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
         <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#pic-btn-burger"></use>
         </svg>
-        <!-- menu-hide__burger-hidden -->
+        <!-- menu-hide__burger-hidden-no-js -->
       </button>
     </div>
   </div>
