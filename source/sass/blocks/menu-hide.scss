@@ -44,6 +44,26 @@
 
   &:hover {
     cursor: pointer;
+
+    .menu-hide__ico-burger {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    .menu-hide__ico-burger {
+      opacity: 0.3;
+    }
+  }
+}
+
+.menu-hide__ico-burger {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -52,7 +72,7 @@
   display: none;
 }
 
-.menu-hide-hidden-no-js {
+.menu-hide__hidden-no-js {
   margin-top: -73px;
 }
 
@@ -63,7 +83,12 @@
 
 .menu-hide__logo-hidden-form-no-js {
   position: relative;
-  top: 55px;
+  top: 57px;
+}
+
+.menu-hide__logo-hidden-catalog-no-js {
+  position: relative;
+  top: 56px;
 }
 // если js не актиыен\сломался и тп
 

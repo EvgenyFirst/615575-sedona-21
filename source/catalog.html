@@ -32,17 +32,22 @@
               <span class="menu__link-btn-pic"></span>
             </button>
           </li>
-          <li class="menu__items">
+          <li class="menu__items  menu__items-default">
             <a class="menu__link menu__link-default">
               Фото и видео
             </a>
           </li>
           <li class="menu__items menu__items-logo">
-            <a class="menu__logo" href="index.html">
-              <picture>
-                <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <img src="img/logotype-tablet.svg" alt="Логотип «Седона»">
-              </picture>
+            <p class="menu__items-logo__mobile menu__items-logo-tablet-desktop">
+              Логотип «Седона»
+            </p>
+            <a class="menu__logo menu__logo__pic-logo-sedona" href="index.html">
+              <svg class="menu__logo-triangle-desktop" width="187" height="97" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#pic-logo-triangle-desktop"></use>
+              </svg>
+              <svg class="menu__logo-master" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#pic-logo-sedona-tablet"></use>
+              </svg>
             </a>
           </li>
           <li class="menu__items">
@@ -61,15 +66,27 @@
     </div>
   </header>
   <!-- Навигационное меню (закрытое) start -->
-  <div class="menu-hide">
+  <div class="menu-hide menu-hide__hidden-no-js">
     <!--  menu-hide__hide-top -->
-    <div class="menu-hide__hide menu-hide__hide-add ">
+    <div class="menu-hide__hide">
       <!--  menu-hide__hide-add -->
-      <a class="menu-hide__logo" href="index.html">
-        <img class="menu-hide__pic" src="img/logotype-mobile.svg" alt="Логотип «Седона»">
+      <p class="visually-hidden">
+        Логотип «Седона»
+      </p>
+      <a class="menu-hide__logo menu-hide__logo-hidden-no-js" href="index.html">
+        <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+          <use class="menu-hide__pic-logo-sedona" xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
+        </svg>
       </a>
-      <button class="menu-hide__button-burger" type="button">
-        <img class="menu-hide__burger" src="img/icon-menu.svg" alt="Кнопка меню «бургер»">
+
+      <p class="visually-hidden">
+        Кнопка меню «бургер»
+      </p>
+      <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
+        <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+          <use class="menu-hide__ico-burger" xlink:href="img/sprite.svg#pic-btn-burger"></use>
+        </svg>
+        <!-- menu-hide__burger-hidden-no-js -->
       </button>
     </div>
   </div>
@@ -78,17 +95,14 @@
 
   <main class="content">
     <!-- «Седона» start -->
-    <section class="city">
+    <section class="city city__no-js">
       <h2 class="visually-hidden">
         «Седона»
       </h2>
-      <div class="city__wrapper">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1200px)"
-            srcset="img/sedona-header-background-catalog-tablet.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/sedona-header-background-tablet.svg">
-          <img src="img/sedona-header-background-form-catalog.svg" alt="«Седона»"> <!-- city__main -->
-        </picture>
+      <div class="city__wrapper city__wrapper-no-js">
+        <svg class="sedona__header-background-catalog" width="229" height="39" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#pic-sedona-header-background-form-catalog"></use>
+        </svg>
       </div>
     </section>
     <!-- «Седона» end -->
@@ -98,8 +112,8 @@
       <h2 class="visually-hidden">
         Фото и видео
       </h2>
-      <span class="materials__triangle"></span>
-      <div class="materials__block">
+      <span class="materials__triangle materials__triangle-no-js"></span>
+      <div class="materials__block materials__block-no-js">
         <h1 class="materials__header">
           Фото и видео
         </h1>
@@ -125,13 +139,17 @@
               </p>
             </div>
             <div class="materials__social" tabindex="-1">
-              <button type="button" class="materials__button-like" tabindex="0">
-                <picture>
-                  <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/icon-like-desktop.svg">
-                  <img class="materials__like" src="img/icon-like.svg" alt="Лайк">
-                </picture>
-              </button>
-              <p class="materials__number">
+              <span>
+                <span class="visually-hidden">
+                  Лайк
+                </span>
+                <button type="button" class="materials__button-like" tabindex="0">
+                  <svg class="materials__like" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                    <use class="materials__ico-like" xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+              </span>
+              <p class="materials__number" tabindex="-1">
                 1350
               </p>
             </div>
@@ -154,13 +172,17 @@
                 </p>
               </div>
               <div class="materials__social">
-                <button type="button" class="materials__button-like">
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/icon-like-desktop.svg">
-                    <img class="materials__like" src="img/icon-like.svg" alt="Лайк">
-                  </picture>
-                </button>
-                <p class="materials__number">
+                <span>
+                  <span class="visually-hidden">
+                    Лайк
+                  </span>
+                  <button type="button" class="materials__button-like" tabindex="0">
+                    <svg class="materials__like" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                      <use class="materials__ico-like" xlink:href="img/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
+                </span>
+                <p class="materials__number" tabindex="-1">
                   143
                 </p>
               </div>
@@ -182,13 +204,17 @@
                 </p>
               </div>
               <div class="materials__social">
-                <button type="button" class="materials__button-like">
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/icon-like-desktop.svg">
-                    <img class="materials__like" src="img/icon-like.svg" alt="Лайк">
-                  </picture>
-                </button>
-                <p class="materials__number">
+                <span>
+                  <span class="visually-hidden">
+                    Лайк
+                  </span>
+                  <button type="button" class="materials__button-like" tabindex="0">
+                    <svg class="materials__like" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                      <use class="materials__ico-like" xlink:href="img/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
+                </span>
+                <p class="materials__number" tabindex="-1">
                   96
                 </p>
               </div>
@@ -210,12 +236,16 @@
                 </p>
               </div>
               <div class="materials__social">
-                <button type="button" class="materials__button-like">
-                  <picture>
-                    <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/icon-like-desktop.svg">
-                    <img class="materials__like" src="img/icon-like.svg" alt="Лайк">
-                  </picture>
-                </button>
+                <span>
+                  <span class="visually-hidden">
+                    Лайк
+                  </span>
+                  <button type="button" class="materials__button-like" tabindex="0">
+                    <svg class="materials__like" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                      <use class="materials__ico-like" xlink:href="img/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
+                </span>
                 <p class="materials__number">
                   254
                 </p>
@@ -236,48 +266,73 @@
           <span class="materials__lines-video-right"></span>
           <span class="materials__lines-video-left"></span>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/video-catalog-desktop-1x.webp 1x, img/video-catalog-desktop-2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-catalog-tablet-1x.jpg.webp 1x, img/video-catalog-tablet-2x.webp 2x">
+            <source type="image/webp" srcset="img/video-catalog-mobile-1x.webp 1x, img/video-catalog-mobile-2x.webp 2x">
+
             <source type="image/svg+xml" media="(min-width: 1200px)"
               srcset="img/video-catalog-desktop-1x.jpg 1x, img/video-catalog-desktop-2x.jpg 2x">
             <source type="image/svg+xml" media="(min-width: 768px)"
               srcset="img/video-catalog-tablet-1x.jpg 1x, img/video-catalog-tablet-2x.jpg 2x">
             <img class="materials__video-pic" src="img/video-catalog-mobile-1x.jpg"
-              srcset="img/video-catalog-mobile-2x.jpg 2x" alt="Пейзаж">
+              srcset="img/video-catalog-mobile-1x.jpg 1x, video-catalog-mobile-2x.jpg 2x" alt="Пейзаж">
           </picture>
         </div>
         <div class="materials__player" tabindex="0">
           <div class="materials__range">
-            <picture>
-              <source type="image/svg+xml" media="(min-width: 1200px)" srcset="img/scale-desktop.svg">
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/scale-tablet.svg">
-              <img class="materials__scale" src="img/scale-mobile.svg" alt="Шкала времени" tabindex="0">
-            </picture>
-            <button type="button" class="materials__-button-slider">
-              <picture>
-                <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/slider-tablet-desktop.svg">
-                <img src="img/slider-mobile.svg" alt="Бегунок на шкале">
-              </picture>
-            </button>
+            <span>
+              <span class="visually-hidden">
+                Шкала времени
+              </span>
+              <svg class="materials__scale" width="235" height="3" xmlns="http://www.w3.org/2000/svg" tabindex="0">
+                <use class="materials__pic-scale" xlink:href="img/sprite.svg#pic-scale"></use>
+              </svg>
+            </span>
+            <span>
+              <span class="visually-hidden">
+                Бегунок на шкале
+              </span>
+              <button type="button" class="materials__button-slider">
+                <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#ico-button-slider"></use>
+                </svg>
+              </button>
+            </span>
           </div>
           <div class="materials__navigation">
-            <button type="button" class="materials__button-navigation materials__button-navigation-refresh">
-              <picture>
-                <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/refresh-tablet-desktop.svg">
-                <img src="img/refresh-mobile.svg" alt="Обновить">
-              </picture>
-            </button>
+            <span>
+              <span class="visually-hidden">
+                Кнопка "Обновить"
+              </span>
+              <button type="button" class="materials__button-navigation materials__button-navigation-refresh">
+                <svg width="16" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <use class="materials__ico-refresh" xlink:href="img/sprite.svg#ico-refresh"></use>
+                </svg>
+              </button>
+            </span>
             <div class="materials__navigation-group">
-              <button type="button" class="materials__button-navigation materials__button-сс">
-                <picture>
-                  <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/cc-tablet-desktop.svg">
-                  <img src="img/cc-mobile.svg" alt="СС">
-                </picture>
-              </button>
-              <button type="button" class="materials__button-navigation materials__button-full">
-                <picture>
-                  <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/resize-tablet.svg">
-                  <img src="img/resize-mobile.svg" alt="На весь экран">
-                </picture>
-              </button>
+              <span>
+                <span class="visually-hidden">
+                  Кнопка "Субтитры"
+                </span>
+                <button type="button" class="materials__button-navigation materials__button-сс">
+                  <svg width="32" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <use class="materials__ico-cc" xlink:href="img/sprite.svg#ico-cc"></use>
+                  </svg>
+                </button>
+              </span>
+              <span>
+                <span class="visually-hidden">
+                  Кнопка "На весь экран"
+                </span>
+                <button type="button" class="materials__button-navigation materials__button-full">
+                  <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <use class="materials__button-ico-full" xlink:href="img/sprite.svg#ico-resize"></use>
+                  </svg>
+                </button>
+              </span>
             </div>
           </div>
         </div>
@@ -310,7 +365,10 @@
             <p class="visually-hidden">
               Твиттер
             </p>
-            <img class="bottom__social-pic" src="img/icon-twitter.svg" width="17" height="14" alt="Твиттер">
+            <svg class="bottom__social-pic bottom__social-twitter-pic" width="18" height="15"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#twitter-pic"></use>
+            </svg>
           </a>
         </li>
         <li class="bottom__social-item">
@@ -318,7 +376,10 @@
             <p class="visually-hidden">
               Фейсбук
             </p>
-            <img class="bottom__social-pic" src="img/icon-facebook.svg" width="8" height="18" alt="Фейсбук">
+            <svg class="bottom__social-pic bottom__social-facebook-pic" width="9" height="19"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#facebook-pic"></use>
+            </svg>
           </a>
         </li>
         <li class="bottom__social-item">
@@ -326,7 +387,10 @@
             <p class="visually-hidden">
               Ютуб
             </p>
-            <img class="bottom__social-pic" src="img/icon-youtube.svg" width="19" height="14" alt="Ютуб">
+            <svg class="bottom__social-pic bottom__social-youtube-pic" width="20" height="14"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#youtube-pic"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -345,17 +409,15 @@
         <p class="visually-hidden">
           Разработано HTMLAcademy
         </p>
-        <svg class="bottom__developer-pic" width="27" height="35" viewBox="0 0 27 35" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-            fill="black" />
+        <svg class="bottom__developer-pic" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
+          <use class="bottom__developer-ico" xlink:href="img/sprite.svg#developer-pic"></use>
         </svg>
       </a>
     </section>
     <!-- Разработано HTMLAcademy end -->
   </footer>
   <!-- Подвал сайта end -->
+
 
 </body>
 

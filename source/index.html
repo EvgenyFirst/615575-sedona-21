@@ -23,7 +23,7 @@
       <nav class="menu__nav">
         <!-- menu__hidden -->
         <ul class="menu__nav-block">
-          <li class="menu__items menu__items-btn-close">
+          <li class="menu__items menu__items-btn-close menu__items-default">
             <!-- Кнопка для закрытия навигационного меню будет реализовано псевдоэлементами-->
             <a class="menu__link menu__link-default">
               Главная
@@ -41,7 +41,7 @@
             <p class="menu__items-logo__mobile menu__items-logo-tablet-desktop">
               Логотип «Седона»
             </p>
-            <a class="menu__logo" href="index.html">
+            <a class="menu__logo menu__logo__pic-logo-sedona" href="index.html">
               <svg class="menu__logo-triangle-desktop" width="187" height="97" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#pic-logo-triangle-desktop"></use>
               </svg>
@@ -66,7 +66,7 @@
     </div>
   </header>
   <!-- Навигационное меню (закрытое) start -->
-  <div class="menu-hide menu-hide-hidden-no-js">
+  <div class="menu-hide menu-hide__hidden-no-js">
     <!--  menu-hide__hide-top -->
     <div class="menu-hide__hide">
       <!--  menu-hide__hide-add -->
@@ -75,7 +75,7 @@
       </p>
       <a class="menu-hide__logo menu-hide__logo-hidden-no-js" href="index.html">
         <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
+          <use class="menu-hide__pic-logo-sedona" xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
         </svg>
       </a>
 
@@ -84,7 +84,8 @@
       </p>
       <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
         <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#pic-btn-burger"></use>
+          <!--  menu-hide__burger-hidden-no-js -->
+          <use class="menu-hide__ico-burger" xlink:href="img/sprite.svg#pic-btn-burger"></use>
         </svg>
         <!-- menu-hide__burger-hidden-no-js -->
       </button>
@@ -334,9 +335,9 @@
           предложения гостиниц в седоне
         </p>
       </div>
-      <a class="interesting__link" href="#">
-        НАЙТИ гостиницу
-      </a>
+      <button class="interesting__button" type="button">
+        <span class="interesting__button-special">НАЙТИ гостиницу</span>
+      </button>
     </section>
     <!-- ЗАИНТЕРЕСОВАЛИСЬ? end -->
 
@@ -432,7 +433,7 @@
           Разработано HTMLAcademy
         </p>
         <svg class="bottom__developer-pic" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#developer-pic"></use>
+          <use class="bottom__developer-ico" xlink:href="img/sprite.svg#developer-pic"></use>
         </svg>
       </a>
     </section>

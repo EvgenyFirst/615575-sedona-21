@@ -96,14 +96,17 @@
   }
 }
 
-.interesting__link {
+.interesting__button {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   color: $white-color;
+
+  width: 100%;
 
   margin-top: 14px;
 
@@ -113,7 +116,31 @@
   display: flex;
   justify-content: center;
 
+  border: none;
+
   background-color: $lite-blue-color;
+
+  &:hover {
+    cursor: pointer;
+
+    background-color: $dark-blue-color;
+  }
+
+  &:focus-within {
+    background-color: $darker-blue-one-color;
+
+    .interesting__button-special {
+      opacity: 0.3;
+    }
+  }
+
+  &:disabled {
+    background-color: $very-light-grey-color;
+
+    .interesting__button-special {
+      opacity: 1;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 457px;
