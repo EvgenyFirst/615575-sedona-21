@@ -24,11 +24,19 @@
 
   max-width: 1201px;
   min-width: 320px;
-  height: 57px;
+  height: 58px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/triangle-top-tablet-desktop.svg");
     max-width: 1200px;
+  }
+}
+
+.materials__triangle-no-js {
+  padding-top: 116px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
   }
 }
 
@@ -50,6 +58,14 @@
     padding-bottom: 64px;
 
     background-color: $white-color;
+  }
+}
+
+.materials__block-no-js {
+  margin-top: -39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
   }
 }
 
@@ -250,6 +266,7 @@
   margin-top: -21px;
   margin-left: -9px;
 
+  padding-top: 19px;
   padding-right: 1px;
 
   background: none;
@@ -272,6 +289,18 @@
   padding-right: 14px;
   padding-left: 23px;
 
+  &:hover {
+    .materials__ico-like {
+      fill: $lighter-blue-color;
+    }
+  }
+
+  &:active {
+    .materials__ico-like {
+      fill: $lite-blue-color;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 23px;
     min-height: 21px;
@@ -280,8 +309,30 @@
     padding-left: 0;
 
     position: absolute;
-    top: 37px;
+    top: 19px;
     right: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+  }
+}
+
+.materials__ico-like {
+  fill-opacity: 0.3;
+  fill: $black-color;
+
+  &:hover {
+    fill: $lighter-blue-color;
+  }
+
+  &:active {
+    fill: $lite-blue-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill-opacity: 1;
+    fill: $white-color;
   }
 }
 
@@ -724,11 +775,40 @@
 
 .materials__scale {
   position: absolute;
-  top: 21px;
+  top: 22px;
   left: 22px;
+
+  background-color: $white-color;
+
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    width: 389px;
+    height: 3px;
+
+    top: 24px;
+    left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+
+    top: 22px;
+    left: 17px;
+  }
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.materials__pic-scale {
+  @media (min-width: $tablet-width) {
+    width: 389px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
   }
 }
 
@@ -782,43 +862,206 @@
 
 .materials__button-navigation-refresh {
   position: absolute;
+  bottom: 21px;
   left: 20px;
+
+  &:hover {
+    .materials__ico-refresh {
+      fill: $black-special-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     left: 29px;
+
+    .materials__ico-refresh {
+      fill: $white-color;
+    }
+
+    &:hover {
+      .materials__ico-refresh {
+        fill: $white-color;
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      .materials__ico-refresh {
+        fill: $white-color;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.materials__ico-refresh,
+.materials__ico-cc,
+.materials__ico-resize {
+  fill: $wet-asphalt-color;
+
+  @media (min-width: $tablet-width) {
+    fill: $white-color;
+  }
+}
+
+.materials__ico-refresh {
+  &:hover {
+    fill: $black-special-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: $white-color;
+
+    &:hover {
+      fill: $white-color;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: $white-color;
+      opacity: 0.3;
+    }
   }
 }
 
 .materials__button-сс {
   position: absolute;
-  left: 95px;
+  left: 57px;
+
+  &:hover {
+    .materials__ico-cc {
+      fill: $black-special-color;
+
+      @media (min-width: $tablet-width) {
+        fill: $white-color;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &:active {
+    .materials__ico-cc {
+      opacity: 0.3;
+
+      @media (min-width: $tablet-width) {
+        fill: $white-color;
+        opacity: 0.3;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    left: 1px;
+    left: -136px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 35px;
+    bottom: 7px;
+    left: -141px;
+  }
+}
+
+.materials__ico-cc {
+  &:hover {
+    fill: $black-special-color;
+
+    @media (min-width: $tablet-width) {
+      fill: $white-color;
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      fill: $white-color;
+      opacity: 0.3;
+    }
   }
 }
 
 .materials__button-full {
   position: absolute;
-  bottom: 4px;
-  left: 159px;
+  bottom: 6px;
+  left: 121px;
+
+  &:hover {
+    .materials__button-ico-full {
+      fill: $black-special-color;
+    }
+
+    @media (min-width: $tablet-width) {
+      fill: $white-color;
+
+      opacity: 60%;
+    }
+  }
+
+  &:active {
+    .materials__button-ico-full {
+      opacity: 0.3;
+
+      @media (min-width: $tablet-width) {
+        fill: $white-color;
+
+        opacity: 30%;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    bottom: 4px;
-    left: 65px;
+    bottom: 6px;
+    left: -73px;
   }
 
   @media (min-width: $desktop-width) {
     bottom: 7px;
-    left: 96px;
+    left: -78px;
   }
 }
 
-.materials__-button-slider {
+.materials__button-ico-full {
+  fill: $wet-asphalt-color;
+
+  @media (min-width: $tablet-width) {
+    fill: $white-color;
+  }
+
+  &:hover {
+    fill: $black-special-color;
+
+    @media (min-width: $tablet-width) {
+      fill: $white-color;
+
+      opacity: 60%;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      fill: $white-color;
+
+      opacity: 30%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 16px;
+    height: 20px;
+  }
+}
+
+.materials__button-slider {
   position: absolute;
   top: 15px;
   left: 52px;

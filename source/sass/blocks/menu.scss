@@ -57,6 +57,42 @@
   border-top: 1px solid $lighter-blue-color;
   border-bottom: 1px solid $darker-blue-color;
 
+  &:hover {
+    cursor: pointer;
+
+    background-color: $dark-blue-color;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
+  }
+
+  &:active {
+    background-color: $darker-blue-one-color;
+
+    @media (min-width: $tablet-width) {
+      color: $lite-black-one-color;
+
+      background-color: transparent;
+    }
+
+    .menu__link {
+      opacity: 0.3;
+
+      @media (min-width: $tablet-width) {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:focus-within {
+    @media (min-width: $tablet-width) {
+      color: $black-color;
+
+      opacity: 0.3;
+    }
+  }
+
   &:nth-child(1) {
     @media (min-width: $tablet-width) {
       position: relative;
@@ -121,6 +157,12 @@
   }
 }
 
+.menu__items-default {
+  &:hover {
+    cursor: default;
+  }
+}
+
 .menu__items-btn-close {
   position: relative;
 
@@ -133,6 +175,20 @@
   line-height: 40px;
   text-decoration: none;
   color: $white-color;
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      color: $lite-blue-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      color: $lite-black-one-color;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -162,6 +218,16 @@
 
   width: 22.2px;
   height: 22.2px;
+
+  &:hover {
+    cursor: pointer;
+
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .menu__items-logo {
@@ -223,6 +289,8 @@ input[type="radio"].visually-hidden {
 
   border-bottom: none;
 
+  z-index: 1;
+
   &::after {
     content: "";
     background-image: url("../img/gradient.svg");
@@ -264,10 +332,18 @@ input[type="radio"].visually-hidden {
     width: 187px;
     height: 97px;
 
-    background-image: url("../img/logotype-desktop.svg");
-
     position: absolute;
     right: -40px;
+  }
+}
+
+.menu__logo__pic-logo-sedona {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

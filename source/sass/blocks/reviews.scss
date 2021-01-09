@@ -327,6 +327,10 @@
   line-height: 26px;
 
   padding-right: 13px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .reviews__label-my-data {
@@ -344,6 +348,17 @@
   border: none;
 
   background-color: $very-lighter-grey-color;
+
+  &:hover {
+    background-color: $very-light-grey-color;
+  }
+
+  &:focus-within {
+    outline: 4px solid $very-light-grey-color;
+    outline-offset: -4px;
+
+    background-color: $white-color;
+  }
 
   &::placeholder {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -617,6 +632,8 @@
   &:first-child {
     padding-left: 20px;
 
+    z-index: 1;
+
     @media (min-width: $tablet-width) {
       padding-left: 20px;
 
@@ -709,14 +726,15 @@
       content: " ";
       display: inline-block;
 
-      width: 52px;
-      height: 52px;
+      width: 43px;
+      height: 43px;
 
       position: absolute;
       top: -11px;
       left: -77px;
 
       border-radius: 50%;
+      border: 5px solid $lite-grey-one-color;
 
       background-color: $lite-grey-one-color;
 
@@ -742,6 +760,24 @@
       @media (min-width: $tablet-width) {
         top: 0;
         left: -57px;
+      }
+    }
+
+    &:hover {
+      &::before {
+        border: 5px solid $very-light-grey-color;
+        background-color: $very-light-grey-color;
+      }
+    }
+
+    &:active {
+      &::before {
+        border: 5px solid $dark-grey-color;
+        background-color: $dark-grey-color;
+      }
+
+      &::after {
+        opacity: 0.3;
       }
     }
   }
@@ -871,6 +907,26 @@
 
       @media (min-width: $tablet-width) {
         top: 5px;
+      }
+    }
+
+    &:hover {
+      &::before {
+        border: 5px solid $very-light-grey-color;
+
+        background-color: $very-light-grey-color;
+      }
+    }
+
+    &:active {
+      &::before {
+        border: 5px solid $dark-grey-color;
+
+        background-color: $dark-grey-color;
+      }
+
+      &::after {
+        opacity: 0.3;
       }
     }
   }
@@ -1167,6 +1223,17 @@
 
   &:hover {
     cursor: pointer;
+
+    background-color: $dark-blue-color;
+  }
+
+  &:active,
+  &:focus-within {
+    background-color: $darker-blue-one-color;
+
+    .reviews__pin-special {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
