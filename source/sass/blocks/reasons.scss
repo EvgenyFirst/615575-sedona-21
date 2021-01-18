@@ -727,20 +727,23 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 
+    min-height: 242px;
+
     margin-top: -132px;
 
-    padding-top: 20px;
+    padding-top: 11px;
     padding-bottom: -11px;
 
-    min-height: 242px;
+    position: relative;
+    top: 7px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 258px;
 
-    margin-top: -128px;
+    margin-top: -130px;
 
-    padding-top: 4px;
+    padding-top: 0;
   }
 }
 
@@ -776,6 +779,9 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -789,11 +795,12 @@
   padding-left: 12px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 5px;
     padding-right: 6px;
     padding-left: 6px;
 
     position: relative;
-    top: 0;
+    top: -2px;
   }
 
   @media (min-width: $tablet-fix-ten-width) {
@@ -805,7 +812,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -4px;
+    top: -3px;
   }
 }
 
@@ -816,7 +823,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -5px;
+    top: -7px;
   }
 }
 
@@ -831,7 +838,15 @@
     padding-left: 5px;
 
     position: relative;
-    top: 1px;
+    top: -3px;
+  }
+}
+
+.reasons__items-block-add-three-info-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -866,6 +881,10 @@
   position: relative;
   top: -2px;
 
+  @media (min-width: $tablet-width) {
+    top: 3px;
+  }
+
   @media (min-width: $tablet-fix-three-width) {
     padding-top: 16px;
   }
@@ -888,7 +907,7 @@
 .reasons__items-number-road {
   @media (min-width: $tablet-width) {
     position: relative;
-    top: -2px;
+    top: 1px;
     right: 2px;
   }
 
@@ -936,6 +955,19 @@
 
     top: -2px;
     left: 8px;
+  }
+}
+
+.reasons__items-info-road-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -997,7 +1029,7 @@
     padding-left: 58px;
 
     position: relative;
-    top: 23px;
+    top: 26px;
   }
 
   @media (min-width: $tablet-fix-one-width) {
@@ -1030,6 +1062,10 @@
 .reasons__peace-road-people {
   display: none;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   @media (min-width: $desktop-width) {
     display: block;
   }
@@ -1040,7 +1076,7 @@
   top: -8px;
 
   @media (min-width: $tablet-width) {
-    top: 19px;
+    top: 21px;
     right: 0;
   }
 
@@ -1088,7 +1124,7 @@
     padding-right: 46px;
     padding-left: 44px;
 
-    top: 22px;
+    top: 24px;
   }
 
   @media (min-width: $tablet-fix-one-width) {

@@ -86,3 +86,15 @@
     padding-top: 98px;
   }
 }
+
+.city__wrapper-header-background-catalog {
+    @media (min-width: $tablet-width) {
+      width: 494px;
+      height: 79px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 460px;
+      height: 80px;
+    }
+}

@@ -118,9 +118,9 @@
       </h2>
       <span class="reviews__triangle"></span>
       <div class="reviews__block">
-        <h1 class="reviews__header">
+        <h2 class="reviews__header">
           Оставьте свой отзыв
-        </h1>
+        </h2>
         <p class="reviews__info">
           Помогите нашим отелям стать лучше!
           оставьте отзыв о них,<br class="reviews__info-br"> <span>а также о
@@ -360,51 +360,53 @@
 
   <!-- Модальные окна start -->
 
-  <div class="modal__error modal__hidden">
-    <h1 class="visually-hidden">
-      Сообщение об ошибке: "Что-то пошло не так!"
-    </h1>
+  <section class="modal">
+    <div class="modal__error modal__hidden">
+      <h1 class="visually-hidden">
+        Сообщение об ошибке: "Что-то пошло не так!"
+      </h1>
 
-    <h2 class="modal__header-error">
-      Что-то пошло<br class="modal__header-error-br"> не так!
-    </h2>
-
-    <p class="modal__info-error">
-      Проверьте поля, выделенные красным,
-      скорее всегод вы забыли их заполнить
-    </p>
-
-    <div class="modal__error-wrapper">
-      <button class="modal__button-error" id="button-error" type="submit" tabindex="0">
-        ок
-      </button>
-    </div>
-  </div>
-
-  <div class="modal__ok modal__hidden">
-    <h1 class="visually-hidden">
-      Сообщение: "Ваш отзыв отправлен!"
-    </h1>
-
-    <div class="modal__ok-wtapper">
-      <h2 class="modal__header-ok">
-        Ваш отзыв отправлен!
+      <h2 class="modal__header-error">
+        Что-то пошло<br class="modal__header-error-br"> не так!
       </h2>
 
-      <p class="modal__info-ok">
-        Спасибо за ваше участие,
-        ваш отзыв уже поступил к нам.<br>
-        в ближайшее время мы
-        опубликуем его на сайте.
+      <p class="modal__info-error">
+        Проверьте поля, выделенные красным,
+        скорее всегод вы забыли их заполнить
       </p>
+
+      <div class="modal__error-wrapper">
+        <button class="modal__button-error" id="button-error" type="submit" tabindex="0">
+          ок
+        </button>
+      </div>
     </div>
 
-    <div class="modal__ok-btn-wrapper">
-      <button class="modal__button-ok" id="button-ok" type="submit" tabindex="0">
-        Закрыть окно
-      </button>
+    <div class="modal__ok modal__hidden">
+      <h1 class="visually-hidden">
+        Сообщение: "Ваш отзыв отправлен!"
+      </h1>
+
+      <div class="modal__ok-wtapper">
+        <h2 class="modal__header-ok">
+          Ваш отзыв отправлен!
+        </h2>
+
+        <p class="modal__info-ok">
+          Спасибо за ваше участие,
+          ваш отзыв уже поступил к нам.<br>
+          в ближайшее время мы
+          опубликуем его на сайте.
+        </p>
+      </div>
+
+      <div class="modal__ok-btn-wrapper">
+        <button class="modal__button-ok" id="button-ok" type="submit" tabindex="0">
+          Закрыть окно
+        </button>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- Модальные окна end -->
 

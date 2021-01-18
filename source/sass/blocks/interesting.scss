@@ -53,13 +53,13 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
 
-    margin-top: -28px;
+    margin-top: -74px;
 
     padding-left: 1px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -52px;
+    margin-top: -96px;
   }
 }
 
@@ -96,8 +96,24 @@
   }
 }
 
+.interesting__button-link {
+  text-decoration: none;
+
+  position: relative;
+  top: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 7px;
+  }
+}
+
 .interesting__button {
   width: 100%;
+  min-height: 58px;
 
   margin-top: 14px;
 
@@ -106,6 +122,16 @@
 
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+
+  text-transform: uppercase;
+  color: $white-color;
 
   border: none;
 
@@ -127,6 +153,7 @@
 
   &:disabled {
     background-color: $very-light-grey-color;
+    cursor: default;
 
     .interesting__button-special {
       opacity: 1;
@@ -135,23 +162,11 @@
 
   @media (min-width: $tablet-width) {
     width: 457px;
-
-    position: relative;
-    top: 17px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -28px;
   }
 }
 
-.interesting__button-link {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $white-color;
+.interesting__button-special {
+  display: flex;
+  justify-content: center;
+  margin-top: -45px;
 }
