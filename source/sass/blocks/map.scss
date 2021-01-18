@@ -19,17 +19,19 @@
   }
 }
 
-.map__pic {
+.map__pic-no-js {
   @media (min-width: $tablet-width) {
     height: 350px;
     object-fit: cover;
   }
 }
 
-.map__marker {
+.map__marker-no-js {
   padding-top: 160px;
 
   position: absolute;
+
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-top: 162px;
@@ -39,4 +41,23 @@
   @media (min-width: $desktop-width) {
     padding-right: 5px;
   }
+}
+
+.map__hidden {
+  display: none;
+}
+
+.map__frame {
+  border: none;
+
+  width: 100%;
+  min-height: 354px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 358px;
+  }
+}
+
+.map__frame-no-js {
+  display: none;
 }

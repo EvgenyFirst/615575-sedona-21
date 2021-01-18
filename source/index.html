@@ -6,7 +6,7 @@
   <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no, width = device-width">
   <link rel="icon" href="img/favicon-16x16.ico" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="img/favicon-32x32.ico" sizes="32x32">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -21,7 +21,6 @@
     <div class="menu__block">
       <!-- Навигационное меню (открытое) start -->
       <nav class="menu__nav">
-        <!-- menu__hidden -->
         <ul class="menu__nav-block">
           <li class="menu__items menu__items-btn-close menu__items-default">
             <!-- Кнопка для закрытия навигационного меню будет реализовано псевдоэлементами-->
@@ -64,35 +63,32 @@
       </nav>
       <!-- Навигационное меню (открытое) end -->
     </div>
-  </header>
-  <!-- Навигационное меню (закрытое) start -->
-  <div class="menu-hide menu-hide__hidden-no-js">
-    <!--  menu-hide__hide-top -->
-    <div class="menu-hide__hide">
-      <!--  menu-hide__hide-add -->
-      <p class="visually-hidden">
-        Логотип «Седона»
-      </p>
-      <a class="menu-hide__logo menu-hide__logo-hidden-no-js" href="index.html">
-        <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
-          <use class="menu-hide__pic-logo-sedona" xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
-        </svg>
-      </a>
 
-      <p class="visually-hidden">
-        Кнопка меню «бургер»
-      </p>
-      <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
-        <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
-          <!--  menu-hide__burger-hidden-no-js -->
-          <use class="menu-hide__ico-burger" xlink:href="img/sprite.svg#pic-btn-burger"></use>
-        </svg>
-        <!-- menu-hide__burger-hidden-no-js -->
-      </button>
+    <!-- Навигационное меню (закрытое) start -->
+    <div class="menu-hide menu-hide__hidden-no-js">
+      <div class="menu-hide__hide">
+        <p class="visually-hidden">
+          Логотип «Седона»
+        </p>
+        <a class="menu-hide__logo menu-hide__logo-hidden-no-js" href="index.html">
+          <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+            <use class="menu-hide__pic-logo-sedona" xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
+          </svg>
+        </a>
+
+        <p class="visually-hidden">
+          Кнопка меню «бургер»
+        </p>
+        <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
+          <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+            <use class="menu-hide__ico-burger" xlink:href="img/sprite.svg#pic-btn-burger"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-  <!-- Навигационное меню (закрытое) end -->
-  <!-- Навигационное меню end -->
+    <!-- Навигационное меню (закрытое) end -->
+    <!-- Навигационное меню end -->
+  </header>
 
   <main class="content">
     <!-- Добро пожаловать в «Седону» start -->
@@ -270,7 +266,7 @@
             <p
               class="reasons__items-info reasons__items-info-add reasons__items-block-add-three reasons__items-block-add-three-info">
               ВСЕ интересные места находятся
-              очень близко
+              очень<br class="reasons__items-block-add-three-info-br"> близко
             </p>
           </div>
         </div>
@@ -289,8 +285,8 @@
             </h4>
             <p
               class="reasons__items-info reasons__items-info-add reasons__items-info-road reasons__items-block-add-four">
-              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА
-              совсем НЕ СКУЧНО!
+              ЕХАТЬ В СЕДОНУ ИЗ<br class="reasons__items-info-road-br"> ЛАС-ВЕГАСА
+              совсем <br class="reasons__items-block-add-three-info-br"> НЕ СКУЧНО!
             </p>
           </div>
         </div>
@@ -335,9 +331,10 @@
           предложения гостиниц в седоне
         </p>
       </div>
-      <button class="interesting__button" type="button">
-        <span class="interesting__button-special">НАЙТИ гостиницу</span>
-      </button>
+      <form action="#">
+        <button class="interesting__button-link interesting__button interesting__button-special" type="submit">Найти
+          гостиницу</button>
+      </form>
     </section>
     <!-- ЗАИНТЕРЕСОВАЛИСЬ? end -->
 
@@ -355,18 +352,22 @@
 
         <source media="(min-width: 1200px)" srcset="img/map-desktop-1x.jpg 1x, img/map-desktop-2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/map-tablet-1x.jpg 1x, img/map-tablet-2x.jpg 2x">
-        <img class="map__pic" src="img/map-mobile-1x.jpg" srcset="img/map-mobile-2x.jpg 2x" alt="Карта">
+        <img class="map__empty map__pic-no-js" src="img/map-mobile-1x.jpg" srcset="img/map-mobile-2x.jpg 2x"
+          alt="Карта">
       </picture>
-      <svg class="map__marker" width="27" height="27" xmlns="http://www.w3.org/2000/svg">
+      <svg class="map__marker-empty map__marker-no-js" width="27" height="27" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="img/sprite.svg#marker-pic"></use>
       </svg>
 
+      <iframe class="map__frame-empty map__frame-no-js map__frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296176.4782430216!2d-111.86903744940204!3d34.89845107057831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ3JzQ0LjIiTiAxMTHCsDM2JzQ0LjIiVw!5e0!3m2!1sru!2sru!4v1610360038884!5m2!1sru!2sru"
+        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
     <!-- Карта end -->
   </main>
 
   <!-- Подвал сайта start -->
-  <footer class="bottom">
+  <footer class="bottom bottom-no-js">
     <h2 class="visually-hidden">
       Подвал сайта
     </h2>
@@ -440,6 +441,9 @@
     <!-- Разработано HTMLAcademy end -->
   </footer>
   <!-- Подвал сайта end -->
+
+  <script src="js/index.min.js"></script>
+  <script src="js/map.min.js"></script>
 
 </body>
 

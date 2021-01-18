@@ -36,13 +36,15 @@
 // form
 @import "blocks/sedona.scss";
 @import "blocks/reviews.scss";
-//
 // form
 //
 // catalog
 @import "blocks/city.scss";
 @import "blocks/materials.scss";
-//
 // catalog
+//
+//modal
+@import "blocks/modal.scss";
+//modal
 
 // каждому БЭМ-блоку должен соответствовать отдельный препроцессорный файл

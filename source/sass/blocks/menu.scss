@@ -1,7 +1,5 @@
 // Навигационное меню (открытое) start //
 .menu {
-  min-height: 223px;
-
   @media (min-width: $tablet-width) {
     min-height: 56px;
   }
@@ -57,6 +55,8 @@
   border-top: 1px solid $lighter-blue-color;
   border-bottom: 1px solid $darker-blue-color;
 
+  position: relative;
+
   &:hover {
     cursor: pointer;
 
@@ -64,6 +64,7 @@
 
     @media (min-width: $tablet-width) {
       background-color: transparent;
+      cursor: default;
     }
   }
 
@@ -176,6 +177,10 @@
   text-decoration: none;
   color: $white-color;
 
+  position: absolute;
+  width: 100%;
+  left: 0;
+
   &:hover {
     @media (min-width: $tablet-width) {
       color: $lite-blue-color;
@@ -195,6 +200,8 @@
     font-weight: 700;
     line-height: 26px;
     color: $black-color;
+
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -313,6 +320,10 @@ input[type="radio"].visually-hidden {
 
   background: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .menu__link-btn-hidden {
@@ -364,6 +375,10 @@ input[type="radio"].visually-hidden {
 
 .menu__hidden {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 // Навигационное меню (открытое) end //

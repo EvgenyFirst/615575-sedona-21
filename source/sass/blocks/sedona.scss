@@ -14,6 +14,7 @@
   height: 214px;
 
   @media (min-resolution: 2dppx) {
+    background-color: $lite-grey-color;
     background-image: url("../img/background-form-mobile-2x.jpg");
     background-size: 902px auto;
     background-position-y: -229px;
@@ -34,6 +35,7 @@
     min-height: 291px;
 
     @media (min-resolution: 2dppx) {
+      background-color: $lite-grey-color;
       background-image: url("../img/background-form-tablet-desktop-2x.jpg");
       background-size: 1200px 519px;
     }
@@ -45,7 +47,7 @@
 }
 
 .sedona__no-js {
-  background-position-y: -169px;
+  background-position-y: -226px;
 
   @media (min-width: $tablet-width) {
     background-position-y: -229px;
@@ -71,7 +73,7 @@
 }
 
 .sedona__wrapper-no-js {
-  padding-top: 107px;
+  padding-top: 55px;
 
   @media (min-width: $tablet-width) {
     padding-top: 93px;

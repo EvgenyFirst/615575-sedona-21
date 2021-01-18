@@ -13,7 +13,7 @@
 }
 
 .reviews-no-js {
-  margin-top: -57px;
+  margin-top: -111px;
 
   @media (min-width: $tablet-width) {
     margin-top: -58px;
@@ -369,6 +369,11 @@
   }
 }
 
+.reviews__input-error {
+  outline: 4px solid red;
+  outline-offset: -4px;
+}
+
 .reviews__input-my-data {
   @media (min-width: $tablet-width) {
     min-width: 100px;
@@ -434,19 +439,21 @@
     background-color: $very-light-grey-color;
 
     width: 58px;
-    height: 58px;
+    height: 61px;
 
     position: absolute;
-    top: 35px;
+    top: 34px;
     right: 0;
     bottom: 0;
 
     @media (min-width: $tablet-width) {
-      top: 36px;
+      height: 62px;
+
+      top: 34px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 40px;
+      top: 38px;
     }
   }
 
@@ -527,10 +534,10 @@
     background-color: $very-light-grey-color;
 
     width: 58px;
-    height: 58px;
+    height: 60px;
 
     position: absolute;
-    top: 35px;
+    top: 33px;
     right: -1px;
   }
 
@@ -563,7 +570,7 @@
     flex-wrap: nowrap;
 
     &::after {
-      top: 1px;
+      top: 0;
     }
   }
 }
