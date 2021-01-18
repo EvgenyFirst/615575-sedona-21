@@ -15,6 +15,7 @@
 
 .materials__triangle {
   display: block;
+
   background-image: url("../img/triangle-top.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -33,9 +34,13 @@
 }
 
 .materials__triangle-no-js {
-  padding-top: 116px;
+  margin-bottom: 65px;
+
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+
     padding-top: 2px;
   }
 }
@@ -157,6 +162,8 @@
 
 .materials__scenery {
   display: block;
+
+  background-color: $lite-grey-color;
   background-image: url("../img/scenery-catalog-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -168,6 +175,7 @@
   height: 280px;
 
   @media (min-resolution: 2dppx) {
+    background-color: $lite-grey-color;
     background-image: url("../img/scenery-catalog-mobile-2x.jpg");
     background-size: 845px auto;
   }
@@ -179,6 +187,7 @@
     height: 400px;
 
     @media (min-resolution: 2dppx) {
+      background-color: $lite-grey-color;
       background-image: url("../img/scenery-catalog-tablet-desktop-2x.jpg");
       background-size: 1204px auto;
     }
@@ -205,6 +214,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-color: $lite-grey-color;
     background-image: url("../img/baclground-cart-catalog-desktop-opacity.svg");
 
     margin-top: -83px;
@@ -282,6 +292,8 @@
     min-height: 21px;
 
     position: relative;
+
+    margin-top: 16px;
   }
 }
 
@@ -309,12 +321,8 @@
     padding-left: 0;
 
     position: absolute;
-    top: 19px;
+    top: 0;
     right: 4px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 20px;
   }
 }
 
@@ -377,8 +385,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
-
     margin-top: -20px;
 
     padding-right: 0;
@@ -432,6 +438,8 @@
 
 .materials__vegetation {
   display: block;
+
+  background-color: $lite-grey-color;
   background-image: url("../img/vegetation-catalog-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -445,6 +453,7 @@
   height: 280px;
 
   @media (min-resolution: 2dppx) {
+    background-color: $lite-grey-color;
     background-image: url("../img/vegetation-catalog-mobile-2x.jpg");
     background-size: 426px auto;
   }
@@ -457,6 +466,7 @@
     height: 267px;
 
     @media (min-resolution: 2dppx) {
+      background-color: $lite-grey-color;
       background-image: url("../img/vegetation-catalog-tablet-2x.jpg");
       background-size: 398px auto;
     }
@@ -469,6 +479,7 @@
     height: 267px;
 
     @media (min-resolution: 2dppx) {
+      background-color: $lite-grey-color;
       background-image: url("../img/vegetation-catalog-desktop-2x.jpg");
       background-size: 400px auto;
     }
@@ -527,6 +538,8 @@
 
 .materials__road {
   display: block;
+
+  background-color: $lite-grey-color;
   background-image: url("../img/road-catalog-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -540,6 +553,7 @@
   height: 280px;
 
   @media (min-resolution: 2dppx) {
+    background-color: $lite-grey-color;
     background-image: url("../img/road-catalog-mobile-2x.jpg");
     background-size: 426px auto;
   }
@@ -552,18 +566,21 @@
     height: 265px;
 
     @media (min-resolution: 2dppx) {
+      background-color: $lite-grey-color;
       background-image: url("../img/road-catalog-tablet-2x.jpg");
       background-size: auto 265px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    background-color: $lite-grey-color;
     background-image: url("../img/road-catalog-desktop-1x.jpg");
 
     max-width: 400px;
     height: 265px;
 
     @media (min-resolution: 2dppx) {
+      background-color: $lite-grey-color;
       background-image: url("../img/road-catalog-desktop-2x.jpg");
       background-size: 400px 265px;
     }
@@ -606,6 +623,8 @@
 
 .materials__bridge {
   display: block;
+
+  background-color: $lite-grey-color;
   background-image: url("../img/bridge-catalog-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -619,6 +638,7 @@
   height: 280px;
 
   @media (min-resolution: 2dppx) {
+    background-color: $lite-grey-color;
     background-image: url("../img/bridge-catalog-mobile-2x.jpg");
     background-size: 427px auto;
   }
@@ -630,6 +650,7 @@
     height: 267px;
 
     @media (min-resolution: 2dppx) {
+      background-color: $lite-grey-color;
       background-image: url("../img/bridge-catalog-tablet-2x.jpg");
       background-size: 398px auto;
     }
@@ -643,6 +664,7 @@
     height: 267px;
 
     @media (min-resolution: 2dppx) {
+      background-color: $lite-grey-color;
       background-image: url("../img/bridge-catalog-desktop-2x.jpg");
       background-size: 400px auto;
     }

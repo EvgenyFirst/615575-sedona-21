@@ -1,0 +1,326 @@
+.modal__error {
+  width: 100%;
+  min-height: 325px;
+
+  margin-left: -20px;
+
+  position: fixed;
+  bottom: 351px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.3);
+  background-color: white;
+
+  z-index: 3;
+
+  // outline: 3px solid $special-border-blue-color; // специальные цыета для рамок по заданию
+  // outline-offset: -3px; // специальные цыета для рамок по заданию
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 360px;
+    min-height: 348px;
+
+    margin-left: -200px;
+
+    bottom: 239px;
+    left: 50%;
+
+    box-shadow: 0 1px 60px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 267px;
+  }
+}
+
+.modal__ok {
+  width: 100%;
+  min-height: 325px;
+
+  position: fixed;
+  bottom: 351px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.3);
+
+  background-color: white;
+
+  z-index: 3;
+
+  // outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
+  // outline-offset: -3px; // специальные цыета для рамок по заданию
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 646px;
+    min-height: 348px;
+
+    margin-left: -323px;
+
+    bottom: 517px;
+    left: 50%;
+
+    box-shadow: 0 1px 60px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 336px;
+
+    bottom: 534px;
+  }
+}
+
+.modal__ok-wtapper {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.modal__header-ok {
+  margin: 0;
+}
+
+.modal__error,
+.modal__okб {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: $white-color;
+}
+
+.modal__header-error,
+.modal__header-ok {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.modal__info-error,
+.modal__info-ok {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: $black-color;
+}
+
+.modal__button-error,
+.modal__button-ok {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white-color;
+
+  width: 100%;
+
+  padding-top: 18.53px;
+  padding-bottom: 13.5px;
+
+  background-color: $lite-blue-color;
+
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+
+    background-color: $dark-blue-color;
+  }
+
+  &:active,
+  &:focus-within {
+    background-color: $darker-blue-one-color;
+
+    .reviews__pin-special {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    min-width: 324px;
+
+    padding-right: 16px;
+    padding-left: 14px;
+
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 480px;
+
+    padding-right: 15px;
+  }
+}
+
+.modal__button-ok {
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 458px;
+
+    padding-top: 14.53px;
+  }
+}
+
+.modal__info-ok {
+  padding-right: 36px;
+  padding-left: 36px;
+
+  position: relative;
+  top: 13px;
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+  }
+}
+
+.modal__ok-btn-wrapper {
+  min-height: 98px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $lite-grey-one-color;
+
+  @media (min-width: $tablet-width) {
+    min-height: 146px;
+  }
+}
+
+.modal__header-error {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__info-error {
+  margin-bottom: 21px;
+
+  padding-right: 46px;
+  padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+
+    padding-right: 26px;
+    padding-left: 26px;
+
+    position: relative;
+    bottom: 15px;
+  }
+}
+
+.modal__error-wrapper {
+  margin-bottom: 36px;
+
+  padding-right: 70px;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.modal__button-error {
+  @media (min-width: $tablet-width) {
+    min-width: 272px;
+  }
+}
+
+.modal__header-error-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.modal__hidden {
+  display: none;
+}
+
+/* Animations form start */
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(-30px);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+/* Animations form end */
+
+.modal__ok-opened {
+  animation: bounce 0.6s;
+}
+
+.modal__error-opened {
+  animation: shake 0.6s;
+}

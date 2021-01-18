@@ -6,7 +6,7 @@
   <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no, width = device-width">
   <link rel="icon" href="img/favicon-16x16.ico" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="img/favicon-32x32.ico" sizes="32x32">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -21,7 +21,6 @@
     <div class="menu__block">
       <!-- Навигационное меню (открытое) start -->
       <nav class="menu__nav">
-        <!-- menu__hidden -->
         <ul class="menu__nav-block">
           <li class="menu__items menu__items-btn-close">
             <!-- Кнопка для закрытия навигационного меню будет реализовано псевдоэлементами-->
@@ -32,7 +31,7 @@
               <span class="menu__link-btn-pic"></span>
             </button>
           </li>
-          <li class="menu__items  menu__items-default">
+          <li class="menu__items menu__items-default">
             <a class="menu__link menu__link-default">
               Фото и видео
             </a>
@@ -64,34 +63,36 @@
       </nav>
       <!-- Навигационное меню (открытое) end -->
     </div>
-  </header>
-  <!-- Навигационное меню (закрытое) start -->
-  <div class="menu-hide menu-hide__hidden-no-js">
-    <!--  menu-hide__hide-top -->
-    <div class="menu-hide__hide">
-      <!--  menu-hide__hide-add -->
-      <p class="visually-hidden">
-        Логотип «Седона»
-      </p>
-      <a class="menu-hide__logo menu-hide__logo-hidden-no-js" href="index.html">
-        <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
-          <use class="menu-hide__pic-logo-sedona" xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
-        </svg>
-      </a>
 
-      <p class="visually-hidden">
-        Кнопка меню «бургер»
-      </p>
-      <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
-        <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
-          <use class="menu-hide__ico-burger" xlink:href="img/sprite.svg#pic-btn-burger"></use>
-        </svg>
-        <!-- menu-hide__burger-hidden-no-js -->
-      </button>
+    <!-- Навигационное меню (закрытое) start -->
+    <div class="menu-hide menu-hide__hidden-no-js">
+      <!--  menu-hide__hide-top -->
+      <div class="menu-hide__hide">
+        <!--  menu-hide__hide-add -->
+        <p class="visually-hidden">
+          Логотип «Седона»
+        </p>
+        <a class="menu-hide__logo menu-hide__logo-hidden-no-js" href="index.html">
+          <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+            <use class="menu-hide__pic-logo-sedona" xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
+          </svg>
+        </a>
+
+        <p class="visually-hidden">
+          Кнопка меню «бургер»
+        </p>
+        <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
+          <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+            <!--  menu-hide__burger-hidden-no-js -->
+            <use class="menu-hide__ico-burger" xlink:href="img/sprite.svg#pic-btn-burger"></use>
+          </svg>
+          <!-- menu-hide__burger-hidden-no-js -->
+        </button>
+      </div>
     </div>
-  </div>
-  <!-- Навигационное меню (закрытое) end -->
-  <!-- Навигационное меню end -->
+    <!-- Навигационное меню (закрытое) end -->
+    <!-- Навигационное меню end -->
+  </header>
 
   <main class="content">
     <!-- «Седона» start -->
@@ -418,6 +419,7 @@
   </footer>
   <!-- Подвал сайта end -->
 
+  <script src="js/catalog.min.js"></script>
 
 </body>
 

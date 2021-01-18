@@ -28,14 +28,18 @@
   // outline-offset: -3px; // специальные цыета для рамок по заданию
 }
 
+.menu-hide__logo {
+  padding-top: 13px;
+}
+
 .menu-hide__hide-add {
-  margin-top: -74px;
-  z-index: -1;
+  margin-top: -17px;
+  z-index: 1;
 }
 
 .menu-hide__button-burger {
   position: absolute;
-  top: 15px;
+  top: 30px;
   right: 14px;
 
   background: none;
@@ -68,17 +72,24 @@
 }
 
 // если js не актиыен\сломался и тп
-.menu-hide__burger-hidden-no-js {
+.menu-hide__burger-hidden-no-js,
+.menu-hide__burger-hidden-hidden {
   display: none;
 }
 
 .menu-hide__hidden-no-js {
-  margin-top: -73px;
+  margin-top: -31px;
+}
+
+.menu-hide__logo-add {
+  margin-top: 0;
+
+  padding-top: 0;
 }
 
 .menu-hide__logo-hidden-no-js {
   position: relative;
-  top: 59px;
+  top: 3px;
 }
 
 .menu-hide__logo-hidden-form-no-js {

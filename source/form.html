@@ -6,7 +6,7 @@
   <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no, width = device-width">
   <link rel="icon" href="img/favicon-16x16.ico" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="img/favicon-32x32.ico" sizes="32x32">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -21,7 +21,6 @@
     <div class="menu__block">
       <!-- Навигационное меню (открытое) start -->
       <nav class="menu__nav">
-        <!-- menu__hidden -->
         <ul class="menu__nav-block">
           <li class="menu__items menu__items-btn-close">
             <!-- Кнопка для закрытия навигационного меню будет реализовано псевдоэлементами-->
@@ -64,34 +63,36 @@
       </nav>
       <!-- Навигационное меню (открытое) end -->
     </div>
-  </header>
-  <!-- Навигационное меню (закрытое) start -->
-  <div class="menu-hide menu-hide__hidden-no-js">
-    <!--  menu-hide__hide-top -->
-    <div class="menu-hide__hide">
-      <!--  menu-hide__hide-add -->
-      <p class="visually-hidden">
-        Логотип «Седона»
-      </p>
-      <a class="menu-hide__logo menu-hide__logo-hidden-no-js" href="index.html">
-        <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
-          <use class="menu-hide__pic-logo-sedona" xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
-        </svg>
-      </a>
 
-      <p class="visually-hidden">
-        Кнопка меню «бургер»
-      </p>
-      <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
-        <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
-          <use class="menu-hide__ico-burger" xlink:href="img/sprite.svg#pic-btn-burger"></use>
-        </svg>
-        <!-- menu-hide__burger-hidden-no-js -->
-      </button>
+    <!-- Навигационное меню (закрытое) start -->
+    <div class="menu-hide menu-hide__hidden-no-js">
+      <!--  menu-hide__hide-top -->
+      <div class="menu-hide__hide">
+        <!--  menu-hide__hide-add -->
+        <p class="visually-hidden">
+          Логотип «Седона»
+        </p>
+        <a class="menu-hide__logo menu-hide__logo-hidden-no-js" href="index.html">
+          <svg class="menu-hide__pic" width="102" height="84" xmlns="http://www.w3.org/2000/svg">
+            <use class="menu-hide__pic-logo-sedona" xlink:href="img/sprite.svg#pic-logo-sedona-mobile"></use>
+          </svg>
+        </a>
+
+        <p class="visually-hidden">
+          Кнопка меню «бургер»
+        </p>
+        <button class="menu-hide__button-burger menu-hide__burger-hidden-no-js" type="button">
+          <svg class="menu-hide__burger" width="23" height="22" xmlns="http://www.w3.org/2000/svg">
+            <use class="menu-hide__ico-burger" xlink:href="img/sprite.svg#pic-btn-burger"></use>
+          </svg>
+          <!-- menu-hide__burger-hidden-no-js -->
+        </button>
+      </div>
     </div>
-  </div>
-  <!-- Навигационное меню (закрытое) end -->
-  <!-- Навигационное меню end -->
+    <!-- Навигационное меню (закрытое) end -->
+    <!-- Навигационное меню end -->
+  </header>
+
 
   <main class="content">
     <!-- «Седона» start -->
@@ -128,8 +129,7 @@
         </p>
       </div>
       <div class="reviews__menu">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <!-- reviews__form -->
+        <form class="reviews__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <div class="reviews__form-wrapper">
             <fieldset class="reviews__style reviews__group">
               <legend class="reviews__legend">
@@ -139,15 +139,17 @@
                 <li class="reviews__li">
                   <p class="reviews__data reviews__data-info">
                     <label class="reviews__label reviews__label-my-data" for="user-name">ИМЯ*:</label>
-                    <input class="reviews__input reviews__input-my-data reviews__input-user-name" id="user-name"
-                      type="text" name="userName" placeholder="Петр" required tabindex="0">
+                    <input
+                      class="reviews__input reviews__input-my-data reviews__input-user-name reviews__required-user-name"
+                      id="user-name" type="text" name="userName" placeholder="Петр" required tabindex="0" minlength="1">
                   </p>
                 </li>
                 <li class="reviews__li">
                   <p class="reviews__data reviews__data-info">
                     <label class="reviews__label reviews__label-my-data" for="user-surname">ФАМИЛИЯ*:</label>
-                    <input class="reviews__input reviews__input-my-data reviews__input-user-surname" id="user-surname"
-                      type="text" name="userSurname" placeholder="Иванов" required tabindex="0">
+                    <input
+                      class="reviews__input reviews__input-my-data reviews__input-user-surname reviews__required-user-surname"
+                      id="user-surname" type="text" name="userSurname" placeholder="Иванов" required tabindex="0" minlength="1">
                   </p>
                 </li>
                 <li class="reviews__li">
@@ -169,15 +171,16 @@
                   <p class="reviews__data reviews__data-contact reviews__data-phone">
                     <label class="reviews__label reviews__label-contact" for="user-phone"><span
                         class="reviews__label-contact-hidden">Контактный</span> телефон*:</label>
-                    <input class="reviews__input reviews__input-contact" id="user-phone" type="tel" name="userPhone"
-                      placeholder="Введите телефон" required tabindex="0">
+                    <input class="reviews__input reviews__input-contact reviews__required-user-phone" id="user-phone"
+                      name="userPhone" placeholder="Введите телефон" required tabindex="0" type="tel" minlength="6"
+                      maxlength="11">
                   </p>
                 </li>
                 <li class="reviews__li">
                   <p class="reviews__data reviews__data-email">
                     <label class="reviews__label reviews__label-email" for="user-email">Электронная почта*:</label>
-                    <input class="reviews__input reviews__input-email" id="user-email" type="email" name="userEmail"
-                      placeholder="Введите e-mail" required tabindex="0">
+                    <input class="reviews__input reviews__input-email reviews__required-user-email" id="user-email"
+                      type="email" name="userEmail" placeholder="Введите e-mail" required tabindex="0" minlength="5">
                   </p>
                 </li>
               </ul>
@@ -213,7 +216,6 @@
             </fieldset>
             <fieldset class="reviews__style reviews__style-attractions reviews__style-group reviews__group">
               <legend class="reviews__legend reviews__legend-attractions reviews__legend-special">
-                <!-- reviews__legend-group -->
                 посещенные достопримечательности:
               </legend>
               <ul class="reviews__items reviews__items-place">
@@ -356,6 +358,58 @@
   </footer>
   <!-- Подвал сайта end -->
 
+  <!-- Модальные окна start -->
+
+  <div class="modal__error modal__hidden">
+    <h1 class="visually-hidden">
+      Сообщение об ошибке: "Что-то пошло не так!"
+    </h1>
+
+    <h2 class="modal__header-error">
+      Что-то пошло<br class="modal__header-error-br"> не так!
+    </h2>
+
+    <p class="modal__info-error">
+      Проверьте поля, выделенные красным,
+      скорее всегод вы забыли их заполнить
+    </p>
+
+    <div class="modal__error-wrapper">
+      <button class="modal__button-error" id="button-error" type="submit" tabindex="0">
+        ок
+      </button>
+    </div>
+  </div>
+
+  <div class="modal__ok modal__hidden">
+    <h1 class="visually-hidden">
+      Сообщение: "Ваш отзыв отправлен!"
+    </h1>
+
+    <div class="modal__ok-wtapper">
+      <h2 class="modal__header-ok">
+        Ваш отзыв отправлен!
+      </h2>
+
+      <p class="modal__info-ok">
+        Спасибо за ваше участие,
+        ваш отзыв уже поступил к нам.<br>
+        в ближайшее время мы
+        опубликуем его на сайте.
+      </p>
+    </div>
+
+    <div class="modal__ok-btn-wrapper">
+      <button class="modal__button-ok" id="button-ok" type="submit" tabindex="0">
+        Закрыть окно
+      </button>
+    </div>
+  </div>
+
+  <!-- Модальные окна end -->
+
+  <script src="js/form.min.js"></script>
+  <script src="js/modal.min.js"></script>
 
 </body>
 

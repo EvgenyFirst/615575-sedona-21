@@ -97,15 +97,6 @@
 }
 
 .interesting__button {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $white-color;
-
   width: 100%;
 
   margin-top: 14px;
@@ -152,4 +143,15 @@
   @media (min-width: $desktop-width) {
     top: -28px;
   }
+}
+
+.interesting__button-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white-color;
 }
