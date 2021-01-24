@@ -1,5 +1,5 @@
 .bottom {
-  margin-top: 6px;
+  margin-top: 7px;
 
   padding-right: 20px;
   padding-left: 20px;
@@ -15,9 +15,10 @@
   // outline-offset: -3px; // специальные цыета для рамок по заданию
 
   @media (min-width: $tablet-width) {
-    min-height: 120px;
+    min-height: 161px;
 
-    padding-top: 4px;
+    margin-top: -43px;
+
     padding-right: 20px;
     padding-left: 30px;
 
@@ -27,6 +28,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -47px;
+
     padding-top: 10px;
     padding-right: 0;
     padding-left: 0;
@@ -39,8 +42,12 @@
 }
 
 .bottom-no-js {
+  z-index: -1;
+
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    min-height: 161px;
+
+    margin-top: -43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,8 +69,8 @@
     margin-top: 5px;
     margin-left: 0;
 
-    padding-top: 80px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 0;
   }
 }
 
@@ -73,7 +80,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 49px;
 
-    min-height: 91px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,12 +114,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -28px;
+    margin-top: 43px;
     margin-left: -44px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -23px;
+    margin-top: 38px;
     margin-left: -24px;
   }
 }
@@ -137,6 +144,14 @@
   padding-left: 0;
 
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+
+    padding-left: 4px;
+  }
 }
 
 .bottom__social-item {
@@ -203,17 +218,19 @@
 .bottom__developer {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 
   margin-top: -9px;
   margin-left: 2px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -28px;
+    margin-top: 44px;
     margin-left: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -22px;
+    margin-top: 38px;
   }
 }
 
@@ -230,3 +247,27 @@
     }
   }
 }
+
+// Firefox fix
+
+@media (min-width: $desktop-width) {
+  .bottom__catalog {
+    @-moz-document url-prefix("") {
+      padding-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .bottom__form {
+    @-moz-document url-prefix("") {
+      margin-top: 19px;
+
+      @media (min-width: $desktop-width) {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+// Firefox fix

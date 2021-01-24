@@ -5,3 +5,14 @@
     background-color: $lite-grey-two-color;
   }
 }
+
+// Код на случай, если понадобится сравнивать с макетом в браузере Firefox
+/*
+  html {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 50%;
+    background-image: url("../img/index-desktop.jpg");
+  }
+*/
+// Код на случай, если понадобится сравнивать с макетом в браузере Firefox
