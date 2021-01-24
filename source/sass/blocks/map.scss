@@ -20,8 +20,11 @@
 }
 
 .map__pic-no-js {
+  z-index: 3;
+
   @media (min-width: $tablet-width) {
     height: 350px;
+
     object-fit: cover;
   }
 }
@@ -52,6 +55,8 @@
 
   width: 100%;
   min-height: 354px;
+
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     min-height: 358px;

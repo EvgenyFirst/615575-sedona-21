@@ -16,6 +16,8 @@
 
   z-index: 3;
 
+  animation: shake 0.6s;
+
   // outline: 3px solid $special-border-blue-color; // специальные цыета для рамок по заданию
   // outline-offset: -3px; // специальные цыета для рамок по заданию
 
@@ -53,6 +55,8 @@
   background-color: white;
 
   z-index: 3;
+
+  animation: bounce 0.6s;
 
   // outline: 3px solid $special-border-red-color; // специальные цыета для рамок по заданию
   // outline-offset: -3px; // специальные цыета для рамок по заданию
@@ -184,6 +188,13 @@
   margin-right: 20px;
   margin-left: 20px;
 
+  @-moz-document url-prefix("") {
+    &:active {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 458px;
 
@@ -258,16 +269,15 @@
 }
 
 .modal__button-error {
+  @-moz-document url-prefix("") {
+    &:active {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 272px;
-  }
-}
-
-.modal__header-error-br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
   }
 }
 
@@ -316,11 +326,3 @@
   }
 }
 /* Animations form end */
-
-.modal__ok-opened {
-  animation: bounce 0.6s;
-}
-
-.modal__error-opened {
-  animation: shake 0.6s;
-}

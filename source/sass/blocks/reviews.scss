@@ -76,6 +76,29 @@
 
   padding-left: 1px;
 
+  @-moz-document url-prefix("") {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-left: 11px;
+
+    @media (min-width: $tablet-width) {
+      font-family: "PT Sans", "Arial", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 97px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
 
@@ -84,7 +107,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 95px;
+    padding-top: 89px;
   }
 }
 
@@ -99,20 +122,64 @@
   padding-left: 4px;
 
   @media (min-width: $tablet-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
 
-    padding-right: calc(158px - 60px);
-    padding-left: calc(156px - 60px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
-    span {
-      padding-left: 9px;
+// Firefox fix
+@-moz-document url-prefix("") {
+  .reviews__info {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+    padding-top: 15px;
+    padding-left: 4px;
+
+    @media (min-width: $tablet-width) {
+      .reviews__info-br {
+        display: block;
+      }
+
+      font-size: 14px;
+
+      padding-top: 8px;
+      padding-right: calc(158px - 60px);
+      padding-left: calc(156px - 60px);
+
+      span {
+        padding-left: 9px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 14px;
+
+      @media (min-width: $desktop-width) {
+        padding-top: 7px;
+      }
     }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 14px;
+  .reviews__header {
+    @-moz-document url-prefix("") {
+      @media (min-width: $desktop-width) {
+        padding-top: 97px;
+      }
+    }
   }
 }
+
+// Firefox fix
 
 .reviews__menu {
   margin-top: 21px;
@@ -120,6 +187,13 @@
   @media (min-width: $tablet-width) {
     padding-right: 60px;
     padding-left: 60px;
+  }
+
+  @-moz-document url-prefix("") {
+    @media (min-width: $tablet-width) {
+      padding-right: 59px;
+      padding-left: 58px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -265,6 +339,9 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -414,10 +491,15 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .reviews__li {
       &:first-child {
         margin-left: 87px;
+
+        @-moz-document url-prefix("") {
+          margin-left: 99px;
+        }
       }
 
       &:nth-child(2) {
@@ -454,6 +536,10 @@
 
     @media (min-width: $desktop-width) {
       top: 38px;
+
+      @-moz-document url-prefix("") {
+        right: -33px;
+      }
     }
   }
 
@@ -472,18 +558,34 @@
     bottom: 12px;
 
     z-index: 1;
+
+    @-moz-document url-prefix("") {
+      right: -18px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
 
+    margin-right: -91px;
+
     padding-top: 1px;
+
+    @-moz-document url-prefix("") {
+      right: -18px;
+    }
   }
 }
 
 .reviews__label-contact {
-  margin-left: -62px;
+  padding-right: 59px;
   padding-left: 0;
+
+  @-moz-document url-prefix("") {
+    position: relative;
+    bottom: 2px;
+    left: -8px;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -491,32 +593,47 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 26px;
+    top: 53px;
+    left: -181px;
 
-    top: 56px;
-    left: -164px;
+    @-moz-document url-prefix("") {
+      left: -175px;
+    }
   }
 }
 
 .reviews__input-contact {
+  padding-right: 59px;
+
   position: relative;
   top: 8px;
+
+  @-moz-document url-prefix("") {
+    padding-right: 2px;
+
+    &::-moz-placeholder {
+      line-height: 3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 201px;
+    padding-right: 0;
+
+    min-width: 254px;
 
     position: relative;
     top: 11px;
-  }
-}
 
-.reviews__input-contact,
-.reviews__input-email {
-  padding-right: 59px;
+    @-moz-document url-prefix("") {
+      min-width: 192px;
+
+      right: 26px;
+    }
+  }
 }
 
 .reviews__data-contact,
@@ -600,8 +717,25 @@
 }
 
 .reviews__input-email {
+  margin-right: 57px;
+  padding-right: 59px;
+
+  @-moz-document url-prefix("") {
+    padding-right: 2px;
+
+    &::-moz-placeholder {
+      line-height: 3;
+    }
+  }
+
   @media (min-width: $desktop-width) {
+    padding-right: 0;
+
     min-width: 232px;
+
+    @-moz-document url-prefix("") {
+      padding-left: 23px;
+    }
   }
 }
 
@@ -623,6 +757,10 @@
 
 .reviews__legend-emotions {
   padding-top: 31px;
+
+  @-moz-document url-prefix("") {
+    padding-left: 8px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 17px;
@@ -812,6 +950,15 @@
 
 .reviews__legend-attractions {
   padding-top: 17px;
+
+  @-moz-document url-prefix("") {
+    @media (min-width: $tablet-width) {
+      span {
+        position: relative;
+        right: 46px;
+      }
+    }
+  }
 }
 
 .reviews__items-place {
@@ -855,6 +1002,15 @@
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.reviews__label-checkbox-rocks {
+  @media (min-width: $desktop-width) {
+    @-moz-document url-prefix("") {
+      left: 21px;
+      bottom: 3px;
+    }
   }
 }
 
@@ -1049,6 +1205,10 @@
 .reviews__legend-description {
   padding-top: 23px;
 
+  @-moz-document url-prefix("") {
+    padding-left: 11px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 23px;
     padding-right: 33px;
@@ -1118,6 +1278,11 @@
 }
 
 .reviews__legend-contact {
+  @-moz-document url-prefix("") {
+    padding-top: 1px;
+    padding-left: 4px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 4px;
     padding-right: 69px;
@@ -1135,6 +1300,7 @@
 .reviews__button {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   padding-top: 10px;
   padding-left: 16px;
@@ -1183,6 +1349,14 @@
 }
 
 .reviews__label-contact-hidden {
+  @-moz-document url-prefix("") {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      top: 1px;
+      left: -7px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -1227,6 +1401,30 @@
   background-color: $lite-blue-color;
 
   border: none;
+
+  @-moz-document url-prefix("") {
+    &:active,
+    &:focus-within {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      &:active,
+      &:focus-within {
+        padding-right: 8px;
+        padding-left: 0;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &:active,
+      &:focus-within {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
 
   &:hover {
     cursor: pointer;
@@ -1274,3 +1472,46 @@
     display: block;
   }
 }
+
+// Firefox fix
+
+.reviews__legend-fix-one {
+  @-moz-document url-prefix("") {
+    padding-left: 4px;
+  }
+}
+
+.reviews__input-fix-mame {
+  @-moz-document url-prefix("") {
+    position: relative;
+    bottom: 1px;
+
+    &::-moz-placeholder {
+      line-height: 3.5;
+    }
+  }
+}
+
+.reviews__input-fix-surname {
+  @-moz-document url-prefix("") {
+    position: relative;
+    bottom: -1px;
+
+    &::-moz-placeholder {
+      line-height: 3;
+    }
+  }
+}
+
+.reviews__input-fix-patronymic {
+  @-moz-document url-prefix("") {
+    position: relative;
+    bottom: 3px;
+
+    &::-moz-placeholder {
+      line-height: 3.5;
+    }
+  }
+}
+
+// Firefox fix

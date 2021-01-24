@@ -132,15 +132,15 @@
         <form class="reviews__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <div class="reviews__form-wrapper">
             <fieldset class="reviews__style reviews__group">
-              <legend class="reviews__legend">
+              <legend class="reviews__legend reviews__legend-fix-one">
                 Представьтесь:
               </legend>
               <ul class="reviews__items reviews__items-my-data">
                 <li class="reviews__li">
-                  <p class="reviews__data reviews__data-info">
+                  <p class="reviews__data reviews__data-info reviews__input-fix-mame">
                     <label class="reviews__label reviews__label-my-data" for="user-name">ИМЯ*:</label>
                     <input
-                      class="reviews__input reviews__input-my-data reviews__input-user-name reviews__required-user-name"
+                      class="reviews__input reviews__input-my-data reviews__input-user-name reviews__required-user-name reviews__input-fix-mame"
                       id="user-name" type="text" name="userName" placeholder="Петр" required tabindex="0" minlength="1">
                   </p>
                 </li>
@@ -148,7 +148,7 @@
                   <p class="reviews__data reviews__data-info">
                     <label class="reviews__label reviews__label-my-data" for="user-surname">ФАМИЛИЯ*:</label>
                     <input
-                      class="reviews__input reviews__input-my-data reviews__input-user-surname reviews__required-user-surname"
+                      class="reviews__input reviews__input-my-data reviews__input-user-surname reviews__required-user-surname reviews__input-fix-surname"
                       id="user-surname" type="text" name="userSurname" placeholder="Иванов" required tabindex="0" minlength="1">
                   </p>
                 </li>
@@ -156,7 +156,7 @@
                   <p class="reviews__data reviews__data-info">
                     <label class="reviews__label reviews__label-my-data" for="user-patronymic">Отчество:</label>
                     <input
-                      class="reviews__input reviews__input-special reviews__input-my-data reviews__input-user-patronymic"
+                      class="reviews__input reviews__input-special reviews__input-my-data reviews__input-user-patronymic reviews__input-fix-patronymic"
                       id="user-patronymic" type="text" name="userPatronymic" placeholder="Александрович" tabindex="0">
                   </p>
                 </li>
@@ -216,7 +216,7 @@
             </fieldset>
             <fieldset class="reviews__style reviews__style-attractions reviews__style-group reviews__group">
               <legend class="reviews__legend reviews__legend-attractions reviews__legend-special">
-                посещенные достопримечательности:
+                посещенные <span>достопримечательности:</span>
               </legend>
               <ul class="reviews__items reviews__items-place">
                 <li class="reviews__li reviews__li-attractions">
@@ -244,7 +244,7 @@
                   <p class="reviews__data reviews__data-custom-checkbox">
                     <input class="reviews__input-checkbox reviews__input-checkbox-visually-hidden" value="rocks"
                       type="checkbox" name="emotion" id="filter-rocks">
-                    <label class="reviews__label-checkbox" for="filter-rocks">Красные скалы</label>
+                    <label class="reviews__label-checkbox reviews__label-checkbox-rocks" for="filter-rocks">Красные скалы</label>
                   </p>
                 </li>
               </ul>
@@ -367,7 +367,7 @@
       </h1>
 
       <h2 class="modal__header-error">
-        Что-то пошло<br class="modal__header-error-br"> не так!
+        Что-то пошло<br> не так!
       </h2>
 
       <p class="modal__info-error">
