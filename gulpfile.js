@@ -164,8 +164,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/**/*{woff2,woff}",
     "source/img/**/*.ico",
-    "source/img/**/*.{jpg,png,svg}",
-    "source/css/normalize.css",
+    "source/img/**/*.{jpg,png,svg}"
   ], {
     base: "source"
   })
@@ -175,7 +174,21 @@ const copy = (done) => {
 
 exports.copy = copy;
 
-// Copy
+// CopyNormalize
+
+const copyNormalize = (done) => {
+  gulp.src([
+    "source/sass/normalize.css"
+  ], {
+    base: "source/sass"
+  })
+    .pipe(gulp.dest("build/css"))
+  done();
+}
+
+exports.copyNormalize = copyNormalize;
+
+// copySprite
 
 const copySprite = (done) => {
   gulp.src([
@@ -224,6 +237,8 @@ const reload = done => {
 const watcher = () => {
   gulp.watch("source/img/**/*.{png,jpg,svg}", gulp.series(getOptimisingImg));
   // gulp.watch("source/img/*.svg}", gulp.series(getSprite));
+  gulp.watch("source/css/normalize.css", gulp.series(copyNormalize));
+  gulp.watch("source/img/**/*.{jpg,png}", gulp.series(createWebp));
   gulp.watch("source/img/sprite.svg}", gulp.series(copySprite));
   gulp.watch("source/img/**/*.{jpg,png}", gulp.series(createWebp));
   gulp.watch("source/sass/**/*.scss", gulp.series(styles, getStylesMin));
@@ -252,7 +267,8 @@ const build = gulp.series(
     copy,
     getOptimisingImg,
     createWebp,
-    copySprite
+    copySprite,
+    copyNormalize
   ));
 
 exports.build = build;
@@ -273,7 +289,9 @@ exports.default = gulp.series(
     // getSprite,
     copy,
     getOptimisingImg,
-    createWebp
+    createWebp,
+    copySprite,
+    copyNormalize
   ),
   gulp.series(
     server,
