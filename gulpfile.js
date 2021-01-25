@@ -273,8 +273,7 @@ exports.default = gulp.series(
     // getSprite,
     copy,
     getOptimisingImg,
-    createWebp,
-    copySprite
+    createWebp
   ),
   gulp.series(
     server,
