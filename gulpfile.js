@@ -128,7 +128,7 @@ const getOptimisingImg = () => {
     .pipe(imagemin([
       imagemin.mozjpeg({ progressive: true }),
       imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.svgo()
+      // imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
 }
@@ -147,14 +147,16 @@ exports.createWebp = createWebp;
 
 // Sprite
 
-const getSprite = () => {
-  return gulp.src("source/img/*.svg")
-    .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-}
+/*
+  const getSprite = () => {
+    return gulp.src("source/img/*.svg")
+      .pipe(svgstore())
+      .pipe(rename("sprite.svg"))
+      .pipe(gulp.dest("build/img"));
+  }
 
-exports.getSprite = getSprite;
+  exports.getSprite = getSprite;
+*/
 
 // Copy
 
@@ -172,6 +174,20 @@ const copy = (done) => {
 }
 
 exports.copy = copy;
+
+// Copy
+
+const copySprite = (done) => {
+  gulp.src([
+    "source/img/sprite.svg"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copySprite = copySprite;
 
 // Clean
 
@@ -207,7 +223,8 @@ const reload = done => {
 
 const watcher = () => {
   gulp.watch("source/img/**/*.{png,jpg,svg}", gulp.series(getOptimisingImg));
-  gulp.watch("source/img/*.svg}", gulp.series(getSprite));
+  // gulp.watch("source/img/*.svg}", gulp.series(getSprite));
+  gulp.watch("source/img/sprite.svg}", gulp.series(copySprite));
   gulp.watch("source/img/**/*.{jpg,png}", gulp.series(createWebp));
   gulp.watch("source/sass/**/*.scss", gulp.series(styles, getStylesMin));
   gulp.watch("source/js/index.js", gulp.series(getScriptIndexMin));
@@ -231,10 +248,11 @@ const build = gulp.series(
     getScriptFormMin,
     getScriptModalMin,
     getScriptCatalogMin,
-    getSprite,
+    // getSprite,
     copy,
     getOptimisingImg,
-    createWebp
+    createWebp,
+    copySprite
   ));
 
 exports.build = build;
@@ -252,9 +270,11 @@ exports.default = gulp.series(
     getScriptFormMin,
     getScriptModalMin,
     getScriptCatalogMin,
-    getSprite,
+    // getSprite,
     copy,
-    createWebp
+    getOptimisingImg,
+    createWebp,
+    copySprite
   ),
   gulp.series(
     server,
