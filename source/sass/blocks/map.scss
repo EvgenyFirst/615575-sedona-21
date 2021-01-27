@@ -63,6 +63,10 @@
   }
 }
 
+.map__bg {
+  background-color: $special-bg-color-without-bg-img;
+}
+
 .map__frame-no-js {
   display: none;
 }

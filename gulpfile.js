@@ -246,7 +246,7 @@ const watcher = () => {
   gulp.watch("source/js/map.js", gulp.series(getScriptMapMin));
   gulp.watch("source/js/form.js", gulp.series(getScriptFormMin));
   gulp.watch("source/js/modal.js", gulp.series(getScriptModalMin));
-  gulp.watch("source/js/catalog.js", gulp.series(getScriptCatalogMin));
+  gulp.watch("source/js/modal.js", gulp.series(getScriptModalMin));
   gulp.watch("source/*.html", gulp.series(getHtmlMin, reload));
 }
 

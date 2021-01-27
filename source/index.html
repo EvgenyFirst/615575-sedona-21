@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no, width = device-width">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="icon" href="img/favicon-16x16.ico" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="img/favicon-32x32.ico" sizes="32x32">
   <link rel="stylesheet" href="css/style.min.css">
@@ -214,8 +218,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#icon-burger"></use>
                 </svg>
-                <h4
-                  class="reasons__itemadd-item-header reasons__itemadd-item-header-set reasons__itemadd-item-header-burger">
+                <h4 class="reasons__itemadd-item-header reasons__itemadd-item-header-set reasons__itemadd-item-header-burger">
                   ЕДА
                 </h4>
               </div>
@@ -338,10 +341,8 @@
           предложения гостиниц в седоне
         </p>
       </div>
-      <form action="#">
-        <button class="interesting__button-link interesting__button interesting__button-special" type="submit">Найти
-          гостиницу</button>
-      </form>
+      <a href="/" target="_blank" class="interesting__button-link interesting__button interesting__button-special interesting__button-special-no-js">Найти
+        гостиницу</a>
     </section>
     <!-- ЗАИНТЕРЕСОВАЛИСЬ? end -->
 
@@ -359,7 +360,7 @@
 
         <source media="(min-width: 1200px)" srcset="img/map-desktop-1x.jpg 1x, img/map-desktop-2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/map-tablet-1x.jpg 1x, img/map-tablet-2x.jpg 2x">
-        <img class="map__empty map__pic-no-js" src="img/map-mobile-1x.jpg" srcset="img/map-mobile-2x.jpg 2x"
+        <img class="map__empty map__pic-no-js map__bg" src="img/map-mobile-1x.jpg" srcset="img/map-mobile-2x.jpg 2x"
           alt="Карта">
       </picture>
       <svg class="map__marker-empty map__marker-no-js" width="27" height="27" xmlns="http://www.w3.org/2000/svg">

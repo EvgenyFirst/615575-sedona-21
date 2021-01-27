@@ -292,7 +292,7 @@
 .reasons__city {
   display: block;
 
-  background-color: $lite-grey-color;
+  background-color: $special-bg-color-without-bg-img;
   background-image: url("../img/city-index-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -305,7 +305,7 @@
   height: 260px;
 
   @media (min-resolution: 2dppx) {
-    background-color: $lite-grey-color;
+    background-color: $special-bg-color-without-bg-img;
     background-image: url("../img/city-index-mobile-2x.jpg");
     background-size: 520px auto;
   }
@@ -317,14 +317,14 @@
     height: 256px;
 
     @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
+      background-color: $special-bg-color-without-bg-img;
       background-image: url("../img/city-index-tablet-2x.jpg");
       background-size: 512px auto;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $lite-grey-color;
+    background-color: $special-bg-color-without-bg-img;
     background-image: url("../img/city-index-desktop-1x.jpg");
 
     width: 800px;
@@ -332,7 +332,7 @@
     height: 256px;
 
     @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
+      background-color: $special-bg-color-without-bg-img;
       background-image: url("../img/city-index-desktop-2x.jpg");
       background-size: 800px auto;
     }
@@ -500,6 +500,10 @@
     @-moz-document url-prefix("") {
       position: relative;
       left: 0;
+
+      @media (min-width: $tablet-width) {
+        padding-right: 44px;
+      }
     }
   }
 
@@ -560,7 +564,7 @@
 .reasons__devil {
   display: block;
 
-  background-color: $lite-grey-color;
+  background-color: $special-bg-color-without-bg-img;
   background-image: url("../img/bridge-index-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -573,7 +577,7 @@
   height: 260px;
 
   @media (min-resolution: 2dppx) {
-    background-color: $lite-grey-color;
+    background-color: $special-bg-color-without-bg-img;
     background-image: url("../img/bridge-index-mobile-2x.jpg");
     background-size: 520px auto;
   }
@@ -585,7 +589,7 @@
     height: 256px;
 
     @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
+      background-color: $special-bg-color-without-bg-img;
       background-image: url("../img/bridge-index-tablet-2x.jpg");
       background-size: 512px auto;
     }
@@ -600,7 +604,7 @@
     height: 256px;
 
     @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
+      background-color: $special-bg-color-without-bg-img;
       background-image: url("../img/bridge-index-desktop-2x.jpg");
       background-size: 800px 270px;
       background-position-y: -3px;

@@ -2,12 +2,18 @@
 
 var removeMenuHideHiddenNoJs = document.querySelector(".menu-hide");
 removeMenuHideHiddenNoJs.classList.remove("menu-hide__hidden-no-js");
+
 var removeMenuHidelogoHiddenNoJs = document.querySelector(".menu-hide__logo");
 removeMenuHidelogoHiddenNoJs.classList.remove("menu-hide__logo-hidden-no-js");
+
 var removeMenuHideBurgerHiddenNoJs = document.querySelector(".menu-hide__button-burger");
 removeMenuHideBurgerHiddenNoJs.classList.remove("menu-hide__burger-hidden-no-js");
+
 var removeMenuLinkBtnHidden = document.querySelector(".menu__link-btn");
 removeMenuLinkBtnHidden.classList.remove("menu__link-btn-hidden");
+
+var removeIinterestingButtonSpecialNoJs = document.querySelector(".interesting__button-special");
+removeIinterestingButtonSpecialNoJs.classList.remove("interesting__button-special-no-js");
 
 // закрывает главное меню
 var closeMainMenu = document.querySelector(".menu__link-btn");

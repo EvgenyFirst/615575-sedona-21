@@ -61,7 +61,7 @@
   margin-left: -4px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 75px;
+    margin-top: 20px;
     margin-left: 0;
   }
 
@@ -75,23 +75,27 @@
 }
 
 .bottom__catalog {
-  margin-top: 33px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 49px;
+    margin-top: 13px;
 
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -43px;
+    margin-top: -65px;
 
-    padding-top: 68px;
+    padding-top: 25px;
     padding-bottom: 0;
 
     position: relative;
-    top: 21px;
+    top: 5px;
   }
+}
+
+.bottom__catalog-no-js {
+  padding-top: 0;
 }
 
 .bottom__visit {
@@ -253,7 +257,7 @@
 @media (min-width: $desktop-width) {
   .bottom__catalog {
     @-moz-document url-prefix("") {
-      padding-top: 15px;
+      padding-top: 44px;
     }
   }
 }

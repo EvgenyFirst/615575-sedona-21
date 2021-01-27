@@ -117,9 +117,6 @@
 
   margin-top: 14px;
 
-  padding-top: 14.5px;
-  padding-bottom: 17.5px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,14 +148,16 @@
     }
   }
 
-  &:disabled {
-    background-color: $very-light-grey-color;
-    cursor: default;
+  /*
+    &:disabled {
+      background-color: $very-light-grey-color;
+      cursor: default;
 
-    .interesting__button-special {
-      opacity: 1;
+      .interesting__button-special {
+        opacity: 1;
+      }
     }
-  }
+  */
 
   @media (min-width: $tablet-width) {
     width: 457px;
@@ -179,8 +178,23 @@
     top: 16px;
   }
 
+  @media (min-width: $tablet-width) {
+    top: 31px;
+  }
+
   @media (min-width: $desktop-width) {
     top: -14px;
+  }
+}
+
+.interesting__button-special-no-js {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -15px;
   }
 }
 

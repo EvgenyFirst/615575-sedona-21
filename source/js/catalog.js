@@ -24,6 +24,12 @@ removeCityWrapper.classList.remove('city__wrapper-no-js');
 var removeMaterialsBlockNoJs = document.querySelector('.materials__block');
 removeMaterialsBlockNoJs.classList.remove('materials__block-no-js');
 
+var removeMaterialsPlayerFixkNoJs = document.querySelector('.materials__player-fix');
+removeMaterialsPlayerFixkNoJs.classList.remove('materials__player-fix-no-js');
+
+var removeBottomCatalogkNoJs = document.querySelector('.bottom__catalog');
+removeBottomCatalogkNoJs.classList.remove('bottom__catalog-no-js');
+
 
 
 // закрывает главное меню

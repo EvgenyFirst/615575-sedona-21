@@ -8,6 +8,10 @@
   <link rel="apple-touch-icon" href="img/favicon-32x32.ico" sizes="32x32">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -129,7 +133,18 @@
             <span class="materials__lines-scenery-right"></span>
             <span class="materials__lines-scenery-left"></span>
           </div>
-          <a href="#" class="materials__scenery"></a>
+          <a href="#" class="materials__scenery">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/scenery-catalog-tablet-desktop-1x.webp 1x, img/scenery-catalog-tablet-desktop-2x.webp 2x">
+              <source type="image/webp" srcset="img/scenery-catalog-mobile-1x.webp 1x, img/scenery-catalog-mobile-2x.webp 2x">
+
+              <source type="image/svg+xml" media="(min-width: 1200px)"
+                srcset="img/scenery-catalog-desktop-1x.jpg 1x, img/scenery-catalog-desktop-2x.jpg 2x">
+              <img class="materials__scenery-pic" src="img/scenery-catalog-mobile-1x.jpg"
+                srcset="img/scenery-catalog-mobile-1x.jpg 1x, scenery-catalog-mobile-2x.jpg 2x" alt="НЕРОДНЫЕ ПРОСТОРЫ">
+            </picture>
+          </a>
           <div class="materials__cart-wrapper-one materials__cart-special materials__cart-wrapper">
             <div>
               <p class="materials__name">
@@ -162,7 +177,22 @@
               <span class="materials__lines-vegetation-right"></span>
               <span class="materials__lines-vegetation-left"></span>
             </div>
-            <a href="#" class="materials__vegetation"></a>
+            <a href="#" class="materials__vegetation">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/vegetation-catalog-desktop-1x.webp 1x, img/vegetation-catalog-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/vegetation-catalog-tablet-1x.webp 1x, img/vegetation-catalog-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/vegetation-catalog-mobile-1x.webp 1x, img/vegetation-catalog-mobile-2x.webp 2x">
+
+                <source type="image/svg+xml" media="(min-width: 1200px)"
+                  srcset="img/vegetation-catalog-desktop-1x.jpg 1x, img/vegetation-catalog-desktop-2x.jpg 2x">
+                <source type="image/svg+xml" media="(min-width: 768px)"
+                  srcset="img/vegetation-catalog-tablet-1x.jpg 1x, img/vegetation-catalog-tablet-2x.jpg 2x">
+                <img class="materials__vegetation-pic" src="img/vegetation-catalog-mobile-1x.jpg"
+                  srcset="img/vegetation-catalog-mobile-1x.jpg 1x, vegetation-catalog-mobile-2x.jpg 2x" alt="МЕСТНАЯ РАСТИТЕЛЬНОСТЬ">
+              </picture>
+            </a>
             <div class="materials__cart-wrapper-one materials__cart-wrapper">
               <div>
                 <p class="materials__name">
@@ -194,7 +224,22 @@
               <span class="materials__lines-road-right"></span>
               <span class="materials__lines-road-left materials__lines-group"></span>
             </div>
-            <a href="#" class="materials__road"></a>
+            <a href="#" class="materials__road">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/road-catalog-desktop-1x.webp 1x, img/road-catalog-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/road-catalog-tablet-1x.webp 1x, img/road-catalog-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/road-catalog-mobile-1x.webp 1x, img/road-catalog-mobile-2x.webp 2x">
+
+                <source type="image/svg+xml" media="(min-width: 1200px)"
+                  srcset="img/road-catalog-desktop-1x.jpg 1x, img/road-catalog-desktop-2x.jpg 2x">
+                <source type="image/svg+xml" media="(min-width: 768px)"
+                  srcset="img/road-catalog-tablet-1x.jpg 1x, img/road-catalog-tablet-2x.jpg 2x">
+                <img class="materials__road-pic" src="img/road-catalog-mobile-1x.jpg"
+                  srcset="img/road-catalog-mobile-1x.jpg 1x, road-catalog-mobile-2x.jpg 2x" alt="ДОРОГА НА СЕВЕР">
+              </picture>
+            </a>
             <div class="materials__cart-wrapper-two materials__cart-wrapper">
               <div>
                 <p class="materials__name">
@@ -226,7 +271,22 @@
               <span class="materials__lines-bridge-right"></span>
               <span class="materials__lines-bridge-left"></span>
             </div>
-            <a href="#" class="materials__bridge"></a>
+            <a href="#" class="materials__bridge">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/bridge-catalog-desktop-1x.webp 1x, img/bridge-catalog-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/bridge-catalog-tablet-1x.webp 1x, img/bridge-catalog-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/bridge-catalog-mobile-1x.webp 1x, img/bridge-catalog-mobile-2x.webp 2x">
+
+                <source type="image/svg+xml" media="(min-width: 1200px)"
+                  srcset="img/bridge-catalog-desktop-1x.jpg 1x, img/bridge-catalog-desktop-2x.jpg 2x">
+                <source type="image/svg+xml" media="(min-width: 768px)"
+                  srcset="img/bridge-catalog-tablet-1x.jpg 1x, img/bridge-catalog-tablet-2x.jpg 2x">
+                <img class="materials__bridge-pic" src="img/bridge-catalog-mobile-1x.jpg"
+                  srcset="img/bridge-catalog-mobile-1x.jpg 1x, bridge-catalog-mobile-2x.jpg 2x" alt="МОСТ ДЬЯВОЛА">
+              </picture>
+            </a>
             <div class="materials__cart-wrapper-one materials__cart-wrapper">
               <div>
                 <p class="materials__name">
@@ -270,7 +330,7 @@
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="img/video-catalog-desktop-1x.webp 1x, img/video-catalog-desktop-2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/video-catalog-tablet-1x.jpg.webp 1x, img/video-catalog-tablet-2x.webp 2x">
+              srcset="img/video-catalog-tablet-1x.webp 1x, img/video-catalog-tablet-2x.webp 2x">
             <source type="image/webp" srcset="img/video-catalog-mobile-1x.webp 1x, img/video-catalog-mobile-2x.webp 2x">
 
             <source type="image/svg+xml" media="(min-width: 1200px)"
@@ -337,7 +397,7 @@
             </div>
           </div>
         </div>
-        <span class="materials__player-fix"></span>
+        <span class="materials__player-fix materials__player-fix-no-js"></span>
       </div>
     </section>
     <!-- «Седона» end -->
@@ -345,7 +405,7 @@
   </main>
 
   <!-- Подвал сайта start -->
-  <footer class="bottom bottom__catalog">
+  <footer class="bottom bottom__catalog bottom__catalog-no-js">
     <h2 class="visually-hidden">
       Подвал сайта
     </h2>

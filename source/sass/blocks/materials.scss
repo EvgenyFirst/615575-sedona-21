@@ -35,9 +35,9 @@
 }
 
 .materials__triangle-no-js {
-  margin-bottom: 65px;
+  margin-top: 4px;
 
-  padding-top: 11px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;
@@ -56,22 +56,25 @@
 }
 
 .materials__block {
-  margin-top: 33px;
+  padding-top: 25px;
+  padding-bottom: 16px;
 
-  padding-bottom: 18px;
+  background-color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 41px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 64px;
-
-    background-color: $white-color;
   }
 }
 
 .materials__block-no-js {
-  margin-top: -39px;
+  padding-top: -39px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 31px;
+    margin-top: -39px;
   }
 }
 
@@ -85,16 +88,19 @@
   padding-right: 12px;
   padding-left: 15px;
 
+  position: relative;
+  top: -5px;
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
 
-    padding-top: 31px;
+    padding-top: 23px;
     padding-right: 60px;
     padding-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 65px;
+    padding-top: 58px;
   }
 }
 
@@ -108,6 +114,9 @@
   padding-top: 14px;
   padding-right: 21px;
   padding-left: 25px;
+
+  position: relative;
+  top: -7px;
 
   @media (min-width: $tablet-width) {
     padding-right: 161px;
@@ -124,16 +133,16 @@
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 54px;
+    margin-top: 1px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 14px;
+    margin-top: -18px;
   }
 }
 
 .materials__cart {
-  margin-top: -11px;
+  margin-top: -9px;
 }
 
 .materials__lines-scenery-right,
@@ -146,6 +155,8 @@
   height: 281px;
 
   @media (min-width: $tablet-width) {
+    position: absolute; // дублировал тк без этого "заглушка" не прилипает к края, начиная от планшетной ширины
+
     width: 60px;
     min-height: 403px;
   }
@@ -164,10 +175,7 @@
 .materials__scenery {
   display: block;
 
-  background-color: $lite-grey-color;
-  background-image: url("../img/scenery-catalog-mobile-1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
 
   margin-right: auto;
   margin-left: auto;
@@ -175,23 +183,28 @@
   max-width: 845px;
   height: 280px;
 
-  @media (min-resolution: 2dppx) {
-    background-color: $lite-grey-color;
-    background-image: url("../img/scenery-catalog-mobile-2x.jpg");
-    background-size: 845px auto;
-  }
-
   @media (min-width: $tablet-width) {
-    background-image: url("../img/scenery-catalog-tablet-desktop-1x.jpg");
-
     max-width: 1204px;
     height: 400px;
+  }
+}
 
-    @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
-      background-image: url("../img/scenery-catalog-tablet-desktop-2x.jpg");
-      background-size: 1204px auto;
-    }
+.materials__scenery-pic {
+  position: absolute;
+  left: 50%;
+
+  min-width: fit-content;
+
+  height: 100%;
+
+  margin-left: -419px;
+
+  background-color: $special-bg-color-without-bg-img;
+
+  @media (min-width: $tablet-width) {
+    min-width: 1200px;
+
+    margin-left: -599px;
   }
 }
 
@@ -215,6 +228,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
     background-color: $lite-grey-color;
     background-image: url("../img/baclground-cart-catalog-desktop-opacity.svg");
 
@@ -367,7 +382,7 @@
 }
 
 .materials__group {
-  width: 320px;
+  min-width: 320px;
 
   margin-right: auto;
   margin-left: auto;
@@ -395,6 +410,8 @@
 
 .materials__lines {
   position: relative;
+
+  z-index: 2;
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -440,10 +457,7 @@
 .materials__vegetation {
   display: block;
 
-  background-color: $lite-grey-color;
-  background-image: url("../img/vegetation-catalog-mobile-1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
 
   margin-top: 33px;
   margin-right: auto;
@@ -453,47 +467,43 @@
   min-width: 320px;
   height: 280px;
 
-  @media (min-resolution: 2dppx) {
-    background-color: $lite-grey-color;
-    background-image: url("../img/vegetation-catalog-mobile-2x.jpg");
-    background-size: 426px auto;
-  }
-
   @media (min-width: $tablet-width) {
-    background-image: url("../img/vegetation-catalog-tablet-1x.jpg");
-
     max-width: 398px;
     min-width: 309px;
     height: 267px;
 
-    @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
-      background-image: url("../img/vegetation-catalog-tablet-2x.jpg");
-      background-size: 398px auto;
-    }
+    overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/vegetation-catalog-desktop-1x.jpg");
-
     max-width: 400px;
     height: 267px;
+  }
+}
 
-    @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
-      background-image: url("../img/vegetation-catalog-desktop-2x.jpg");
-      background-size: 400px auto;
-    }
+.materials__vegetation-pic {
+  position: absolute;
+  left: 50%;
+
+  min-width: fit-content;
+  height: 100%;
+
+  margin-left: -208px;
+
+  background-color: $special-bg-color-without-bg-img;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -199px;
   }
 }
 
 .materials__block-think {
   @media (min-width: $tablet-width) {
-    margin-top: 52px;
+    margin-top: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-top: -11px;
   }
 }
 
@@ -540,10 +550,7 @@
 .materials__road {
   display: block;
 
-  background-color: $lite-grey-color;
-  background-image: url("../img/road-catalog-mobile-1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
 
   margin-top: 35px;
   margin-right: auto;
@@ -553,38 +560,44 @@
   min-width: 320px;
   height: 280px;
 
-  @media (min-resolution: 2dppx) {
-    background-color: $lite-grey-color;
-    background-image: url("../img/road-catalog-mobile-2x.jpg");
-    background-size: 426px auto;
-  }
-
   @media (min-width: $tablet-width) {
-    background-image: url("../img/road-catalog-tablet-1x.jpg");
-
     max-width: none;
     min-width: 326px;
     height: 265px;
 
-    @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
-      background-image: url("../img/road-catalog-tablet-2x.jpg");
-      background-size: auto 265px;
-    }
+    overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $lite-grey-color;
-    background-image: url("../img/road-catalog-desktop-1x.jpg");
-
     max-width: 400px;
-    height: 265px;
+    height: 272px;
 
-    @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
-      background-image: url("../img/road-catalog-desktop-2x.jpg");
-      background-size: 400px 265px;
-    }
+    margin-top: 33px;
+  }
+}
+
+.materials__road-pic {
+  position: absolute;
+  left: 50%;
+
+  min-width: 426px;
+  height: 100%;
+
+  margin-left: -213px;
+
+  background-color: $special-bg-color-without-bg-img;
+
+  @media (min-width: $tablet-width) {
+    min-width: 400px;
+
+    margin-left: -202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 267px;
+
+    margin-left: -200px;
   }
 }
 
@@ -594,6 +607,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -88px;
+
     background-color: transparent;
   }
 }
@@ -625,10 +640,7 @@
 .materials__bridge {
   display: block;
 
-  background-color: $lite-grey-color;
-  background-image: url("../img/bridge-catalog-mobile-1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
 
   margin-top: 34px;
   margin-right: auto;
@@ -638,37 +650,40 @@
   min-width: 320px;
   height: 280px;
 
-  @media (min-resolution: 2dppx) {
-    background-color: $lite-grey-color;
-    background-image: url("../img/bridge-catalog-mobile-2x.jpg");
-    background-size: 427px auto;
-  }
-
   @media (min-width: $tablet-width) {
-    background-image: url("../img/bridge-catalog-tablet-1x.jpg");
-
     max-width: 398px;
     height: 267px;
 
-    @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
-      background-image: url("../img/bridge-catalog-tablet-2x.jpg");
-      background-size: 398px auto;
-    }
+    overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/bridge-catalog-desktop-1x.jpg");
-
     width: 400px;
     min-width: 400px;
     height: 267px;
+  }
+}
 
-    @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
-      background-image: url("../img/bridge-catalog-desktop-2x.jpg");
-      background-size: 400px auto;
-    }
+.materials__bridge-pic {
+  position: absolute;
+  left: 50%;
+
+  max-width: 100%;
+  min-width: 520px;
+  height: 100%;
+
+  margin-left: -263px;
+
+  background-color: $special-bg-color-without-bg-img;
+
+  @media (min-width: $tablet-width) {
+    min-width: 400px;
+
+    margin-left: -199px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -200px;
   }
 }
 
@@ -683,7 +698,7 @@
   display: flex;
   justify-content: center;
 
-  margin-top: 33px;
+  margin-top: 26px;
   margin-right: auto;
   margin-left: auto;
 
@@ -696,6 +711,9 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
+    min-height: 497px;
+
+    margin-top: 75px;
   }
 }
 
@@ -737,10 +755,11 @@
 
 .materials__player {
   position: relative;
+  top: -5px;
 
   width: 280px;
 
-  margin-top: -52px;
+  margin-top: -43px;
   margin-right: auto;
   margin-left: auto;
 
@@ -756,7 +775,10 @@
     min-width: 648px;
     min-height: 93px;
 
-    margin-top: -100px;
+    margin-top: -94px;
+
+    position: relative;
+    top: -8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -764,6 +786,8 @@
     max-width: 800px;
     min-width: 800px;
     min-height: 114px;
+
+    margin-top: -98px;
   }
 }
 
@@ -1139,14 +1163,23 @@
     display: block;
 
     width: 100%;
-    min-height: 31px;
+    min-height: 51px;
 
     position: relative;
-    bottom: 24px;
+    bottom: 29px;
 
     background-color: $white-color;
 
     z-index: 2;
+  }
+}
+
+.materials__player-fix-no-js {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    bottom: 29px;
+
+    min-height: 77px;
   }
 }
 

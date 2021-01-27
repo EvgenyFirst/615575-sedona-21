@@ -1,5 +1,5 @@
 .sedona {
-  background-color: $lite-grey-color;
+  background-color: $special-bg-color-without-bg-img;
   background-image: url("../img/background-form-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
@@ -11,10 +11,14 @@
 
   max-width: 902px;
   min-width: 320px;
-  height: 214px;
+  height: 157px;
+
+  @-moz-document url-prefix("") {
+    height: 156px;
+  }
 
   @media (min-resolution: 2dppx) {
-    background-color: $lite-grey-color;
+    background-color: $special-bg-color-without-bg-img;
     background-image: url("../img/background-form-mobile-2x.jpg");
     background-size: 902px auto;
     background-position-y: -229px;
@@ -24,6 +28,7 @@
   // outline-offset: -3px; // специальные цыета для рамок по заданию
 
   @media (min-width: $tablet-width) {
+    background-color: $special-bg-color-without-bg-img;
     background-image: url("../img/background-form-tablet-desktop-1x.jpg");
     background-position-y: -229px;
 
@@ -35,7 +40,7 @@
     min-height: 291px;
 
     @media (min-resolution: 2dppx) {
-      background-color: $lite-grey-color;
+      background-color: $special-bg-color-without-bg-img;
       background-image: url("../img/background-form-tablet-desktop-2x.jpg");
       background-size: 1200px 519px;
     }

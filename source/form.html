@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = no, width = device-width">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="icon" href="img/favicon-16x16.ico" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="img/favicon-32x32.ico" sizes="32x32">
   <link rel="stylesheet" href="css/style.min.css">
@@ -136,15 +140,14 @@
                 Представьтесь:
               </legend>
               <ul class="reviews__items reviews__items-my-data">
-                <li class="reviews__li">
+                <li class="reviews__li" tabindex="0">
                   <p class="reviews__data reviews__data-info reviews__input-fix-mame">
                     <label class="reviews__label reviews__label-my-data" for="user-name">ИМЯ*:</label>
-                    <input
-                      class="reviews__input reviews__input-my-data reviews__input-user-name reviews__required-user-name reviews__input-fix-mame"
+                    <input class="reviews__input reviews__input-my-data reviews__input-user-name reviews__required-user-name reviews__input-fix-mame"
                       id="user-name" type="text" name="userName" placeholder="Петр" required tabindex="0" minlength="1">
                   </p>
                 </li>
-                <li class="reviews__li">
+                <li class="reviews__li" tabindex="0">
                   <p class="reviews__data reviews__data-info">
                     <label class="reviews__label reviews__label-my-data" for="user-surname">ФАМИЛИЯ*:</label>
                     <input
@@ -152,7 +155,7 @@
                       id="user-surname" type="text" name="userSurname" placeholder="Иванов" required tabindex="0" minlength="1">
                   </p>
                 </li>
-                <li class="reviews__li">
+                <li class="reviews__li" tabindex="0">
                   <p class="reviews__data reviews__data-info">
                     <label class="reviews__label reviews__label-my-data" for="user-patronymic">Отчество:</label>
                     <input
@@ -194,22 +197,22 @@
                 <li class="reviews__li reviews__li-emotions">
                   <p class="reviews__data reviews__data-custom-radio">
                     <input class="reviews__input-radio reviews__input-radio-visually-hidden" value="positive"
-                      type="radio" name="impression" id="filter-positive" checked>
-                    <label class="reviews__label-radio" for="filter-positive">Скорее положительное</label>
+                      type="radio" name="impression" id="filter-positive" tabindex="1" checked>
+                    <label class="reviews__label-radio" for="filter-positive" tabindex="1">Скорее положительное</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-emotions">
                   <p class="reviews__data reviews__data-custom-radio">
                     <input class="reviews__input-radio reviews__input-radio-visually-hidden" value="negative"
-                      type="radio" name="impression" id="filter-negative">
-                    <label class="reviews__label-radio" for="filter-negative">Скорее отрицательное</label>
+                      type="radio" name="impression" id="filter-negative" tabindex="1">
+                    <label class="reviews__label-radio" for="filter-negative" tabindex="1">Скорее отрицательное</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-emotions">
                   <p class="reviews__data reviews__data-custom-radio">
                     <input class="reviews__input-radio reviews__input-radio-visually-hidden" value="hard" type="radio"
-                      name="impression" id="filter-hard">
-                    <label class="reviews__label-radio" for="filter-hard">Затрудняюсь ответить</label>
+                      name="impression" id="filter-hard" tabindex="1">
+                    <label class="reviews__label-radio" for="filter-hard" tabindex="1">Затрудняюсь ответить</label>
                   </p>
                 </li>
               </ul>
@@ -222,29 +225,29 @@
                 <li class="reviews__li reviews__li-attractions">
                   <p class="reviews__data reviews__data-custom-checkbox">
                     <input class="reviews__input-checkbox reviews__input-checkbox-visually-hidden" value="bridge"
-                      type="checkbox" name="emotion" id="filter-bridge" checked>
-                    <label class="reviews__label-checkbox" for="filter-bridge">Мост Дьявола</label>
+                      type="checkbox" name="emotion" id="filter-bridge" tabindex="1" checked>
+                    <label class="reviews__label-checkbox" for="filter-bridge" tabindex="1">Мост Дьявола</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-attractions">
                   <p class="reviews__data reviews__data-custom-checkbox">
                     <input class="reviews__input-checkbox reviews__input-checkbox-visually-hidden" value="mountain"
-                      type="checkbox" name="emotion" id="filter-mountain" checked>
-                    <label class="reviews__label-checkbox" for="filter-mountain">Гора-Колокол</label>
+                      type="checkbox" name="emotion" id="filter-mountain" tabindex="1" checked>
+                    <label class="reviews__label-checkbox" for="filter-mountain" tabindex="1">Гора-Колокол</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-attractions">
                   <p class="reviews__data reviews__data-custom-checkbox">
                     <input class="reviews__input-checkbox reviews__input-checkbox-visually-hidden" value="slide"
-                      type="checkbox" name="emotion" id="filter-slide" checked>
-                    <label class="reviews__label-checkbox" for="filter-slide">Слайд-парк</label>
+                      type="checkbox" name="emotion" id="filter-slide" tabindex="1" checked>
+                    <label class="reviews__label-checkbox" for="filter-slide" tabindex="1">Слайд-парк</label>
                   </p>
                 </li>
                 <li class="reviews__li reviews__li-attractions">
                   <p class="reviews__data reviews__data-custom-checkbox">
                     <input class="reviews__input-checkbox reviews__input-checkbox-visually-hidden" value="rocks"
-                      type="checkbox" name="emotion" id="filter-rocks">
-                    <label class="reviews__label-checkbox reviews__label-checkbox-rocks" for="filter-rocks">Красные скалы</label>
+                      type="checkbox" name="emotion" id="filter-rocks" tabindex="1">
+                    <label class="reviews__label-checkbox reviews__label-checkbox-rocks" for="filter-rocks" tabindex="1">Красные скалы</label>
                   </p>
                 </li>
               </ul>
@@ -261,7 +264,7 @@
                     восторги </label>
                   <textarea class="reviews__input reviews__input-user-description" rows="1"
                     placeholder="Опишите подробно все свои восторги" id="user-description"
-                    name="userDescription"></textarea>
+                    name="userDescription" tabindex="1"></textarea>
                 </p>
               </li>
             </ul>

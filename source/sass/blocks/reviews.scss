@@ -1,10 +1,14 @@
 .reviews {
-  margin-top: -113px;
+  margin-top: -57px;
+
+  @-moz-document url-prefix("") {
+    margin-top: -57px;
+  }
 
   // outline: 3px solid $special-border-lite-green-color; // специальные цыета для рамок по заданию
   // outline-offset: -3px; // специальные цыета для рамок по заданию
   @media (min-width: $tablet-width) {
-    margin-top: -58px;
+    margin-top: -57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,10 +17,14 @@
 }
 
 .reviews-no-js {
-  margin-top: -111px;
+  margin-top: -57px;
 
   @media (min-width: $tablet-width) {
     margin-top: -58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -57px;
   }
 }
 
@@ -57,13 +65,26 @@
     padding-right: 68px;
     padding-left: 67px;
 
+    position: relative;
+    bottom: 9px;
+
     border-bottom: none;
+
+
+    @-moz-document url-prefix("") {
+      position: relative;
+      bottom: 1px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -1px;
+    margin-top: 9px;
 
     background-color: $white-color;
+
+    @-moz-document url-prefix("") {
+      bottom: 13px;
+    }
   }
 }
 
@@ -131,6 +152,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 9px;
+  }
 }
 
 // Firefox fix
@@ -197,7 +222,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -1px;
+    margin-top: -10px;
 
     background-color: $white-color;
   }
@@ -560,7 +585,14 @@
     z-index: 1;
 
     @-moz-document url-prefix("") {
-      right: -18px;
+      bottom: 15px;
+      right: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @-moz-document url-prefix("") {
+        right: -16px;
+      }
     }
   }
 
@@ -572,7 +604,7 @@
     padding-top: 1px;
 
     @-moz-document url-prefix("") {
-      right: -18px;
+      right: -16px;
     }
   }
 }
@@ -612,7 +644,7 @@
     padding-right: 2px;
 
     &::-moz-placeholder {
-      line-height: 3;
+      line-height: 3.5;
     }
   }
 
@@ -632,6 +664,10 @@
       min-width: 192px;
 
       right: 26px;
+
+      &::-moz-placeholder {
+        line-height: 2.6;
+      }
     }
   }
 }
@@ -724,7 +760,7 @@
     padding-right: 2px;
 
     &::-moz-placeholder {
-      line-height: 3;
+      line-height: 3.5;
     }
   }
 
@@ -735,6 +771,10 @@
 
     @-moz-document url-prefix("") {
       padding-left: 23px;
+
+      &::-moz-placeholder {
+        line-height: 2.8;
+      }
     }
   }
 }
@@ -856,7 +896,6 @@
   height: 1px;
   margin: -1px;
   padding: 0;
-  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -864,6 +903,12 @@
 }
 
 .reviews__data-custom-radio {
+  &:focus-within {
+    &::before {
+      border: 5px solid $black-color;
+    }
+  }
+
   .reviews__label-radio {
     position: relative;
 
@@ -923,6 +968,12 @@
 
       &::after {
         opacity: 0.3;
+      }
+    }
+
+    &:focus-within {
+      &::before {
+        border: 5px solid $black-color;
       }
     }
   }
@@ -1090,6 +1141,12 @@
 
       &::after {
         opacity: 0.3;
+      }
+    }
+
+    &:focus-within {
+      &::before {
+        border: 5px solid $black-color;
       }
     }
   }
@@ -1468,7 +1525,7 @@
 .reviews__info-br {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
@@ -1487,7 +1544,7 @@
     bottom: 1px;
 
     &::-moz-placeholder {
-      line-height: 3.5;
+      line-height: 3.1;
     }
   }
 }
@@ -1498,7 +1555,27 @@
     bottom: -1px;
 
     &::-moz-placeholder {
-      line-height: 3;
+      line-height: 3.1;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__input-fix-surname {
+    @-moz-document url-prefix("") {
+      &::-moz-placeholder {
+        line-height: 3;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__input-fix-surname {
+    @-moz-document url-prefix("") {
+      &::-moz-placeholder {
+        line-height: 2.45;
+      }
     }
   }
 }
@@ -1509,7 +1586,7 @@
     bottom: 3px;
 
     &::-moz-placeholder {
-      line-height: 3.5;
+      line-height: 3.3;
     }
   }
 }
