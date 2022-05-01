@@ -5,7 +5,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.4",
-    "browser-sync": "2.26.13",
+    "browser-sync": "^2.27.9",
     "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-htmlmin": "5.0.1",
@@ -18,7 +18,7 @@
     "gulp-svgstore": "7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "4.0.1",
-    "postcss": "8.1.10",
+    "postcss": "^8.3.0",
     "postcss-csso": "5.0.0",
     "stylelint": "13.8.0",
     "stylelint-config-htmlacademy": "0.1.4"
