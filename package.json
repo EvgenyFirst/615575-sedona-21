@@ -3,7 +3,7 @@
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "@htmlacademy/editorconfig-cli": "2.0.8",
     "autoprefixer": "10.0.4",
     "browser-sync": "^2.27.9",
     "del": "6.0.0",
